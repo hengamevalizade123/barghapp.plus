@@ -1,0 +1,167 @@
+.c-careers {
+	gap: 48px;
+
+	&__desc {
+		color: var(--color-text);
+		@include font-size(16px, 1.8);
+	}
+
+	&__season {
+		@include mq($until: md) {
+			flex-wrap: wrap;
+		}
+
+		li {
+			width: calc(50% - 8px);
+			flex: auto;
+
+			svg {
+				height: 36px;
+				width: 36px;
+
+				path {
+					stroke: var(--color-secondary);
+				}
+			}
+
+			h3 {
+				@include font-size(18px, 1.8);
+				position: relative;
+				color: var(--color-secondary);
+				@include mq($until: desktop) {
+					@include font-size(16px, 1.8);
+				}
+
+				&:before {
+					content: "";
+					width: 86px;
+					height: 26px;
+					background: #77b04221;
+					position: absolute;
+					bottom: 0;
+					left: -14px;
+				}
+			}
+
+			p {
+				color: var(--color-text);
+				@include font-size(14px, 1.8);
+			}
+		}
+	}
+
+	&__steps {
+		ul {
+			position: relative;
+			gap: 60px;
+			margin-top: 48px;
+			align-items: flex-start;
+			@include mq($until: md) {
+				flex-direction: column;
+				gap: 36px;
+				margin-top: 32px;
+			}
+
+			li {
+				position: relative;
+				text-align: center;
+				color: var(--color-text);
+				width: 20%;
+				@include mq($until: md) {
+					flex-direction: row;
+					align-items: center;
+					width: 100%;
+				}
+
+				span.step-icon {
+					background: var(--color-primary);
+					border-radius: 50%;
+					height: 48px;
+					width: 48px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+
+					path {
+						stroke: var(--color-white);
+						transition: stroke .4s ease;
+					}
+				}
+			}
+		}
+
+		span {
+			@include font-size(14px, 1.8);
+		}
+	}
+
+	h2 {
+		color: var(--color-text);
+		@include font-size(18px, 1.8);
+		position: relative;
+		width: max-content;
+
+		&:before {
+			content: "";
+			width: 86px;
+			height: 26px;
+			background: #dcebf9;
+			position: absolute;
+			bottom: 0;
+			left: -14px;
+			z-index: -1;
+		}
+	}
+
+	form {
+		p:nth-child(6) {
+			width: 250px;
+			margin-right: auto;
+		}
+	}
+}
+
+.c-careers__steps li::after {
+	content: "";
+	position: absolute;
+	top: 24px;
+	left: -60px;
+	width: 60px;
+	height: 4px;
+	background: #ccc;
+	border-radius: 4px;
+	transition: background .4s ease;
+	@include mq($until: md) {
+		content: "";
+		position: absolute;
+		top: 52px;
+		right: 22px;
+		height: 28px;
+		background: #ccc;
+		border-radius: 4px;
+		-webkit-transition: background .4s ease;
+		transition: background .4s ease;
+		bottom: -87px;
+		width: 4px;
+	}
+}
+
+.c-careers__steps li:last-child::after {
+	display: none;
+}
+
+.c-careers__steps li.active .step-icon {
+	background: var(--color-secondary);
+}
+
+.c-careers__steps li.active svg path {
+	stroke: var(--color-white) !important;
+}
+
+.c-careers__steps li.line-active::after {
+	background: var(--color-secondary);
+}
+
+#wpcf7-f13474-o1 {
+	width: 100%;
+}

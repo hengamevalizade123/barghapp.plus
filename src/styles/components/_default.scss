@@ -6,6 +6,10 @@
 	height: 100%;
 }
 
+.h-auto {
+	height: auto;
+}
+
 .p-0 {
 	padding: 0;
 }
@@ -13,11 +17,35 @@
 .pt-0 {
 	padding-top: 0;
 }
-.padding-md{
-	padding: 16px;
+
+.pb-0 {
+	padding-bottom: 0;
 }
+
+.padding-sm {
+	padding: 8px;
+}
+
+.padding-md {
+	padding: 16px;
+	box-sizing: border-box;
+}
+
+.padding-lg {
+	padding: 32px;
+	box-sizing: border-box;
+}
+
 .m-0 {
 	margin: 0;
+}
+
+.mt-0 {
+	margin-top: 0;
+}
+
+.mb-0 {
+	margin-bottom: 0;
 }
 
 .border-radius {
@@ -31,14 +59,25 @@
 .txt-justify {
 	text-align: justify;
 }
-.txt-left{
+
+.txt-left {
 	text-align: left;
 }
-.txt-right{
+
+.txt-right {
 	text-align: right;
 }
+
+.txt-center {
+	text-align: center;
+}
+
 .relative {
 	position: relative;
+}
+
+.absolute {
+	position: absolute;
 }
 
 .color-primary {
@@ -60,6 +99,43 @@
 .bg-gradiant-btm-top {
 	background: linear-gradient(0deg, #244065 0%, #031232 100%);
 }
-.items-start{
+
+.items-start {
 	align-items: flex-start;
+}
+
+.justify-end {
+	justify-content: flex-end;
+}
+
+.cover {
+	object-fit: cover;
+}
+
+.contain {
+	object-fit: contain;
+}
+
+.border-box {
+	box-sizing: border-box;
+}
+
+.d-block {
+	display: block;
+}
+
+.color-white {
+	color: var(--color-white);
+}
+
+.font-sm {
+	@include font-size(14px, 1.6);
+}
+
+svg {
+	flex-shrink: 0;
+}
+
+.numberic-list li {
+	list-style: arabic-indic;
 }

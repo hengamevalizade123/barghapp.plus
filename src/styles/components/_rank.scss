@@ -1,0 +1,84 @@
+.rank-math-breadcrumb {
+	position: relative;
+	margin-bottom: 14px
+}
+
+.rank-math-breadcrumb p {
+	margin: 0;
+	color: var(--color-text);
+	font-weight: 400;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	row-gap: 8px;
+	display: inline
+}
+
+.rank-math-breadcrumb .last {
+	color: var(--color-secondary);
+	font-size: 14px;
+	font-size: .875rem;
+	line-height: 1.8;
+	display: inline
+}
+
+.rank-math-breadcrumb a {
+	color: var(--color-text);
+	text-decoration: none;
+	position: relative;
+	-webkit-transition: color .2s linear;
+	transition: color .2s linear;
+	white-space: nowrap;
+	font-size: 14px;
+	font-size: .875rem;
+	line-height: 1.8;
+	display: inline
+}
+
+.rank-math-breadcrumb a::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	-webkit-transform: scaleX(0);
+	transform: scaleX(0);
+	border-radius: .5rem;
+	height: 1px;
+	bottom: 0;
+	right: 0;
+	background: var(--color-white-60);
+	-webkit-transform-origin: bottom left;
+	transform-origin: bottom left;
+	-webkit-transition: -webkit-transform .125s ease-out;
+	transition: -webkit-transform .125s ease-out;
+	transition: transform .125s ease-out;
+	transition: transform .125s ease-out,-webkit-transform .125s ease-out
+}
+
+.rank-math-breadcrumb a:hover {
+	color: var(--color-secondary)
+}
+
+.rank-math-breadcrumb a:hover::after {
+	-webkit-transform: scaleX(1);
+	transform: scaleX(1);
+	-webkit-transform-origin: bottom right;
+	transform-origin: bottom right
+}
+
+.rank-math-breadcrumb .separator {
+	margin: 0 .5em;
+	background-image: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.0001 19.92L8.48009 13.4C7.71009 12.63 7.71009 11.37 8.48009 10.6L15.0001 4.08" stroke="%23292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+	width: 14px;
+	height: 14px;
+	background-size: cover;
+	display: inline-block;
+	vertical-align: -4px;
+	opacity: .225;
+	-ms-flex-negative: 0;
+	flex-shrink: 0
+}

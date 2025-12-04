@@ -1,0 +1,21 @@
+.c-established {
+	margin-top: 32px;
+
+	&__desc {
+		color: var(--color-text);
+		@include font-size(16px, 1.8);
+		background: var(--color-white);
+		border-radius: $border-radius;
+		padding: 24px;
+		ul{
+			border: 1px solid #f3f3f3;
+			border-radius: 12px;
+			padding: 16px 36px;
+			@include mq($until:sm){
+				padding: 0 12px;
+				border: 0;
+				text-align: justify;
+			}
+		}
+	}
+}

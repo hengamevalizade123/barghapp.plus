@@ -1,0 +1,275 @@
+.c-form {
+	&__title {
+		padding: 28px;
+		border-bottom: 1px solid #e9edf3;
+
+		h1 {
+			@include font-size(24px, 1.6);
+			color: var(--color-primary);
+			z-index: 1;
+		}
+	}
+
+	.c-from__content {
+		padding: 28px;
+
+		form {
+			display: flex;
+			flex-direction: column;
+			gap: 1em;
+			align-items: flex-start;
+			color: var(--color-text-black);
+			@include font-size(14px, 1.6);
+
+			input, select {
+				flex: 1;
+				border: 1px solid #e5e8f0 !important;
+				border-radius: .5rem !important;
+				padding: 1em;
+				height: 52px;
+				@include font-size(14px, 1.8);
+				color: var(--color-text);
+				text-align: right;
+				outline: none !important;
+				box-shadow: none;
+
+				&:active, &:focus {
+					border: 1px solid var(--color-secondary);
+				}
+			}
+
+			.wpcf7-not-valid-tip {
+				margin-top: .5em;
+				font-size: 13px;
+				position: absolute;
+				left: 1em;
+				bottom: -6px;
+				background: var(--color-white);
+				padding: 0 .5em
+			}
+
+			textarea {
+				flex: 1;
+				border: 1px solid #e5e8f0;
+				border-radius: .5rem;
+				padding: 1em;
+				height: 20em;
+				@include font-size(14px, 1.8);
+				color: var(--color-text);
+				width: 100%;
+				resize: none;
+				box-shadow: none;
+			}
+
+			.gform-body {
+				width: 100%;
+			}
+
+			.gfield_radio, .gfield_checkbox {
+				flex-direction: row !important;
+				gap: 24px !important;
+
+				input {
+					padding: 0;
+					height: 24px;
+					width: 24px;
+
+					&:active, &:focus {
+						background: var(--color-secondary) !important;
+					}
+
+					&:before {
+						content: "✔";
+						background-color: none;
+						height: 24px;
+						width: 24px;
+						display: flex;
+						justify-content: center;
+						padding-top: 2px;
+						color: white;
+					}
+				}
+
+				@include mq($until: sm) {
+					flex-wrap: wrap !important;
+					.gchoice {
+						width: calc(50% - 12px);
+					}
+				}
+			}
+
+			input[type="submit"] {
+				background: var(--color-secondary) !important;
+				transition: all .2s linear;
+				border-radius: 10px !important;
+				outline: none !important;
+				border: none;
+				max-width: 130px;
+
+				&:hover, &:active, &:focus {
+					background: var(--color-primary) !important;
+				}
+			}
+
+			.gform_next_button, .gform_previous_button {
+				max-width: 80px;
+				border-radius: 8px !important;
+				outline: none;
+				transition: all .2s linear;
+			}
+
+			.gform_previous_button {
+				border: 1px solid var(--color-primary) !important;
+				outline: none !important;
+
+				&:hover, &:active, &:focus {
+					border: 0;
+					background: var(--color-primary) !important;
+					color: var(--color-white) !important;
+				}
+			}
+
+			.gform_page .gform-page-footer .gform_next_button {
+				background: var(--color-secondary) !important;
+				outline: none !important;
+
+				&:hover, &:active, &:focus {
+					background: var(--color-primary) !important;
+					color: var(--color-white);
+				}
+			}
+
+			.gform-page-footer.gform_page_footer {
+				justify-content: space-between;
+			}
+
+			.gform_fields {
+				gap: 12px;
+			}
+		}
+
+		.gform_required_legend {
+			display: none !important;
+		}
+
+		.gform-theme--framework .gf_step_completed .gf_step_number::after {
+			border: none;
+			background: var(--color-secondary);
+		}
+
+		.gform-theme--framework .gf_step_number {
+			border: 1px solid #dfdfdf;
+			padding-top: 3px;
+			border-radius: 10px;
+		}
+
+		.gform-theme--framework .gf_step_active .gf_step_number, .gform-theme--framework .gf_step_completed .gf_step_number {
+			color: var(--color-white);
+			background: var(--color-secondary);
+			border: none;
+		}
+	}
+
+	.wpcf7-alert {
+		background: var(--color-primary);
+		color: var(--color-white);
+		padding: 1em;
+		border-radius: .5rem;
+		margin-bottom: 2em;
+		@include font-size(14px, 1.6);
+
+		svg {
+			vertical-align: middle;
+			margin-left: .25em;
+			width: 18px;
+			height: 18px;
+
+			path {
+				stroke: var(--color-white)
+			}
+		}
+	}
+
+	.gform_title {
+		border-bottom: 1px solid #e9edf3;
+		color: var(--color-text-black);
+		@include font-size(16px, 1.8);
+		font-weight: 700;
+		display: flex;
+		align-items: center;
+		padding: 1em 0;
+	}
+
+	.field_sublabel_below {
+		border: 0 !important;
+	}
+
+	.gsection_title {
+		@include font-size(14px, 1.8);
+		font-weight: 700;
+		color: var(--color-text-black);
+		margin: 0;
+		position: relative;
+
+		&:before {
+			content: "";
+			width: 60%;
+			height: 26px;
+			background: #dcebf9;
+			position: absolute;
+			bottom: 0;
+			left: -14px;
+			z-index: -1;
+		}
+	}
+}
+
+.gform-theme--framework input[type=radio]:where(:not(.gform-theme__disable):not(.gform-theme__disable *):not(.gform-theme__disable-framework):not(.gform-theme__disable-framework *))::before {
+	background: none !important;
+}
+
+.gform_confirmation_message {
+	img {
+		width: 84px !important;
+	}
+}
+
+.popup-content {
+	p {
+		@include font-size(14px, 1.6);
+		color: var(--color-text);
+	}
+
+	h3 {
+		@include font-size(18px, 1.6);
+		color: var(--color-secondary);
+		margin: 0;
+	}
+
+	.close-popup {
+		left: 14px !important;
+		top: 8px !important;
+		right: auto;
+	}
+}
+
+.c-from__content > p {
+	> img {
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+.back-home {
+	background: var(--color-primary);
+	color: var(--color-white);
+	@include font-size(14px, 1.6);
+	transition: all .2s linear;
+	border-radius: $border-radius;
+	padding: 12px 18px;
+	margin: auto;
+
+	&:hover {
+		background: var(--color-secondary);
+	}
+}

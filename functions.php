@@ -174,3 +174,146 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+// form viewer gravity
+add_action('admin_init', function () {
+
+	if (current_user_can('administrator')) {
+		return;
+	}
+
+	$current_user = wp_get_current_user();
+	$username = $current_user->user_login;
+
+	// لیست مجاز
+	$allowed_forms = [
+		'epc' => [4, 2],
+		'eco' => [3],
+		'pro@barghapp.com' => [7],
+		'bpk@barghapp.com' => [5],
+	];
+
+	global $pagenow;
+
+	if ($pagenow === 'admin.php' && isset($_GET['page'])) {
+		$page = sanitize_text_field($_GET['page']);
+		$user_allowed_forms = isset($allowed_forms[$username]) ? $allowed_forms[$username] : [];
+
+		if (empty($user_allowed_forms)) {
+			wp_die('شما به هیچ فرمی دسترسی ندارید.');
+		}
+
+		// محدود کردن Entries
+		if ($page === 'gf_entries') {
+			$current_form_id = isset($_GET['id']) ? intval($_GET['id']) : 0;
+			if (!in_array($current_form_id, $user_allowed_forms)) {
+				wp_redirect(admin_url('admin.php?page=gf_entries&id=' . $user_allowed_forms[0]));
+				exit;
+			}
+		}
+
+		// محدود کردن ارسال واقعی خروجی
+		if ($page === 'gf_export' && isset($_POST['export_lead']) && isset($_POST['export_form'])) {
+			$form_id = intval($_POST['export_form']);
+			if (!in_array($form_id, $user_allowed_forms)) {
+				wp_die('شما اجازه برون‌ریزی این فرم را ندارید.');
+			}
+		}
+	}
+});
+
+
+// حذف فرم‌های غیرمجاز از لیست در صفحه برون‌ریزی (سمت کاربر)
+add_action('admin_head', function () {
+
+	if (!isset($_GET['page']) || $_GET['page'] !== 'gf_export') {
+		return;
+	}
+
+	if (current_user_can('administrator')) {
+		return;
+	}
+
+	$current_user = wp_get_current_user();
+	$username = $current_user->user_login;
+
+	$allowed_forms = [
+		'epc' => [4, 2],
+		'eco' => [3],
+		'pro@barghapp.com' => [7],
+		'bpk@barghapp.com' => [5],
+	];
+
+	if (!isset($allowed_forms[$username])) return;
+
+	$user_allowed_forms = $allowed_forms[$username];
+	$allowed_json = wp_json_encode($user_allowed_forms);
+
+	echo "
+	<script>
+	document.addEventListener('DOMContentLoaded', function() {
+		const allowed = $allowed_json;
+		const select = document.querySelector('select[name=\"export_form\"]');
+		if (!select) return;
+		[...select.options].forEach(opt => {
+			const id = parseInt(opt.value);
+			if (id && !allowed.includes(id)) {
+				opt.remove();
+			}
+		});
+	});
+	</script>
+	";
+});
+
+
+// پنهان کردن اعلان‌ها
+add_action('admin_head', function() {
+	$current_user = wp_get_current_user();
+	$username = $current_user->user_login;
+
+	$users_to_hide_notices = ['epc', 'eco', 'pro@barghapp.com', 'bpk@barghapp.com'];
+
+	if (in_array($username, $users_to_hide_notices)) {
+		echo '<style>
+			.notice,
+			.update-nag,
+			.updated,
+			.error,
+			.is-dismissible,
+			.rank-math-notice,
+			.ep-notice,
+			.elementor-notice,
+			.elementor-admin-notice,
+			.notice-warning,
+			.notice-info,
+			.notice-success {
+				display: none !important;
+			}
+		</style>';
+	}
+});
+/**
+ * Display Reading time
+ *
+ * @return string
+ */
+function str_word_count_utf8($str)
+{
+	return count(preg_split('~[^\p{L}\p{N}\']+~u', $str));
+}
+//reading time
+function display_reading_time()
+{
+	$post_id = get_the_ID();
+	$word_count = str_word_count_utf8(strip_tags(get_post($post_id)->post_content));
+	$reading_speed = 250;
+	$reading_time = ceil($word_count / $reading_speed);
+	if (1 === $reading_time) {
+		return sprintf(__('زمان مطالعه: %s دقیقه', 'text_domain'), $reading_time);
+	} else {
+		return sprintf(__('زمان مطالعه: %s دقیقه', 'text_domain'), $reading_time);
+	}
+}
+
+// Adding shortcode to display the reading time in the blog
+add_shortcode('reading_time', 'display_reading_time');

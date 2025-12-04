@@ -3,11 +3,18 @@ html {
 	font-family: $IRANSansX;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	scroll-behavior: smooth;
+	&:before{
+		transition: all .3s linear;
+	}
 }
 
 body {
 	color: #212121;
 	background: #fff;
+}
+body:not(.home) {
+background: #f9f9f9;
 }
 
 .main {

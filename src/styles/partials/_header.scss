@@ -1,25 +1,67 @@
 header {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
 	z-index: 99;
+	margin-bottom: 16px;
+}
+
+body:not(.home) header {
+	box-shadow: 0 1px 2px rgb(171 171 171 / 24%);
+	margin-bottom: 24px;
+	background: var(--color-white);
 }
 
 .c-main-header {
-	padding: 14px 0;
+	padding: 18px 0;
 
 	&__content {
-		height: 118px;
 		transition: height linear .2s;
 	}
 
-	.header-logo img {
-		width: 168px;
+	nav {
+		@include mq($until: desktop) {
+			order: 1;
+			flex: 1
+		}
 	}
+
+	.header-logo {
+		@include mq($until: desktop) {
+			order: 2;
+			flex: 1;
+			z-index: 100;
+			position: relative;
+			justify-content: center;
+		}
+
+		img {
+			width: 168px;
+			@include mq($until: desktop) {
+				width: 148px;
+			}
+		}
+	}
+
 
 	&__cta {
 		gap: 8px;
+		@include mq($until: desktop) {
+			order: 3;
+			flex: 1
+		}
+	}
+
+	&__panel {
+		padding: 6px 8px;
+		@include font-size(14px, 1.6);
+		margin-right: auto;
+		border-radius: 8px;
+		@include mq($until: sm) {
+			padding: 8px 8px !important;
+			font-size: 13px !important;
+			border-radius: 9px;
+			svg {
+				display: none;
+			}
+		}
 	}
 
 	&__cart {
@@ -64,9 +106,8 @@ header {
 	transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 	list-style: none;
 	z-index: 10;
-	background: linear-gradient(270deg, #960096 0%, #492464 100%);
-
-	@include mq(md) {
+	background: linear-gradient(0deg, #031232 0%, #244065 100%);
+	@include mq(desktop) {
 		flex-direction: row;
 		position: unset;
 		transform: none;
@@ -118,7 +159,7 @@ header {
 	@include mq($from: desktop, $until: 1100px) {
 		gap: 8px;
 	}
-	@include mq(md) {
+	@include mq(desktop) {
 		flex-direction: row;
 		gap: 1em;
 		align-content: center;
@@ -130,7 +171,7 @@ header {
 		padding-right: 0;
 		gap: 1.25em;
 	}
-	@include mq($until: md) {
+	@include mq($until: desktop) {
 		overflow-y: scroll;
 		li:first-child {
 			display: flex;
@@ -173,7 +214,7 @@ header {
 				}
 			}
 
-			@include mq($until: md) {
+			@include mq($until: desktop) {
 				display: none;
 			}
 		}
@@ -194,7 +235,7 @@ header {
 			@include mq($from: desktop, $until: 1100px) {
 				padding: 8px 0;
 			}
-			@include mq(md) {
+			@include mq(desktop) {
 				&:hover {
 					color: var(--color-primary);
 
@@ -224,8 +265,9 @@ header {
 		& > ul {
 			position: absolute;
 			margin: 0;
-			width: 13em;
-			background: rgb(135 18 121 / 80%);
+			width: 15em;
+			backdrop-filter: blur(3px);
+			background: rgb(45 75 116 / 94%);
 			padding: 12px;
 			border-radius: 4px;
 			top: 50px;
@@ -268,14 +310,13 @@ header {
 					display: flex;
 
 					&:hover {
-						background: #FFC300;
-						color: #871279;
+						background: var(--color-primary);
 						font-weight: bold;
 					}
 
 				}
 
-				@include mq(md) {
+				@include mq(desktop) {
 					&:first-of-type {
 						a {
 							border-radius: 4px;
@@ -292,8 +333,8 @@ header {
 				}
 			}
 
-			@include mq($until: md) {
-				display: none;
+			@include mq($until: desktop) {
+				//display: none;
 				position: relative;
 				background: none;
 				box-shadow: none;
@@ -302,6 +343,8 @@ header {
 				border: none;
 				border-radius: 0;
 				top: 0;
+				padding: 0;
+				margin-right: 8px;
 				a.sub-menu {
 					border-right: 1px solid var(--color-grey-03-40);
 					color: var(--color-white-60);
@@ -318,7 +361,7 @@ header {
 			}
 		}
 
-		@include mq(md) {
+		@include mq(desktop) {
 			&:hover {
 				> ul {
 					top: 68px;
@@ -329,6 +372,19 @@ header {
 		}
 	}
 }
+@media (max-width: 768px) {
+
+	.c-menu > li > ul {
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.35s ease;
+	}
+
+	.c-menu > li > ul.open {
+		max-height: 1000px;
+	}
+}
+
 
 //hamburger
 .c-hamburger {
@@ -338,7 +394,7 @@ header {
 	user-select: none;
 	width: 24px;
 
-	@include mq(md) {
+	@include mq(desktop) {
 		display: none;
 		position: unset;
 
@@ -365,7 +421,7 @@ header {
 	z-index: 2;
 	-webkit-touch-callout: none;
 
-	@include mq(md) {
+	@include mq(desktop) {
 		display: none;
 	}
 }
@@ -411,12 +467,24 @@ header {
 .is-fixed {
 	overflow: hidden !important;
 	height: 100%;
+
+	&:before {
+		content: "";
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: #010306b5;
+		position: absolute;
+		z-index: 10;
+		backdrop-filter: blur(2px);
+	}
 }
 
 .c-hamburger__checkbox:checked ~ .c-hamburger__icon {
 	opacity: 1;
 	transform: rotate(45deg) translate(2px, 0px);
-	background: var(--color-white);
+	background: var(--color-white) !important;
 	width: 24px;
 	height: 2px;
 }
@@ -435,8 +503,8 @@ header {
 
 	&.is-open {
 		transform: translate(0, 0);
-
-		@include mq(md) {
+		width: 70%;
+		@include mq(desktop) {
 			transform: none;
 		}
 	}
@@ -459,7 +527,7 @@ header {
 		position: absolute;
 		padding: 0 .5em;
 		margin: 0;
-		width: 13em;
+		width: 15em;
 		background: var(--color-white);
 		border-radius: .5em;
 		box-shadow: 0 4px 8px var(--color-grey-02-20);
@@ -516,7 +584,7 @@ header {
 		padding: 0 .5em;
 		margin: 0;
 		width: 13em;
-		background: rgba(255, 195, 0, 0.75);
+		background:var(--color-primary);
 		top: 0;
 		right: calc(100% + 24px);
 		opacity: 0;
@@ -529,7 +597,7 @@ header {
 			text-align: right;
 
 			a {
-				color: rgba(135, 18, 121, 1);
+				color: var(--color-white);
 				text-decoration: none;
 				@include font-size(14px, 1.8);
 				font-weight: 400;
@@ -562,19 +630,6 @@ header {
 	display: flex;
 	position: relative;
 	align-items: center;
-	margin-left: 24px;
-
-	&:after {
-		content: "";
-		position: absolute;
-		left: -22px;
-		background-image: url('data:image/svg+xml,<svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0.00031662 7.42115L5.58629 0H8.46846L2.88249 7.42115L8.46846 14.8825L8.58594 15H5.70377L5.58629 14.8825L0.00031662 7.42115Z" fill="%23FFC300"/></svg>');
-		display: flex;
-		background-repeat: no-repeat;
-		background-size: contain;
-		height: 16px;
-		width: 14px;
-	}
 }
 
 .js-hamburger-open {
@@ -586,17 +641,17 @@ header {
 		background: var(--color-white) !important;
 	}
 }
+
 .secondary-btn {
 	@include font-size(16px, 1.8);
 	background: var(--color-secondary);
 	color: var(--color-white);
-	padding: 12px 16px;
+	padding: 10px 16px;
+	border-radius: 12px;
 }
-.fixed-header{
+
+.fixed-header {
 	background: var(--color-white-80);
 	backdrop-filter: blur(16px);
 	box-shadow: 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 2px 0 0 rgba(221, 228, 237, .5019607843);
-	.c-main-header__content {
-		height: 60px;
-	}
 }

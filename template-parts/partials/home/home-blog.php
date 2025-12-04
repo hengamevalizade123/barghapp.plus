@@ -1,25 +1,23 @@
-<section class="o-section c-section--home-blog relative radius-rounded-btm-lft bg-gradiant-btm-top">
+<section class="o-section c-section--home-blog">
 	<div class="o-section__wrapper">
-		<h2 class="sec-title u-flex u-flex--column gap-sm m-0">
-								<span class="txt-before u-flex items-center">
-									بـــــــرق آپـــــــــــــــــــــــ
-									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/txt-before.svg"
-										 alt="برقآپ">
-								</span>
-			آخـریـــــــن اخـبـــــــار و مقــــــــالــات
-		</h2>
-		<div class="c-home-blog u-flex space-between items-center">
-			<div class="c-home-blog__items u-flex u-flex--column gap-md">
-				<p class="txt-justify">
-					لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
-					چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لک است، و برای شرایط فعلی تکنولوژی مورد
-				</p>
-				<div class="c-slider-blogs"
-					 data-flickity='{"wrapAround": true, "autoPlay": 3500,"pageDots":false,"prevNextButtons": false,"rightToLeft": true,"cellAlign": "right","freeScroll": true}'>
+		<div class="c-home-blog u-flex u-flex--column">
+			<div class="c-sec-title txt-center">
+				<h2 class="title">
+
+					 اخبــــــار و وبــــلاگ برق‌آپ
+					پـــــلاس
+				</h2>
+				<h3 class="sub-title mb-0">
+					برق‌آپ پلاس؛ اولین سامانه توزیع برق صنعتی
+				</h3></div>
+			<ul class="c-home-blog__content p-0 u-flex gap-md">
+				<li>
+					<div class="c-slider-blogs h-100"
+						 data-flickity='{"wrapAround": true, "autoPlay": 25000,"pageDots":false,"prevNextButtons": false,"rightToLeft": true,"cellAlign": "right"}'>
 						<?php
 						$args = array(
 							'post_type' => 'post',
-							'posts_per_page' => 6,
+							'posts_per_page' => 8,
 							'orderby' => 'date',
 							'order' => 'DESC'
 						);
@@ -28,77 +26,86 @@
 
 						if ($latest_posts->have_posts()) :
 							while ($latest_posts->have_posts()) : $latest_posts->the_post(); ?>
-								<div class="item-before carousel-cell">
-									<div class="item-before-content u-flex gap-md u-flex--column relative">
-										<a class="c-blog__img u-flex w-100" href="<?php the_permalink(); ?>">
-											<img class="w-100 border-radius"
-												 src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>"
-												 alt="<?php the_title_attribute(); ?>">
-										</a>
-										<div class="c-home-blog__item-info u-flex gap-sm u-flex--column">
-											<div class="txt-overflow c-blog__meta u-flex gap-sm space-between">
-												<p class="m-0">
-													<svg width="18" height="18" viewBox="0 0 24 24" fill="none"
-														 xmlns="http://www.w3.org/2000/svg">
-														<path d="M20.75 13.25C20.75 18.08 16.83 22 12 22C7.17 22 3.25 18.08 3.25 13.25C3.25 8.42 7.17 4.5 12 4.5C16.83 4.5 20.75 8.42 20.75 13.25Z"
-															  stroke="#42465399" stroke-width="1.5" stroke-linecap="round"
-															  stroke-linejoin="round"/>
-														<path d="M12 8V13" stroke="#42465399" stroke-width="1.5"
-															  stroke-linecap="round" stroke-linejoin="round"/>
-														<path d="M9 2H15" stroke="#42465399" stroke-width="1.5"
-															  stroke-miterlimit="10" stroke-linecap="round"
-															  stroke-linejoin="round"/>
-													</svg>
-													مطالعه : 2 دقیقه
-												</p>
-												<p class="m-0">
-													<svg width="18" height="18" viewBox="0 0 24 24" fill="none"
-														 xmlns="http://www.w3.org/2000/svg">
-														<path d="M8 2V5" stroke="#42465399" stroke-width="1.5"
-															  stroke-miterlimit="10" stroke-linecap="round"
-															  stroke-linejoin="round"/>
-														<path d="M16 2V5" stroke="#42465399" stroke-width="1.5"
-															  stroke-miterlimit="10" stroke-linecap="round"
-															  stroke-linejoin="round"/>
-														<path d="M3.5 9.09H20.5" stroke="#42465399" stroke-width="1.5"
-															  stroke-miterlimit="10" stroke-linecap="round"
-															  stroke-linejoin="round"/>
-														<path d="M21 8.5V17C21 20 19.5 22 16 22H8C4.5 22 3 20 3 17V8.5C3 5.5 4.5 3.5 8 3.5H16C19.5 3.5 21 5.5 21 8.5Z"
-															  stroke="#42465399" stroke-width="1.5" stroke-miterlimit="10"
-															  stroke-linecap="round" stroke-linejoin="round"/>
-														<path d="M15.6947 13.7H15.7037" stroke="#42465399" stroke-width="2"
-															  stroke-linecap="round" stroke-linejoin="round"/>
-														<path d="M15.6947 16.7H15.7037" stroke="#42465399" stroke-width="2"
-															  stroke-linecap="round" stroke-linejoin="round"/>
-														<path d="M11.9955 13.7H12.0045" stroke="#42465399" stroke-width="2"
-															  stroke-linecap="round" stroke-linejoin="round"/>
-														<path d="M11.9955 16.7H12.0045" stroke="#42465399" stroke-width="2"
-															  stroke-linecap="round" stroke-linejoin="round"/>
-														<path d="M8.29431 13.7H8.30329" stroke="#42465399" stroke-width="2"
-															  stroke-linecap="round" stroke-linejoin="round"/>
-														<path d="M8.29431 16.7H8.30329" stroke="#42465399" stroke-width="2"
-															  stroke-linecap="round" stroke-linejoin="round"/>
-													</svg>
-													20 دی 1403
-												</p>
-											</div>
-											<div class="c-blog__info u-flex u-flex--column gap-sm">
-												<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-												<p class="clamp m-0 txt-justify"><?php echo wp_trim_words(get_the_excerpt(), 20, '...'); ?></p>
+								<div class="carousel-cell w-100">
+									<div class="border-box w-100 padding-md u-flex u-flex--column h-100">
+										<div class="item-before-content u-flex gap-md u-flex--column relative w-100">
+											<a class="c-blog__img u-flex w-100" href="<?php the_permalink(); ?>">
+												<img class="w-100 border-radius cover"
+													 src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>"
+													 alt="<?php the_title_attribute(); ?>">
+											</a>
+											<div class="c-home-blog__item-info u-flex gap-md u-flex--column">
+												<div class="txt-overflow c-blog__meta u-flex gap-sm space-between">
+													<p class="m-0 u-flex gap-sm">
+														<svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+															 xmlns="http://www.w3.org/2000/svg">
+															<path
+																d="M20.75 13.25C20.75 18.08 16.83 22 12 22C7.17 22 3.25 18.08 3.25 13.25C3.25 8.42 7.17 4.5 12 4.5C16.83 4.5 20.75 8.42 20.75 13.25Z"
+																stroke="#42465399" stroke-width="1.5"
+																stroke-linecap="round"
+																stroke-linejoin="round"/>
+															<path d="M12 8V13" stroke="#42465399" stroke-width="1.5"
+																  stroke-linecap="round" stroke-linejoin="round"/>
+															<path d="M9 2H15" stroke="#42465399" stroke-width="1.5"
+																  stroke-miterlimit="10" stroke-linecap="round"
+																  stroke-linejoin="round"/>
+														</svg>
+														مطالعه :
+														<?php echo reading_time()?>
+
+													</p>
+													<p class="m-0 u-flex gap-sm">
+														<svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+															 xmlns="http://www.w3.org/2000/svg">
+															<path d="M8 2V5" stroke="#42465399" stroke-width="1.5"
+																  stroke-miterlimit="10" stroke-linecap="round"
+																  stroke-linejoin="round"/>
+															<path d="M16 2V5" stroke="#42465399" stroke-width="1.5"
+																  stroke-miterlimit="10" stroke-linecap="round"
+																  stroke-linejoin="round"/>
+															<path d="M3.5 9.09H20.5" stroke="#42465399"
+																  stroke-width="1.5"
+																  stroke-miterlimit="10" stroke-linecap="round"
+																  stroke-linejoin="round"/>
+															<path
+																d="M21 8.5V17C21 20 19.5 22 16 22H8C4.5 22 3 20 3 17V8.5C3 5.5 4.5 3.5 8 3.5H16C19.5 3.5 21 5.5 21 8.5Z"
+																stroke="#42465399" stroke-width="1.5"
+																stroke-miterlimit="10"
+																stroke-linecap="round" stroke-linejoin="round"/>
+															<path d="M15.6947 13.7H15.7037" stroke="#42465399"
+																  stroke-width="2"
+																  stroke-linecap="round" stroke-linejoin="round"/>
+															<path d="M15.6947 16.7H15.7037" stroke="#42465399"
+																  stroke-width="2"
+																  stroke-linecap="round" stroke-linejoin="round"/>
+															<path d="M11.9955 13.7H12.0045" stroke="#42465399"
+																  stroke-width="2"
+																  stroke-linecap="round" stroke-linejoin="round"/>
+															<path d="M11.9955 16.7H12.0045" stroke="#42465399"
+																  stroke-width="2"
+																  stroke-linecap="round" stroke-linejoin="round"/>
+															<path d="M8.29431 13.7H8.30329" stroke="#42465399"
+																  stroke-width="2"
+																  stroke-linecap="round" stroke-linejoin="round"/>
+															<path d="M8.29431 16.7H8.30329" stroke="#42465399"
+																  stroke-width="2"
+																  stroke-linecap="round" stroke-linejoin="round"/>
+														</svg>
+														<?php echo get_the_date('j F Y'); ?>
+													</p>
+												</div>
+												<div class="c-blog__info u-flex u-flex--column gap-md">
+													<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+													<p class="clamp m-0 txt-justify"><?php echo wp_trim_words(get_the_excerpt(), 50, '...'); ?></p>
+												</div>
 											</div>
 										</div>
-
-									</div>
-									<div class="c-btn-read-more relative items-center u-flex justify-center">
-										<svg width="613" height="208" viewBox="0 0 613 208" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M574.989 167.103C574.989 187.362 591.413 203.786 611.673 203.786C612.406 203.786 613 204.38 613 205.113V205.998C613 206.731 612.405 207.324 611.673 207.324H1.32715C0.594501 207.324 0.00023676 206.731 0 205.998V205.113C0 204.38 0.594355 203.786 1.32715 203.786C21.3707 203.786 37.6191 187.538 37.6191 167.494V60.7793C37.6191 27.6422 64.4821 0.779297 97.6191 0.779297H514.989C548.126 0.779297 574.989 27.6422 574.989 60.7793V167.103Z" fill="#213D61"/>
-										</svg>
-
-
-
-										<a href="<?php the_permalink(); ?>" type="submit" class="c-btn-primary p-0">
-											<span>ادامه مطلب</span>
-										</a>
+										<div class="c-btn-read-more relative items-center u-flex justify-end">
+											<a href="<?php the_permalink(); ?>" type="submit"
+											   class="c-btn-primary p-0 u-flex items-center">
+												<span>ادامه مطلب</span>
+											</a>
+										</div>
 									</div>
 								</div>
 							<?php endwhile;
@@ -106,16 +113,89 @@
 						else : ?>
 							<div>هیچ مطلبی یافت نشد.</div>
 						<?php endif; ?>
-				</div>
-			</div>
-			<div class="c-home-blog__img txt-left">
-				<img class="w-100" src="<?php echo get_template_directory_uri(); ?>/assets/images/home-blog.png"
-					 alt="برقآپ">
-			</div>
+					</div>
+				</li>
+				<li class="flex-1">
+					<div
+						class="c-podcast h-100 u-flex u-flex--column items-center padding-md gap-md u-flex justify-center">
+						<img class="border-radius"
+							 src="<?php echo get_template_directory_uri(); ?>/assets/images/podcast.svg"
+							 alt="برقآپ">
+						<h3 class="c-podcast__title m-0">
+							خرید برق بالای 30 کیلووات
+						</h3>
+						<svg width="127" height="45" viewBox="0 0 127 45" fill="none"
+							 xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M101.7 17.0249V28.9874C101.7 31.4374 104.362 32.9749 106.487 31.7499L111.675 28.7624L116.862 25.7624C118.987 24.5374 118.987 21.4749 116.862 20.2499L111.675 17.2499L106.487 14.2625C104.362 13.0375 101.7 14.5624 101.7 17.0249Z"
+								stroke="#77B042" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M122.3 30.7254V15.2754" stroke="#77B042" stroke-width="1.875"
+								  stroke-linecap="round" stroke-linejoin="round"/>
+							<path
+								d="M25.3 17.0249V28.9874C25.3 31.4374 22.6376 32.9749 20.5126 31.7499L15.3251 28.7624L10.1375 25.7624C8.01254 24.5374 8.01254 21.4749 10.1375 20.2499L15.3251 17.2499L20.5126 14.2625C22.6376 13.0375 25.3 14.5624 25.3 17.0249Z"
+								stroke="#77B042" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M4.69995 30.7254V15.2754" stroke="#77B042" stroke-width="1.875"
+								  stroke-linecap="round" stroke-linejoin="round"/>
+							<circle cx="62.5" cy="22.5" r="21" stroke="#77B042" stroke-width="3"/>
+							<path
+								d="M61.65 30.11V15.89C61.65 14.54 61.08 14 59.64 14H56.01C54.57 14 54 14.54 54 15.89V30.11C54 31.46 54.57 32 56.01 32H59.64C61.08 32 61.65 31.46 61.65 30.11Z"
+								stroke="#77B042" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+							<path
+								d="M72.0001 30.11V15.89C72.0001 14.54 71.4301 14 69.9901 14H66.3601C64.9301 14 64.3501 14.54 64.3501 15.89V30.11C64.3501 31.46 64.9201 32 66.3601 32H69.9901C71.4301 32 72.0001 31.46 72.0001 30.11Z"
+								stroke="#77B042" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+						<svg width="313" height="36" viewBox="0 0 313 36" fill="none"
+							 xmlns="http://www.w3.org/2000/svg">
+							<rect width="313" height="17" rx="8.5" fill="#D9D9D9"/>
+							<rect width="87" height="17" rx="8.5" fill="#77B042"/>
+							<path
+								d="M280.37 32.5898C280.37 31.7161 280.325 30.9672 280.236 30.3431C280.147 29.7191 279.969 28.9657 279.701 28.0831L281.359 27.508C281.645 28.3907 281.832 29.1797 281.921 29.8751C282.019 30.5616 282.068 31.4576 282.068 32.5631V36H280.37V32.5898ZM286.853 32.2421C286.505 32.2421 286.251 32.1931 286.091 32.095V32.5631V36H284.392V32.5898C284.392 31.7161 284.348 30.9672 284.258 30.3431C284.169 29.7191 283.991 28.9657 283.724 28.0831L285.355 27.508L285.957 29.835C286.055 30.254 286.3 30.4635 286.692 30.4635C286.889 30.4635 287.049 30.41 287.174 30.303C287.308 30.1871 287.374 30.0356 287.374 29.8483C287.374 29.5987 287.285 28.9345 287.107 27.8557L288.819 27.508C288.997 28.5868 289.086 29.3981 289.086 29.9419C289.086 30.3877 288.988 30.7845 288.792 31.1322C288.605 31.4799 288.342 31.7518 288.003 31.9479C287.664 32.1441 287.281 32.2421 286.853 32.2421ZM291.615 32.5898C291.285 32.5898 291.036 32.5096 290.866 32.3491C290.706 32.1797 290.625 31.9123 290.625 31.5467C290.625 31.1812 290.706 30.9226 290.866 30.7711C291.036 30.6195 291.285 30.5437 291.615 30.5437C291.954 30.5437 292.203 30.6195 292.364 30.7711C292.533 30.9226 292.618 31.1812 292.618 31.5467C292.618 31.9123 292.533 32.1797 292.364 32.3491C292.203 32.5096 291.954 32.5898 291.615 32.5898ZM291.615 36C291.285 36 291.036 35.9198 290.866 35.7593C290.706 35.5899 290.625 35.3224 290.625 34.9569C290.625 34.5914 290.706 34.3328 290.866 34.1812C291.036 34.0297 291.285 33.9539 291.615 33.9539C291.954 33.9539 292.203 34.0297 292.364 34.1812C292.533 34.3328 292.618 34.5914 292.618 34.9569C292.618 35.3224 292.533 35.5899 292.364 35.7593C292.203 35.9198 291.954 36 291.615 36ZM297.154 29.3C297.618 29.3 298.059 29.4293 298.478 29.6879C298.897 29.9375 299.232 30.2718 299.481 30.6908C299.74 31.1099 299.869 31.5512 299.869 32.0148C299.869 32.4695 299.74 32.9108 299.481 33.3387C299.223 33.7578 298.884 34.0965 298.465 34.3551C298.046 34.6136 297.609 34.7429 297.154 34.7429C296.691 34.7429 296.245 34.6136 295.817 34.3551C295.398 34.0965 295.059 33.7578 294.801 33.3387C294.542 32.9108 294.413 32.4695 294.413 32.0148C294.413 31.5512 294.542 31.1099 294.801 30.6908C295.059 30.2718 295.398 29.9375 295.817 29.6879C296.245 29.4293 296.691 29.3 297.154 29.3ZM297.154 33.1114C297.431 33.1114 297.68 32.9999 297.903 32.7771C298.126 32.5453 298.237 32.2912 298.237 32.0148C298.237 31.7384 298.126 31.4888 297.903 31.2659C297.68 31.043 297.431 30.9316 297.154 30.9316C296.869 30.9316 296.61 31.043 296.379 31.2659C296.156 31.4888 296.044 31.7384 296.044 32.0148C296.044 32.2912 296.16 32.5453 296.392 32.7771C296.624 32.9999 296.878 33.1114 297.154 33.1114ZM304.402 29.3C304.866 29.3 305.307 29.4293 305.726 29.6879C306.145 29.9375 306.48 30.2718 306.729 30.6908C306.988 31.1099 307.117 31.5512 307.117 32.0148C307.117 32.4695 306.988 32.9108 306.729 33.3387C306.471 33.7578 306.132 34.0965 305.713 34.3551C305.294 34.6136 304.857 34.7429 304.402 34.7429C303.939 34.7429 303.493 34.6136 303.065 34.3551C302.646 34.0965 302.307 33.7578 302.049 33.3387C301.79 32.9108 301.661 32.4695 301.661 32.0148C301.661 31.5512 301.79 31.1099 302.049 30.6908C302.307 30.2718 302.646 29.9375 303.065 29.6879C303.493 29.4293 303.939 29.3 304.402 29.3ZM304.402 33.1114C304.679 33.1114 304.928 32.9999 305.151 32.7771C305.374 32.5453 305.486 32.2912 305.486 32.0148C305.486 31.7384 305.374 31.4888 305.151 31.2659C304.928 31.043 304.679 30.9316 304.402 30.9316C304.117 30.9316 303.859 31.043 303.627 31.2659C303.404 31.4888 303.292 31.7384 303.292 32.0148C303.292 32.2912 303.408 32.5453 303.64 32.7771C303.872 32.9999 304.126 33.1114 304.402 33.1114Z"
+								fill="#555555"/>
+							<path
+								d="M9.56519 29.687C10.002 29.687 10.4179 29.8088 10.8127 30.0524C11.2075 30.2876 11.5225 30.6026 11.7577 30.9975C12.0014 31.3923 12.1232 31.8081 12.1232 32.2449C12.1232 32.6734 12.0014 33.0892 11.7577 33.4924C11.5141 33.8873 11.1949 34.2065 10.8001 34.4501C10.4053 34.6937 9.99362 34.8155 9.56519 34.8155C9.12836 34.8155 8.70834 34.6937 8.30511 34.4501C7.91028 34.2065 7.59106 33.8873 7.34744 33.4924C7.10383 33.0892 6.98202 32.6734 6.98202 32.2449C6.98202 31.8081 7.10383 31.3923 7.34744 30.9975C7.59106 30.6026 7.91028 30.2876 8.30511 30.0524C8.70834 29.8088 9.12836 29.687 9.56519 29.687ZM9.56519 33.2782C9.82561 33.2782 10.0608 33.1732 10.2708 32.9632C10.4809 32.7448 10.5859 32.5054 10.5859 32.2449C10.5859 31.9845 10.4809 31.7493 10.2708 31.5393C10.0608 31.3293 9.82561 31.2243 9.56519 31.2243C9.29638 31.2243 9.05276 31.3293 8.83434 31.5393C8.62433 31.7493 8.51932 31.9845 8.51932 32.2449C8.51932 32.5054 8.62853 32.7448 8.84694 32.9632C9.06536 33.1732 9.30478 33.2782 9.56519 33.2782ZM16.3948 29.687C16.8316 29.687 17.2474 29.8088 17.6422 30.0524C18.0371 30.2876 18.3521 30.6026 18.5873 30.9975C18.8309 31.3923 18.9527 31.8081 18.9527 32.2449C18.9527 32.6734 18.8309 33.0892 18.5873 33.4924C18.3437 33.8873 18.0245 34.2065 17.6296 34.4501C17.2348 34.6937 16.8232 34.8155 16.3948 34.8155C15.9579 34.8155 15.5379 34.6937 15.1347 34.4501C14.7398 34.2065 14.4206 33.8873 14.177 33.4924C13.9334 33.0892 13.8116 32.6734 13.8116 32.2449C13.8116 31.8081 13.9334 31.3923 14.177 30.9975C14.4206 30.6026 14.7398 30.2876 15.1347 30.0524C15.5379 29.8088 15.9579 29.687 16.3948 29.687ZM16.3948 33.2782C16.6552 33.2782 16.8904 33.1732 17.1004 32.9632C17.3104 32.7448 17.4154 32.5054 17.4154 32.2449C17.4154 31.9845 17.3104 31.7493 17.1004 31.5393C16.8904 31.3293 16.6552 31.2243 16.3948 31.2243C16.1259 31.2243 15.8823 31.3293 15.6639 31.5393C15.4539 31.7493 15.3489 31.9845 15.3489 32.2449C15.3489 32.5054 15.4581 32.7448 15.6765 32.9632C15.8949 33.1732 16.1343 33.2782 16.3948 33.2782ZM21.5613 32.7868C21.2505 32.7868 21.0153 32.7112 20.8557 32.56C20.7044 32.4004 20.6288 32.1483 20.6288 31.8039C20.6288 31.4595 20.7044 31.2159 20.8557 31.0731C21.0153 30.9303 21.2505 30.8589 21.5613 30.8589C21.8805 30.8589 22.1157 30.9303 22.2669 31.0731C22.4266 31.2159 22.5064 31.4595 22.5064 31.8039C22.5064 32.1483 22.4266 32.4004 22.2669 32.56C22.1157 32.7112 21.8805 32.7868 21.5613 32.7868ZM21.5613 36C21.2505 36 21.0153 35.9244 20.8557 35.7732C20.7044 35.6136 20.6288 35.3616 20.6288 35.0171C20.6288 34.6727 20.7044 34.4291 20.8557 34.2863C21.0153 34.1435 21.2505 34.0721 21.5613 34.0721C21.8805 34.0721 22.1157 34.1435 22.2669 34.2863C22.4266 34.4291 22.5064 34.6727 22.5064 35.0171C22.5064 35.3616 22.4266 35.6136 22.2669 35.7732C22.1157 35.9244 21.8805 36 21.5613 36ZM26.7806 29.687C27.2174 29.687 27.6333 29.8088 28.0281 30.0524C28.4229 30.2876 28.7379 30.6026 28.9732 30.9975C29.2168 31.3923 29.3386 31.8081 29.3386 32.2449C29.3386 32.6734 29.2168 33.0892 28.9732 33.4924C28.7295 33.8873 28.4103 34.2065 28.0155 34.4501C27.6207 34.6937 27.209 34.8155 26.7806 34.8155C26.3438 34.8155 25.9238 34.6937 25.5205 34.4501C25.1257 34.2065 24.8065 33.8873 24.5629 33.4924C24.3192 33.0892 24.1974 32.6734 24.1974 32.2449C24.1974 31.8081 24.3192 31.3923 24.5629 30.9975C24.8065 30.6026 25.1257 30.2876 25.5205 30.0524C25.9238 29.8088 26.3438 29.687 26.7806 29.687ZM26.7806 33.2782C27.041 33.2782 27.2762 33.1732 27.4863 32.9632C27.6963 32.7448 27.8013 32.5054 27.8013 32.2449C27.8013 31.9845 27.6963 31.7493 27.4863 31.5393C27.2762 31.3293 27.041 31.2243 26.7806 31.2243C26.5118 31.2243 26.2682 31.3293 26.0498 31.5393C25.8397 31.7493 25.7347 31.9845 25.7347 32.2449C25.7347 32.5054 25.8439 32.7448 26.0624 32.9632C26.2808 33.1732 26.5202 33.2782 26.7806 33.2782ZM33.6102 29.687C34.047 29.687 34.4628 29.8088 34.8577 30.0524C35.2525 30.2876 35.5675 30.6026 35.8027 30.9975C36.0463 31.3923 36.1681 31.8081 36.1681 32.2449C36.1681 32.6734 36.0463 33.0892 35.8027 33.4924C35.5591 33.8873 35.2399 34.2065 34.8451 34.4501C34.4502 34.6937 34.0386 34.8155 33.6102 34.8155C33.1733 34.8155 32.7533 34.6937 32.3501 34.4501C31.9553 34.2065 31.636 33.8873 31.3924 33.4924C31.1488 33.0892 31.027 32.6734 31.027 32.2449C31.027 31.8081 31.1488 31.3923 31.3924 30.9975C31.636 30.6026 31.9553 30.2876 32.3501 30.0524C32.7533 29.8088 33.1733 29.687 33.6102 29.687ZM33.6102 33.2782C33.8706 33.2782 34.1058 33.1732 34.3158 32.9632C34.5258 32.7448 34.6308 32.5054 34.6308 32.2449C34.6308 31.9845 34.5258 31.7493 34.3158 31.5393C34.1058 31.3293 33.8706 31.2243 33.6102 31.2243C33.3414 31.2243 33.0977 31.3293 32.8793 31.5393C32.6693 31.7493 32.5643 31.9845 32.5643 32.2449C32.5643 32.5054 32.6735 32.7448 32.8919 32.9632C33.1103 33.1732 33.3498 33.2782 33.6102 33.2782Z"
+								fill="#767676"/>
+						</svg>
+
+					</div>
+				</li>
+				<li>
+					<div class="c-news">
+						<ul class="p-0 m-0 u-flex--column u-flex gap-md">
+							<?php
+							$args = array(
+								'category_name'  => 'news',
+								'post_type' => 'post',
+								'posts_per_page' => 6,
+								'orderby' => 'date',
+								'order' => 'DESC'
+							);
+
+							$latest_posts = new WP_Query($args);
+
+							if ($latest_posts->have_posts()) :
+							while ($latest_posts->have_posts()) : $latest_posts->the_post(); ?>
+							<li>
+								<a class="border-radius padding-md relative u-flex gap-md u-flex--column" href="<?php the_permalink(); ?>">
+									<h3 class="m-0">
+										<?php the_title(); ?>
+									</h3>
+									<p class="m-0">
+										<?php echo wp_trim_words(get_the_excerpt(), 30, '...'); ?>
+									</p>
+									<span class="tag absolute">
+									خبر
+								</span>
+								</a>
+							</li>
+							<?php endwhile;
+								wp_reset_postdata();
+							else : ?>
+								<div>هیچ مطلبی یافت نشد.</div>
+							<?php endif; ?>
+						</ul>
+					</div>
+				</li>
+			</ul>
 		</div>
-	</div>
-	<div class="before-bottom-img">
-		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/bottom-before-light.svg"
-			 alt="برقآپ">
 	</div>
 </section>

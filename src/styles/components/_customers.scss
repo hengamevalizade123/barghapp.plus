@@ -1,19 +1,54 @@
-.c-section--customers {
-	gap: 74px;
-
-	.sec-title {
-		color: var(--color-primary);
-	}
-}
-
 .c-customers {
-	margin-bottom: 84px;
+	gap: 36px;
+
+	ul {
+		@include mq($from: sm, $until: desktop) {
+			gap: 32px;
+			flex-wrap: wrap;
+		}
+		@include mq($until: sm) {
+			gap: 16px;
+			flex-wrap: wrap;
+		}
+
+		li {
+			border: 1px solid #ddd;
+			color: var(--color-text);
+
+			p {
+				@include font-size(16px, 1.6);
+				@include mq($until: sm) {
+					flex-direction: column;
+					align-items: center;
+					gap: 8px;
+					@include font-size(14px, 1.6);
+				}
+			}
+
+			strong {
+				@include font-size(22px, 1.6);
+				color: var(--color-secondary);
+			}
+
+			@include mq($until: md) {
+				flex: auto;
+				width: calc(50% - 18px);
+			}
+		}
+	}
+	img{
+		max-height: 450px;
+	}
 }
 
 .logo-section {
 	display: flex;
 	flex-direction: column;
 	gap: 64PX;
+	z-index: 10;
+	@include mq($until: 1069px) {
+		gap: 36px;
+	}
 }
 
 .content-04__slider {
@@ -31,8 +66,8 @@
 }
 
 .content-04__slider-item {
-	width: var(--width);
-	height: var(--height);
+	width: 80px;
+	height: 80px;
 	position: absolute;
 	left: 100%;
 	animation: autoRun 40s linear infinite;
@@ -41,7 +76,7 @@
 	justify-content: center;
 	align-items: center;
 	filter: grayscale(1);
-	opacity: .5;
+	opacity: .7;
 	transition: all linear .2s;
 	cursor: pointer;
 }
@@ -52,10 +87,6 @@
 	object-fit: contain;
 }
 
-.content-04__slider[reverse="true"] .content-04__slider-item {
-	animation: reversePlay 40s linear infinite;
-}
-
 .content-04__slider .content-04__slider-item:hover {
 	filter: grayscale(0);
 	opacity: 1;
@@ -63,6 +94,11 @@
 
 .content-04__slider:hover .content-04__slider-item {
 	animation-play-state: paused !important;
+}
+
+.c-customers__img {
+	position: absolute;
+	bottom: 0;
 }
 
 /* جهت حرکت از راست به چپ */
@@ -82,5 +118,73 @@
 	}
 	100% {
 		left: 100%;
+	}
+}
+
+.c-catalogue {
+	color: var(--color-white);
+	font-weight: 800;
+	@include font-size(20px, 1.6);
+	background: var(--color-primary);
+	padding: 18px 24px;
+
+	span {
+		max-width: fit-content;
+
+		img {
+			width: 38px;
+			margin-top: 6px;
+			margin-left: 8px;
+		}
+	}
+
+	a {
+		@include font-size(14px, 1.6);
+		font-weight: 400;
+		gap: 8px;
+		background: var(--color-white);
+		padding: 12px 16px;
+		border-radius: 8px;
+		@include font-size(16px, 1.6);
+		color: var(--color-primary);
+		transition: all .2s linear;
+
+		path {
+			stroke: var(--color-primary);
+			transition: all .2s linear;
+		}
+
+		&:hover {
+			background: var(--color-secondary);
+			color: var(--color-white);
+
+			path {
+				stroke: var(--color-white);
+			}
+		}
+	}
+
+	@include mq($from: sm, $until: md) {
+		p {
+			flex-direction: column;
+			gap: 4px;
+		}
+	}
+	@include mq($until: sm) {
+		flex-direction: column;
+		gap: 18px;
+		p {
+			flex-direction: column;
+			gap: 4px;
+			@include font-size(18px, 1.6);
+		}
+		a {
+			padding: 8px 14px;
+
+			svg {
+				height: 18px;
+				width: 18px;
+			}
+		}
 	}
 }
