@@ -49,7 +49,7 @@
 			<div class="c-footer__bottom u-flex gap-lg items-start">
 				<div class="c-footer__col">
 					<div class="c-footer__title u-flex">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-barghapp.svg"
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-barghaap-plus-bg-dark.svg"
 							 alt="برقآپ">
 					</div>
 					<p class="txt-justify">

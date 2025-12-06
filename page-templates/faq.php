@@ -547,13 +547,13 @@ get_header();
 				</div>
 				<div class="c-faq__content" id="system">
 					<h2 class="title title-left">
-						سوالات متداول متداول درباره سامانه برقآپ
+						سوالات متداول درباره سامانه برقآپ
 					</h2>
 					<div class="faq">
 						<div class="faq-item">
 							<div class="faq-item-content">
 								<div class="faq-question">
-									مزایا و امکانات سامانه برق‌آپچیست ؟
+									مزایا و امکانات سامانه برق‌آپ چیست ؟
 									<span class="faq-toggle"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
 																  xmlns="http://www.w3.org/2000/svg">
 <path

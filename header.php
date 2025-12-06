@@ -29,8 +29,8 @@
 		<div class="c-main-header">
 			<div class="o-section__wrapper">
 				<div class="c-main-header__content u-flex items-center space-between">
-					<a class="header-logo" href="/">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/barghapp-logo.svg"
+					<a class="header-logo u-flex" href="/">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-barghaap-plus.svg"
 							 alt="برقآپ">
 					</a>
 					<nav id="site-navigation" class="main-navigation u-flex items-center">

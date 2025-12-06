@@ -33,7 +33,7 @@ body:not(.home) header {
 		}
 
 		img {
-			width: 168px;
+			width: 108px;
 			@include mq($until: desktop) {
 				width: 148px;
 			}
