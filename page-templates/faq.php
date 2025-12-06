@@ -25,53 +25,53 @@ get_header();
 				<ul class="c-faq__subject u-flex gap-sm p-0 m-0">
 					<li class="flex-1">
 						<a class="u-flex padding-md border-radius" href="#not-interrupt">
-							سوالات برق عدم مشمول قطع
+							سوالات متداول برق عدم مشمول قطع
 						</a>
 					</li>
 					<li class="flex-1">
 						<a class="u-flex padding-md border-radius" href="#green">
-							سوالات برق سبز
+							سوالات متداول برق سبز
 						</a>
 					</li>
 					<li class="flex-1">
 						<a class="u-flex padding-md border-radius" href="#freedom">
-							سوالات برق آزاد
+							سوالات متداول برق آزاد
 						</a>
 					</li>
 					<li class="flex-1">
 						<a class="u-flex padding-md border-radius" href="#system">
-							سوالات درباره سامانه برقآپ
+							سوالات متداول درباره سامانه برقآپ
 						</a>
 					</li>
 					<li class="flex-1">
 						<a class="u-flex padding-md border-radius" href="#regular">
-							سوالات خرید برق معمولی
+							سوالات متداول خرید برق معمولی
 						</a>
 					</li>
 					<li class="flex-1">
 						<a class="u-flex padding-md border-radius" href="#bill">
-							سوالات آیتم های قبوض
+							سوالات متداول آیتم های قبوض
 						</a>
 					</li>
 					<li class="flex-1">
 						<a class="u-flex padding-md border-radius" href="#market">
-							سوالات بورس انرژی
+							سوالات متداول بورس انرژی
 						</a>
 					</li>
 					<li class="flex-1">
 						<a class="u-flex padding-md border-radius" href="#certificate">
-							سوالات گواهی صرفه جویی
+							سوالات متداول گواهی صرفه جویی
 						</a>
 					</li>
 					<li class="flex-1">
 						<a class="u-flex padding-md border-radius" href="#solar">
-							سوالات احداث نیروگاه خورشیدی
+							سوالات متداول احداث نیروگاه خورشیدی
 						</a>
 					</li>
 				</ul>
 				<div class="c-faq__content" id="not-interrupt">
 					<h2 class="title title-left">
-						سوالات برق عدم مشمول قطع
+						سوالات متداول برق عدم مشمول قطع
 					</h2>
 					<div class="faq">
 						<div class="faq-item">
@@ -309,7 +309,7 @@ get_header();
 				</div>
 				<div class="c-faq__content" id="green">
 					<h2 class="title title-left">
-						سوالات برق سبز
+						سوالات متداول برق سبز
 					</h2>
 					<div class="faq">
 						<div class="faq-item">
@@ -448,7 +448,7 @@ get_header();
 				</div>
 				<div class="c-faq__content" id="freedom">
 					<h2 class="title title-left">
-						سوالات برق آزاد
+						سوالات متداول برق آزاد
 					</h2>
 					<div class="faq">
 						<div class="faq-item">
@@ -547,7 +547,7 @@ get_header();
 				</div>
 				<div class="c-faq__content" id="system">
 					<h2 class="title title-left">
-						سوالات متداول درباره سامانه برقآپ
+						سوالات متداول متداول درباره سامانه برقآپ
 					</h2>
 					<div class="faq">
 						<div class="faq-item">
@@ -762,7 +762,7 @@ get_header();
 				</div>
 				<div class="c-faq__content" id="regular">
 					<h2 class="title title-left">
-						سوالات در خصوص خرید برق معمولی
+						سوالات متداول در خصوص خرید برق معمولی
 					</h2>
 					<div class="faq">
 						<div class="faq-item">
@@ -982,7 +982,7 @@ get_header();
 				</div>
 				<div class="c-faq__content" id="bill">
 					<h2 class="title title-left">
-						سوالات در خصوص آیتم های قبوض
+						سوالات متداول در خصوص آیتم های قبوض
 					</h2>
 					<div class="faq">
 						<div class="faq-item">
@@ -1332,7 +1332,7 @@ get_header();
 				</div>
 				<div class="c-faq__content" id="market">
 					<h2 class="title title-left">
-						سوالات در خصوص بورس انرژی و انواع تابلو های آن
+						سوالات متداول در خصوص بورس انرژی و انواع تابلو های آن
 					</h2>
 					<div class="faq">
 						<div class="faq-item">

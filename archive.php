@@ -39,25 +39,28 @@ get_header();
 			<div class="c-archive-blog">
 				<ul class="u-flex flex-wrap gap-md wrap p-0 items-start">
 					<?php
-					$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+					$paged = get_query_var('paged') ? get_query_var('paged') : (isset($_GET['page']) ? intval($_GET['page']) : 1);
+
 					$queried_object = get_queried_object();
-					$category_slug = '';
-					if (isset($queried_object->slug) && isset($queried_object->term_id)) {
-						$category_slug = $queried_object->slug;
-					}
+					$is_category_archive = is_category();
+
+					// آرگومان‌های اصلی
 					$args = array(
-						'post_type' => 'post',
+						'post_type'      => 'post',
 						'posts_per_page' => 6,
-						'paged' => $paged,
-						'orderby' => 'date',
-						'order' => 'DESC',
+						'paged'          => $paged,
+						'orderby'        => 'date',
+						'order'          => 'DESC',
 					);
 
-					if ($category_slug) {
-						$args['category_name'] = $category_slug;
+					// اگر در دسته‌بندی هستیم، نیاز نیست category_name اضافه کنیم
+					// چون وردپرس خودش دسته فعلی را اعمال می کند
+					if (!$is_category_archive && isset($queried_object->slug)) {
+						$args['category_name'] = $queried_object->slug;
 					}
 
 					$latest_posts = new WP_Query($args);
+
 
 					if ($latest_posts->have_posts()) :
 						while ($latest_posts->have_posts()) : $latest_posts->the_post(); ?>
@@ -149,14 +152,15 @@ get_header();
 				<div class="pagination u-flex gap-md justify-center content-center margin-lg-t padding-lg-t">
 					<?php
 					echo paginate_links(array(
-						'total' => $latest_posts->max_num_pages,
-						'current' => max(1, $paged),
-						'format' => '?paged=%#%',
-						'show_all' => false,
-						'type' => 'list',
+						'total'     => $latest_posts->max_num_pages,
+						'current'   => $paged,
+						'base'      => add_query_arg('page', '%#%'),
+						'format'    => '',
+						'type'      => 'list',
 						'prev_text' => __('« قبلی'),
 						'next_text' => __('بعدی »'),
 					));
+
 					?>
 				</div>
 			</div>
