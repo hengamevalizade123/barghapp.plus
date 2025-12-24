@@ -82,7 +82,7 @@
 			}
 		}
 
-		p {
+		p, li {
 			@include font-size(15px, 1.8);
 			margin: 0 0 0.5em;
 			font-weight: 400;
@@ -96,6 +96,20 @@
 			strong {
 				color: var(--color-dark-01);
 				font-weight: 700;
+			}
+		}
+
+		li {
+			position: relative;
+			&:before {
+				position: absolute;
+				content: "";
+				width: 6px;
+				height: 6px;
+				right: -14px;
+				border-radius: 50%;
+				top: 12px;
+				background: var(--color-secondary);
 			}
 		}
 
@@ -771,6 +785,7 @@ table:not(.c-page__table.js-tabs table) tr {
 	}
 
 	li {
+		position: relative;
 		&:before {
 			content: "";
 			height: 6px;
