@@ -51,7 +51,7 @@
 			<li class="u-flex gap-sm u-flex--column justify-center">
 				<div class="c-home-desc__title u-flex items-center space-between">
 					<h3>
-						انعقاد قرارداد مطمئن
+						مدیریت هوشمند
 					</h3>
 					<img class="border-radius h-100"
 						 src="<?php echo get_template_directory_uri(); ?>/assets/images/reason-1.png"
@@ -65,7 +65,7 @@
 			<li class="u-flex gap-sm u-flex--column justify-center">
 				<div class="c-home-desc__title u-flex items-center space-between">
 					<h3>
-						انعقاد قرارداد مطمئن
+						پایش آنلاین
 					</h3>
 					<img class="border-radius h-100"
 						 src="<?php echo get_template_directory_uri(); ?>/assets/images/reason-2.png"
@@ -93,7 +93,7 @@
 			<li class="u-flex gap-sm u-flex--column justify-center">
 				<div class="c-home-desc__title u-flex items-center space-between">
 					<h3>
-						انعقاد قرارداد مطمئن
+						تأمین مطمئن
 					</h3>
 					<img class="border-radius h-100"
 						 src="<?php echo get_template_directory_uri(); ?>/assets/images/reason-4.png"
@@ -107,7 +107,7 @@
 			<li class="u-flex gap-sm u-flex--column justify-center">
 				<div class="c-home-desc__title u-flex items-center space-between">
 					<h3>
-						انعقاد قرارداد مطمئن
+						تضمین پایداری
 					</h3>
 					<img class="border-radius h-100"
 						 src="<?php echo get_template_directory_uri(); ?>/assets/images/reason-5.png"
@@ -121,7 +121,7 @@
 			<li class="u-flex gap-sm u-flex--column justify-center">
 				<div class="c-home-desc__title u-flex items-center space-between">
 					<h3>
-						انعقاد قرارداد مطمئن
+						قرارداد منعطف
 					</h3>
 					<img class="border-radius h-100"
 						 src="<?php echo get_template_directory_uri(); ?>/assets/images/reason-6.png"

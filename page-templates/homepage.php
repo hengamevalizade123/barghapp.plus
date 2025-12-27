@@ -2,7 +2,6 @@
 /* Template Name: Home Page */
 get_header();
 
-//include get_template_directory() . '/template-parts/partials/home/svgs.php';
 include get_template_directory() . '/template-parts/partials/home/hero.php';
 include get_template_directory() . '/template-parts/partials/home/introduction.php';
 include get_template_directory() . '/template-parts/partials/home/home-desc.php';
