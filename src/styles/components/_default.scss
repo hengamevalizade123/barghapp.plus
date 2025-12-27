@@ -139,3 +139,46 @@ svg {
 .numberic-list li {
 	list-style: arabic-indic;
 }
+.btn{
+	@include font-size(18px,1.6);
+	@include mq($until:sm){
+		@include font-size(14px,1.6);
+		gap: 8px !important;
+		padding: 12px !important;
+	}
+}
+.btn-primary-gradiant{
+	background: linear-gradient(90deg, #2D4B74 0%, #253B5B 50%, #455D7E 100%);
+	padding: 12px 18px;
+	border-radius: 12px;
+	color: var(--color-white);
+	transition: all linear .2s;
+	path{
+		transition: all linear .2s;
+	}
+	&:hover{
+		background: var(--color-secondary);
+		color: var(--color-white);
+		path{
+			stroke: var(--color-white);
+		}
+	}
+}
+.btn-outline-gradiant{
+	border: 1px solid var(--color-primary);
+	padding: 12px 18px;
+	border-radius: 12px;
+	color: var(--color-primary);
+	transition: all linear .2s;
+	path{
+		transition: all linear .2s;
+	}
+	&:hover{
+background: var(--color-secondary);
+		color: var(--color-white);
+		border: 1px solid var(--color-secondary);
+		path{
+			stroke: var(--color-white);
+		}
+	}
+}

@@ -3,7 +3,7 @@
 		<div class="c-home-desc">
 			<div class="c-sec-title txt-center">
 				<h2 class="title">
-					 مــعــرفــــی برق‌آپ پــــلاس
+					مــعــرفــــی برق‌آپ پــــلاس
 				</h2>
 				<h3 class="sub-title mb-0">
 					برق‌آپ پلاس، اولین سامانه هوشمند خرید برق در ایران
@@ -14,7 +14,13 @@
 					<p class="txt-justify">
 						سامـــــانه
 						بـــــرق‌آپ پـــــلاس
-						اولیـــــن سامـــــانه جامع آنـــــلاین خریـــــد برق در کشـــــور است که در تاریخ ۱ آبان ۱۴۰۲ متـــــولد گردیـــــد. این سامـــــانه دانش بنیـــــان به منظـــــور تسهیـــــل در خرـــــید بـــــرق مشترکیـــــن بـــــالای "30" کیـــــلووات طراحـــــی و به بهـــــره بـــــرداری رسیـــــد و مشترکیـــــن شـــــرکتهای بـــــرق منطقه ای و توزیـــــع نیـــــروی بـــــرق می توانند بـــــرق عادی (حرارتی)، بـــــرق سبـــــز و بـــــرق عدم مشـــــمول مـــــدیریت مصرف را با شرایـــــط کـــــاملاً منـــــعطف خـــــریداری نمـــــوده و از این سامـــــانه گزارشـــــات متنـــــوعی را دریـــــافت نمـــــایند.
+						اولیـــــن سامـــــانه جامع آنـــــلاین خریـــــد برق در کشـــــور است که در تاریخ ۱ آبان ۱۴۰۲
+						متـــــولد گردیـــــد. این سامـــــانه دانش بنیـــــان به منظـــــور تسهیـــــل در خرـــــید
+						بـــــرق مشترکیـــــن بـــــالای "30" کیـــــلووات طراحـــــی و به بهـــــره بـــــرداری
+						رسیـــــد و مشترکیـــــن شـــــرکتهای بـــــرق منطقه ای و توزیـــــع نیـــــروی بـــــرق می
+						توانند بـــــرق عادی (حرارتی)، بـــــرق سبـــــز و بـــــرق عدم مشـــــمول مـــــدیریت مصرف را
+						با شرایـــــط کـــــاملاً منـــــعطف خـــــریداری نمـــــوده و از این سامـــــانه گزارشـــــات
+						متنـــــوعی را دریـــــافت نمـــــایند.
 					</p>
 					<p class="more-desc txt-justify">
 
@@ -41,5 +47,91 @@
 				<button type="button" class="more-toggle u-flex gap-sm items-center">مشاهده بیشتر</button>
 			</div>
 		</div>
+		<ul class="c-home-reason u-flex gap-md p-0 wrap w-100 space-between mb-0">
+			<li class="u-flex gap-sm u-flex--column justify-center">
+				<div class="c-home-desc__title u-flex items-center space-between">
+					<h3>
+						انعقاد قرارداد مطمئن
+					</h3>
+					<img class="border-radius h-100"
+						 src="<?php echo get_template_directory_uri(); ?>/assets/images/reason-1.png"
+						 alt="برقآپ">
+				</div>
+				<p class="m-0 txt-justify">
+					سامـــــانه بـــــرق‌آپ پـــــلاس اولیـــــن سامـــــانه جامع آنـــــلاین خریـــــد برق در کشـــــور
+					است دریـــــافت نمـــــایند.
+				</p>
+			</li>
+			<li class="u-flex gap-sm u-flex--column justify-center">
+				<div class="c-home-desc__title u-flex items-center space-between">
+					<h3>
+						انعقاد قرارداد مطمئن
+					</h3>
+					<img class="border-radius h-100"
+						 src="<?php echo get_template_directory_uri(); ?>/assets/images/reason-2.png"
+						 alt="برقآپ">
+				</div>
+				<p class="m-0 txt-justify">
+					سامـــــانه بـــــرق‌آپ پـــــلاس اولیـــــن سامـــــانه جامع آنـــــلاین خریـــــد برق در کشـــــور
+					است دریـــــافت نمـــــایند.
+				</p>
+			</li>
+			<li class="u-flex gap-sm u-flex--column justify-center">
+				<div class="c-home-desc__title u-flex items-center space-between">
+					<h3>
+						انعقاد قرارداد مطمئن
+					</h3>
+					<img class="border-radius h-100"
+						 src="<?php echo get_template_directory_uri(); ?>/assets/images/reason-3.png"
+						 alt="برقآپ">
+				</div>
+				<p class="m-0 txt-justify">
+					سامـــــانه بـــــرق‌آپ پـــــلاس اولیـــــن سامـــــانه جامع آنـــــلاین خریـــــد برق در کشـــــور
+					است دریـــــافت نمـــــایند.
+				</p>
+			</li>
+			<li class="u-flex gap-sm u-flex--column justify-center">
+				<div class="c-home-desc__title u-flex items-center space-between">
+					<h3>
+						انعقاد قرارداد مطمئن
+					</h3>
+					<img class="border-radius h-100"
+						 src="<?php echo get_template_directory_uri(); ?>/assets/images/reason-4.png"
+						 alt="برقآپ">
+				</div>
+				<p class="m-0 txt-justify">
+					سامـــــانه بـــــرق‌آپ پـــــلاس اولیـــــن سامـــــانه جامع آنـــــلاین خریـــــد برق در کشـــــور
+					است دریـــــافت نمـــــایند.
+				</p>
+			</li>
+			<li class="u-flex gap-sm u-flex--column justify-center">
+				<div class="c-home-desc__title u-flex items-center space-between">
+					<h3>
+						انعقاد قرارداد مطمئن
+					</h3>
+					<img class="border-radius h-100"
+						 src="<?php echo get_template_directory_uri(); ?>/assets/images/reason-5.png"
+						 alt="برقآپ">
+				</div>
+				<p class="m-0 txt-justify">
+					سامـــــانه بـــــرق‌آپ پـــــلاس اولیـــــن سامـــــانه جامع آنـــــلاین خریـــــد برق در کشـــــور
+					است دریـــــافت نمـــــایند.
+				</p>
+			</li>
+			<li class="u-flex gap-sm u-flex--column justify-center">
+				<div class="c-home-desc__title u-flex items-center space-between">
+					<h3>
+						انعقاد قرارداد مطمئن
+					</h3>
+					<img class="border-radius h-100"
+						 src="<?php echo get_template_directory_uri(); ?>/assets/images/reason-6.png"
+						 alt="برقآپ">
+				</div>
+				<p class="m-0 txt-justify">
+					سامـــــانه بـــــرق‌آپ پـــــلاس اولیـــــن سامـــــانه جامع آنـــــلاین خریـــــد برق در کشـــــور
+					است دریـــــافت نمـــــایند.
+				</p>
+			</li>
+		</ul>
 	</div>
 </section>

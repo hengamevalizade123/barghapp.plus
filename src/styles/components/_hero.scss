@@ -1,10 +1,115 @@
-.c-hero{
-	&__slide{
-		width: 100%;
-		margin-left: 16px;
-		img{
-			object-fit: cover;
-			width:100%;
+.c-section--hero {
+	background: linear-gradient(180deg, #E2F9FF 49.9%, #FFFFFF 88.8%);
+
+	h1 {
+		@include font-size(36px, 1.6);
+		color: var(--color-primary);
+
+		span {
+			background: var(--color-secondary);
+			color: var(--color-white);
+			padding: 8px 12px;
+		}
+
+		@include mq($from: md, $until: desktop) {
+			@include font-size(28px, 1.6);
+		}
+		@include mq($until: md) {
+			@include font-size(24px, 1.6);
+			align-items: center;
+		}
+	}
+
+	p {
+		color: var(--color-primary);
+		@include font-size(18px, 2);
+		@include mq($from: sm, $until: desktop) {
+			@include font-size(16px, 1.6);
+		}
+		@include mq($until: sm) {
+			@include font-size(14px, 1.6);
 		}
 	}
 }
+
+.c-hero {
+	overflow: hidden;
+	@include mq($until: md) {
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+	@include mq($until: md) {
+		gap: 16px !important;
+	}
+
+	&__info {
+		img {
+			height: 68px;
+			position: absolute;
+			left: 0;
+			top: 4.5em;
+			animation: float 4s ease-in-out infinite;
+			@include mq($until: sm) {
+				top: 0;
+			}
+		}
+
+		flex: 2;
+		gap: 32px;
+		@include mq($until: md) {
+			align-items: center;
+		}
+	}
+
+	&__img {
+		flex: 1;
+
+		img {
+			max-width: 100%;
+			height: auto;
+			@include mq($until: sm) {
+				max-height: 300px;
+			}
+		}
+	}
+
+	&__info-btn {
+		@include mq($until: md) {
+			gap: 8px !important;
+		}
+	}
+}
+
+.swing {
+	display: inline-block;
+	transform-origin: bottom center;
+	animation: swingSmooth 4s linear infinite;
+}
+
+@keyframes swingSmooth {
+	0% {
+		transform: rotate(-4deg);
+	}
+	50% {
+		transform: rotate(4deg);
+	}
+	100% {
+		transform: rotate(-4deg);
+	}
+}
+
+@keyframes float {
+	0% {
+		transform: translateY(0)
+	}
+
+	50% {
+		transform: translateY(-18px)
+	}
+
+	100% {
+		transform: translateY(0)
+	}
+}
+
+
