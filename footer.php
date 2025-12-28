@@ -49,11 +49,16 @@
 			<div class="c-footer__bottom u-flex gap-lg items-start">
 				<div class="c-footer__col">
 					<div class="c-footer__title u-flex">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-barghaap-plus-bg-dark.svg"
-							 alt="برقآپ">
+						<img
+							src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-barghaap-plus-bg-dark.svg"
+							alt="برقآپ">
 					</div>
 					<p class="txt-justify">
-						سامانه برق‌آپ پلاس اولین سامانه جامع آنلاین خرید برق در کشور است که در تاریخ ۱ آبان ۱۴۰۲ متولد گردید. این سامانه دانش بنیان به منظور تسهیل در خرید برق مشترکین بالای "30" کیلووات طراحی و به بهره برداری رسید و مشترکین شرکتهای برق منطقه ای و توزیع نیروی برق می توانند برق عادی (حرارتی)، برق سبز و برق عدم مشمول مدیریت مصرف را با شرایط کاملاً منعطف خریداری نموده و از این سامانه گزارشات متنوعی را دریافت نمایند.
+						سامانه برق‌آپ پلاس اولین سامانه جامع آنلاین خرید برق در کشور است که در تاریخ ۱ آبان ۱۴۰۲ متولد
+						گردید. این سامانه دانش بنیان به منظور تسهیل در خرید برق مشترکین بالای "30" کیلووات طراحی و به
+						بهره برداری رسید و مشترکین شرکتهای برق منطقه ای و توزیع نیروی برق می توانند برق عادی (حرارتی)،
+						برق سبز و برق عدم مشمول مدیریت مصرف را با شرایط کاملاً منعطف خریداری نموده و از این سامانه
+						گزارشات متنوعی را دریافت نمایند.
 					</p>
 				</div>
 				<div class="c-footer__col">
@@ -65,7 +70,7 @@
 							<a href="https://barghapplus.com/" title="بلاگ برق‌آپ">تامین برق</a>
 						</li>
 						<li>
-							<a  href="https://plus.barghapp.com/careers/" title="فرصت های شغلی">
+							<a href="https://plus.barghapp.com/careers/" title="فرصت های شغلی">
 								فرصت‌های شغلی
 							</a>
 						</li>
@@ -114,7 +119,8 @@
 							</a>
 						</li>
 						<li class="u-flex items-end justify-center">
-							<a class="u-flex items-center" href="https://eitaa.com/barghapp" target="_blank" aria-label="ایتا"
+							<a class="u-flex items-center" href="https://eitaa.com/barghapp" target="_blank"
+							   aria-label="ایتا"
 							   rel="nofollow"><span
 									class="elementor-icon-list-icon">
 <svg height="40px" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 8552.71 3770.5"><g><path
@@ -190,8 +196,9 @@
 	<div class="support">
 		<div class="chat-cards" id="chatCards">
 			<div class="chat-card">
-<!--				<img src="--><?php //echo get_template_directory_uri(); ?><!--/assets/images/support-girl.jpeg"-->
-<!--					 alt="برقآپ">-->
+				<!--				<img src="-->
+				<?php //echo get_template_directory_uri(); ?><!--/assets/images/support-girl.jpeg"-->
+				<!--					 alt="برقآپ">-->
 				<div class="chat-info">
 					<h4>فرانک اعتمادی</h4>
 					<p>
@@ -204,8 +211,9 @@
 				</div>
 			</div>
 			<div class="chat-card">
-<!--				<img src="--><?php //echo get_template_directory_uri(); ?><!--/assets/images/support-girl1.jpeg"-->
-<!--					 alt="برقآپ">-->
+				<!--				<img src="-->
+				<?php //echo get_template_directory_uri(); ?><!--/assets/images/support-girl1.jpeg"-->
+				<!--					 alt="برقآپ">-->
 				<div class="chat-info">
 					<h4>سما حق‌گو</h4>
 					<p>
@@ -218,7 +226,8 @@
 				</div>
 			</div>
 		</div>
-		<a href="tel:09122714980" class="call-button u-flex items-center justify-center" id="callBtn" aria-label="پشتیبانی">
+		<a href="tel:09122714980" class="call-button u-flex items-center justify-center" id="callBtn"
+		   aria-label="پشتیبانی">
 			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<path
 					d="M8.5 19H8C4 19 2 18 2 13V8C2 4 4 2 8 2H16C20 2 22 4 22 8V13C22 17 20 19 16 19H15.5C15.19 19 14.89 19.15 14.7 19.4L13.2 21.4C12.54 22.28 11.46 22.28 10.8 21.4L9.3 19.4C9.14 19.18 8.77 19 8.5 19Z"
@@ -235,7 +244,7 @@
 		<div id="popup-box" class="u-flex border-radius">
 			<div id="popup-close">×</div>
 			<a class="u-flex border-radius" href="https://plus.barghapp.com/established/">
-			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/popupaye.webp" alt="برقآپ">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/popupaye.webp" alt="برقآپ">
 			</a>
 		</div>
 	</div>

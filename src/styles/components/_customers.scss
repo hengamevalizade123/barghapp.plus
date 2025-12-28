@@ -3,7 +3,7 @@
 
 	ul {
 		@include mq($from: sm, $until: desktop) {
-			gap: 32px;
+			gap: 24px;
 			flex-wrap: wrap;
 		}
 		@include mq($until: sm) {
@@ -14,6 +14,23 @@
 		li {
 			border: 1px solid #ddd;
 			color: var(--color-text);
+			padding: 16px;
+			box-sizing: border-box;
+
+			span.customer-icon {
+				background: #cbe3eb80;
+				padding: 12px;
+				border-radius: 50%;
+				display: flex;
+				justify-content: center;
+				height: 36px;
+				width: 36px;
+				align-items: center;
+			}
+
+			img {
+				height: 32px;
+			}
 
 			p {
 				@include font-size(16px, 1.6);
@@ -22,6 +39,13 @@
 					align-items: center;
 					gap: 8px;
 					@include font-size(14px, 1.6);
+				}
+				@include mq($until: 1160px) {
+					display: flex;
+					flex-direction: column;
+					flex: 1;
+					gap: 8px;
+					text-align: center;
 				}
 			}
 
@@ -34,9 +58,13 @@
 				flex: auto;
 				width: calc(50% - 18px);
 			}
+			@include mq($until: sm) {
+				flex-direction: column;
+			}
 		}
 	}
-	img{
+
+	img {
 		max-height: 450px;
 	}
 }
