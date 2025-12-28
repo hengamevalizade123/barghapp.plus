@@ -3,7 +3,7 @@
 		<div class="c-customers u-flex u-flex--column">
 			<div class="c-sec-title txt-center">
 				<h2 class="title">
-					مشـــــتـــــریـــــان برق‌آپ
+					مشــــتـریـان بــرق‌آپ پـــلاس
 				</h2>
 				<h3 class="sub-title mb-0">
 					برق‌آپ پلاس؛ اولین سامانه توزیع برق صنعتی
