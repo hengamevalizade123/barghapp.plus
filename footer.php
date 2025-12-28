@@ -14,38 +14,6 @@
 <footer id="colophon" class="o-section c-section--footer site-footer p-0 relative">
 	<div class="o-section__wrapper">
 		<div class="c-footer">
-			<div class="c-footer__top u-flex gap-md items-center space-between">
-				<ul class="u-flex gap-md border-radius space-between">
-					<li class="flex-1 u-flex items-center gap-md justify-center">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon.svg"
-							 alt="برقآپ">
-						<span>
-			تأمین مطمئن و پایدار
-		</span>
-					</li>
-					<li class="flex-1 u-flex items-center gap-md justify-center">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/emoji-happy.svg"
-							 alt="برقآپ">
-						<span>
-			پشتیبانی تخصصی
-		</span>
-					</li>
-					<li class="flex-1 u-flex items-center gap-md justify-center">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/cup.svg"
-							 alt="برقآپ">
-						<span>
-			مدیریت هوشمند
-		</span>
-					</li>
-					<li class="flex-1 u-flex items-center gap-md justify-center">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/cup.svg"
-							 alt="برقآپ">
-						<span>
-		تحلیل دقیق و تخصصی
-		</span>
-					</li>
-				</ul>
-			</div>
 			<div class="c-footer__bottom u-flex gap-lg items-start">
 				<div class="c-footer__col">
 					<div class="c-footer__title u-flex">

@@ -19,7 +19,7 @@
 			</div>
 			<div class="c-reason__img u-flex">
 				<img class="border-radius h-100"
-					 src="<?php echo get_template_directory_uri(); ?>/assets/images/pizza-sec.png"
+					 src="<?php echo get_template_directory_uri(); ?>/assets/images/pizza-sec.webp"
 					 alt="برقآپ">
 			</div>
 		</div>
