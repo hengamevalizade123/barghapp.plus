@@ -66,3 +66,11 @@ assets/bower_components/*
 .idea/
 library/vendors/composer
 assets/img/.DS_Store
+# Media files (videos)
+######################
+*.mp4
+*.mov
+*.avi
+*.mkv
+assets/videos/*
+src/videos/*

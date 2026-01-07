@@ -1,0 +1,121 @@
+.c-section--home-video {
+	background: var(--bg-gray);
+}
+
+.c-home-video {
+	position: relative;
+	margin: auto;
+
+	&__content {
+		box-sizing: border-box;
+		gap: 36px;
+		@include mq($until: sm) {
+			gap: 24px;
+		}
+	}
+}
+
+//video
+.video-wrapper {
+	position: relative;
+	display: inline-block;
+
+	img.cloud {
+		height: 90px;
+		position: absolute;
+		top: -32px;
+		right: -36px;
+		animation: 4s ease-in-out infinite float;
+		opacity: .8;
+		width: auto;
+		@include mq($until: md) {
+			height: 60px;
+		}
+	}
+}
+
+#myVideo {
+	width: 100%;
+	display: block;
+	border-radius: $border-radius;
+	min-height: 300px;
+	object-fit: cover;
+	max-height: 560px;
+	aspect-ratio: 1253 / 609;
+	@include mq($from:md,$until: desktop) {
+		max-height: 400px
+	}
+	@include mq($until: md) {
+		max-min-height: 300px;
+	}
+}
+
+.play-btn {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	cursor: pointer;
+	width: 90px;
+	height: 90px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 0.2s ease;
+}
+
+.play-btn svg {
+	width: 90px;
+	height: 90px;
+	@include mq($until: md) {
+		width: 65px;
+		height: 65px;
+	}
+}
+
+.play-btn.hidden {
+	opacity: 0;
+	pointer-events: none;
+}
+
+@-webkit-keyframes float {
+	0%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0)
+	}
+
+	50% {
+		-webkit-transform: translateY(-18px);
+		transform: translateY(-18px)
+	}
+}
+
+@keyframes float {
+	0%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0)
+	}
+
+	50% {
+		-webkit-transform: translateY(-18px);
+		transform: translateY(-18px)
+	}
+}
+
+@keyframes floatLeft {
+	0%, 100% {
+		transform: rotate(-16deg) translateY(0);
+	}
+	50% {
+		transform: rotate(-16deg) translateY(-20px);
+	}
+}
+
+@keyframes floatRight {
+	0%, 100% {
+		transform: rotate(16deg) translateY(0);
+	}
+	50% {
+		transform: rotate(16deg) translateY(-22px);
+	}
+}

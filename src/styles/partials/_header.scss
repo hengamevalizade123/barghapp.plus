@@ -14,6 +14,9 @@ body:not(.home) header {
 
 	&__content {
 		transition: height linear .2s;
+		@include mq($until: sm) {
+			gap: 8px;
+		}
 	}
 
 	nav {
@@ -37,6 +40,10 @@ body:not(.home) header {
 			@include mq($until: desktop) {
 				width: 148px;
 			}
+			@include mq($until: sm) {
+				width: 100px;
+				margin-left: 8px;
+			}
 		}
 	}
 
@@ -50,16 +57,59 @@ body:not(.home) header {
 	}
 
 	&__panel {
-		padding: 6px 8px;
+		padding: 10px 12px;
 		@include font-size(14px, 1.6);
-		margin-right: auto;
-		border-radius: 8px;
-		@include mq($until: sm) {
-			padding: 8px 8px !important;
+		//padding: 6px 8px;
+		//@include font-size(14px, 1.6);
+		//margin-right: auto;
+		//border-radius: 8px;
+		@include mq($from: desktop, $until: 1135px) {
+			padding: 8px !important;
 			font-size: 13px !important;
 			border-radius: 9px;
+			&.c-gif {
+				padding-right: 36px !important;
+			}
 			svg {
 				display: none;
+			}
+		}
+		@include mq($until: desktop) {
+			span {
+				display: none;
+			}
+		}
+		@include mq($until: sm) {
+			padding: 8px;
+		}
+
+		&.c-gif {
+			padding-right: 48px;
+			overflow: hidden;
+			@include mq($until: desktop) {
+				padding: 0;
+			}
+		}
+
+		.gif {
+			height: 48px;
+			position: absolute;
+			right: 0px;
+			width: auto;
+			bottom: -3px;
+			@include mq($from: desktop, $until: 1135px) {
+				height: 38px;
+				bottom: -1px;
+			}
+			@include mq($from:sm,$until: desktop) {
+				position: relative;
+				bottom: 0;
+				height: 42px;
+			}
+			@include mq($until: sm) {
+				position: relative;
+				bottom: 0;
+				height: 38px;
 			}
 		}
 	}
@@ -372,6 +422,7 @@ body:not(.home) header {
 		}
 	}
 }
+
 @media (max-width: 768px) {
 
 	.c-menu > li > ul {
@@ -584,7 +635,7 @@ body:not(.home) header {
 		padding: 0 .5em;
 		margin: 0;
 		width: 13em;
-		background:var(--color-primary);
+		background: var(--color-primary);
 		top: 0;
 		right: calc(100% + 24px);
 		opacity: 0;

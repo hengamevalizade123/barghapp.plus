@@ -677,6 +677,7 @@ table:not(.c-page__table.js-tabs table) {
 	max-width: 100%;
 	border-collapse: collapse;
 	overflow-x: auto;
+	margin-top: 32px;
 	@include mq($until: sm) {
 		display: block;
 	}
@@ -694,19 +695,23 @@ table:not(.c-page__table.js-tabs table) tr {
 	flex: 1;
 	justify-content: space-between;
 	align-items: center;
-	color: var(--color-text-black);
+	color: var(--color-secondary);
 	@include font-size(14px, 1.8);
 	cursor: pointer;
-	padding: 0 1em;
-
+	padding:8px 16px;
 	&:first-child {
 		@include font-size(14px, 1.8);
 		position: sticky;
 		top: 0;
-		padding: 0 1em;
-		background: var(--color-white-80);
+		padding:6px 16px;
+		background: var(--color-primary);
 		backdrop-filter: blur(5px);
 		border-bottom: 1px solid #e9edf3;
+		td{
+			color: var(--color-white);
+			font-weight: 600;
+			@include font-size(16px,1.6);
+		}
 	}
 
 	&:nth-child(2n) {

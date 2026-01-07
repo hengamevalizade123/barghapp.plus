@@ -25,14 +25,47 @@
 				header.classList.remove("fixed-header");
 			}
 		});
+		// video player
+		const video = document.getElementById("myVideo");
+		const btn = document.getElementById("playBtn");
+
+		btn.addEventListener("click", function () {
+			video.setAttribute("controls", "controls"); // ← کنترل‌ها را فعال کن
+			video.play();
+			btn.classList.add("hidden");
+		});
+
+		video.addEventListener("pause", function () {
+			btn.classList.remove("hidden"); // دکمه برگرده
+		});
+
+		video.addEventListener("ended", function () {
+			btn.classList.remove("hidden"); // وقتی تموم شد
+		});
 	});
 	jQuery(document).ready(function ($) {
-		$(".tab").on("click", function () {
-			$(".tab").removeClass("active");        // حذف حالت فعال از همه تب‌ها
-			$(this).addClass("active");             // فعال‌کردن تب کلیک‌شده
-			$(".pane").removeClass("active");       // مخفی‌کردن همه‌ی پنل‌ها
-			$("#t" + $(this).data("t")).addClass("active"); // نمایش پنل مربوط به تب
+		// video personal
+		$('#personal-pointer').on('click', function () {
+			const video = $('.video-explain-personal').get(0);
+			if (video) {
+				$(video).attr('controls', 'controls');
+				video.play();
+			}
+			$('.play-btn').addClass('hidden');
 		});
+
+		$(".tab").on("click", function () {
+			var $this = $(this);
+			var paneId = "#t" + $this.data("t");
+			var isActive = $this.hasClass("active");
+			$(".tab").removeClass("active");
+			$(".pane").removeClass("active");
+			if (!isActive) {
+				$this.addClass("active");
+				$(paneId).addClass("active");
+			}
+		});
+
 		const $btn = $(".more-toggle");
 		$btn.on("click", function () {
 			const $parent = $(this).closest(".c-home-desc__content");
@@ -168,3 +201,14 @@
 
 	});
 })();
+// LCP loaded
+window.addEventListener('load', function () {
+	if (window.matchMedia('(max-width: 767px)').matches) {
+		const home = document.querySelector('body.home');
+		if (home) {
+			home.classList.add('lcp-loaded');
+		}
+	}
+});
+
+

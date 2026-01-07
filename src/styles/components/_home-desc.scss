@@ -43,9 +43,6 @@
 
 .c-home-reason {
 	background: radial-gradient(50% 50% at 50% 50%, #e2f9ff8c 0, #fff 100%);
-	@include mq($until: sm) {
-		gap: 8px !important;
-	}
 	li {
 		width: calc(33.33% - 11px);
 		border-radius: $border-radius;

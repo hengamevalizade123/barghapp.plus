@@ -7,8 +7,11 @@
 			@include font-size(28px, 1.6);
 			width: max-content;
 			position: relative;
-			@include mq($until: md) {
+			@include mq($from:sm,$until: md) {
 				@include font-size(22px, 1.6);
+			}
+			@include mq($until: sm) {
+				@include font-size(18px, 1.6);
 			}
 
 			&:after {
@@ -93,15 +96,18 @@
 		width: max-content;
 		position: relative;
 		margin: 0 auto;
-		@include mq($until: md) {
+		@include mq($from:sm,$until: md) {
 			@include font-size(22px, 1.6);
+		}
+		@include mq($until: sm) {
+			@include font-size(18px, 1.6);
 		}
 
 		&:after {
 			content: "";
 			background: url("../images/arrow-down.svg") no-repeat;
-			height: 76px;
-			width: 76px;
+			height: 80px;
+			width: 80px;
 			display: flex;
 			background-size: contain;
 			position: absolute;

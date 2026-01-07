@@ -1,4 +1,4 @@
-<section class="o-section c-section--customers">
+<section class="o-section c-section--customers pt-0">
 	<div class="o-section__wrapper">
 		<div class="c-customers u-flex u-flex--column">
 			<div class="c-sec-title txt-center">
@@ -72,44 +72,44 @@
 					 style="--width:90px; --height:90px; --quantity:13;">
 					<div class="content-04__slider-list">
 						<div class="content-04__slider-item" style="--position:1">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/iran-khodro.webp" alt="برقآپ">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/iran-khodro.avif" alt="برقآپ">
 						</div>
 						<div class="content-04__slider-item" style="--position:2">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/yazd.webp" alt="برقآپ">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/yazd.avif" alt="برقآپ">
 						</div>
 
 						<div class="content-04__slider-item" style="--position:3">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/foolad.webp" alt="برقآپ">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/foolad.avif" alt="برقآپ">
 						</div>
 						<div class="content-04__slider-item" style="--position:4">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/sanaye.webp" alt="برقآپ">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/sanaye.avif" alt="برقآپ">
 						</div>
 						<div class="content-04__slider-item" style="--position:5">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/enteghal-ab.webp" alt="برقآپ">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/enteghal-ab.avif" alt="برقآپ">
 						</div>
 						<div class="content-04__slider-item" style="--position:6">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/apadana.webp" alt="برقآپ">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/apadana.avif" alt="برقآپ">
 						</div>
 						<div class="content-04__slider-item" style="--position:7">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/sahami.webp" alt="برقآپ">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/sahami.avif" alt="برقآپ">
 						</div>
 						<div class="content-04__slider-item" style="--position:8">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/shahroud.webp" alt="برقآپ">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/shahroud.avif" alt="برقآپ">
 						</div>
 						<div class="content-04__slider-item" style="--position:9">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/saipa.webp" alt="برقآپ">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/saipa.avif" alt="برقآپ">
 						</div>
 						<div class="content-04__slider-item" style="--position:10">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/kaleh.webp" alt="برقآپ">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/kaleh.avif" alt="برقآپ">
 						</div>
 						<div class="content-04__slider-item" style="--position:11">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/shimiayi.webp" alt="برقآپ">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/shimiayi.avif" alt="برقآپ">
 						</div>
 						<div class="content-04__slider-item" style="--position:12">
-							<img class="white-filter" src="<?php echo get_template_directory_uri(); ?>/assets/images/siman.webp" alt="برقآپ">
+							<img class="white-filter" src="<?php echo get_template_directory_uri(); ?>/assets/images/siman.avif" alt="برقآپ">
 						</div>
 						<div class="content-04__slider-item" style="--position:13">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/azam.webp" alt="برقآپ">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/azam.avif" alt="برقآپ">
 						</div>
 					</div>
 				</div>

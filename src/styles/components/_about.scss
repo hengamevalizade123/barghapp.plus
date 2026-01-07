@@ -11,6 +11,23 @@
 		}
 	}
 
+	&__video {
+		@include mq($until:sm){
+			flex-direction: column-reverse;
+			align-items: center;
+		}
+		video {
+			width: 100%;
+			cursor: pointer;
+			@include mq($from: md, $until: 1072px) {
+				min-height: 225px !important;
+			}
+			@include mq($until: md) {
+				min-height: 200px !important;
+			}
+		}
+	}
+
 	ul {
 		li {
 			list-style: arabic-indic;
@@ -47,6 +64,7 @@
 		margin-bottom: 16px;
 		max-width: 100%;
 		text-align: justify;
+
 		&:before {
 			content: "";
 			width: 40%;
@@ -58,4 +76,8 @@
 			z-index: -1;
 		}
 	}
+}
+
+.c-about-content {
+	gap: 48px;
 }

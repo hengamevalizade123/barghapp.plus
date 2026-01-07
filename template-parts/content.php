@@ -62,7 +62,6 @@
 							<path d="M8.29431 16.7H8.30329" stroke="#292D32" stroke-width="2" stroke-linecap="round"
 								  stroke-linejoin="round"/>
 						</svg>
-
 						تاریخ انتشار :
 						<?php echo get_the_date('j F Y'); ?>
 					</time>

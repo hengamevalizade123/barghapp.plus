@@ -11,12 +11,16 @@
 			padding: 8px 12px;
 		}
 
-		@include mq($from: md, $until: desktop) {
+		@include mq($from: desktop, $until: 1071px) {
 			@include font-size(28px, 1.6);
 		}
+		@include mq($from: md, $until: desktop) {
+			@include font-size(26px, 1.6);
+		}
 		@include mq($until: md) {
-			@include font-size(24px, 1.6);
+			@include font-size(20px, 1.6);
 			align-items: center;
+			text-align: center;
 		}
 	}
 
@@ -48,16 +52,21 @@
 			position: absolute;
 			left: 0;
 			top: 4.5em;
-			animation: float 4s ease-in-out infinite;
+			@include mq(md){
+				animation: float 4s ease-in-out infinite;
+			}
+			@include mq($from:sm,$until: desktop) {
+				top: 1.5em;
+			}
 			@include mq($until: sm) {
 				top: 0;
 			}
 		}
-
 		flex: 2;
 		gap: 32px;
 		@include mq($until: md) {
 			align-items: center;
+			gap: 24px;
 		}
 	}
 
@@ -67,7 +76,8 @@
 		img {
 			max-width: 100%;
 			height: auto;
-			@include mq($until: sm) {
+			aspect-ratio: 967 / 1024;
+			@include mq($until: md) {
 				max-height: 300px;
 			}
 		}
@@ -83,7 +93,24 @@
 .swing {
 	display: inline-block;
 	transform-origin: bottom center;
-	animation: swingSmooth 4s linear infinite;
+	@include mq(md){
+		animation: swingSmooth 4s linear infinite;
+	}
+}
+@include mq($until:md){
+	.c-hero__info img{
+		animation: none;
+	}
+	.lcp-loaded .c-hero__info img{
+		animation: float 4s ease-in-out infinite;
+	}
+	.swing {
+		animation: none;
+	}
+
+	.lcp-loaded .swing {
+		animation: swingSmooth 4s linear infinite;
+	}
 }
 
 @keyframes swingSmooth {

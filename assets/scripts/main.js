@@ -27,13 +27,41 @@
         header.classList.remove("fixed-header");
       }
     });
+    // video player
+    var video = document.getElementById("myVideo");
+    var btn = document.getElementById("playBtn");
+    btn.addEventListener("click", function () {
+      video.setAttribute("controls", "controls"); // ← کنترل‌ها را فعال کن
+      video.play();
+      btn.classList.add("hidden");
+    });
+    video.addEventListener("pause", function () {
+      btn.classList.remove("hidden"); // دکمه برگرده
+    });
+    video.addEventListener("ended", function () {
+      btn.classList.remove("hidden"); // وقتی تموم شد
+    });
   });
   jQuery(document).ready(function ($) {
+    // video personal
+    $('#personal-pointer').on('click', function () {
+      var video = $('.video-explain-personal').get(0);
+      if (video) {
+        $(video).attr('controls', 'controls');
+        video.play();
+      }
+      $('.play-btn').addClass('hidden');
+    });
     $(".tab").on("click", function () {
-      $(".tab").removeClass("active"); // حذف حالت فعال از همه تب‌ها
-      $(this).addClass("active"); // فعال‌کردن تب کلیک‌شده
-      $(".pane").removeClass("active"); // مخفی‌کردن همه‌ی پنل‌ها
-      $("#t" + $(this).data("t")).addClass("active"); // نمایش پنل مربوط به تب
+      var $this = $(this);
+      var paneId = "#t" + $this.data("t");
+      var isActive = $this.hasClass("active");
+      $(".tab").removeClass("active");
+      $(".pane").removeClass("active");
+      if (!isActive) {
+        $this.addClass("active");
+        $(paneId).addClass("active");
+      }
     });
     var $btn = $(".more-toggle");
     $btn.on("click", function () {
@@ -145,3 +173,12 @@
     });
   });
 })();
+// LCP loaded
+window.addEventListener('load', function () {
+  if (window.matchMedia('(max-width: 767px)').matches) {
+    var home = document.querySelector('body.home');
+    if (home) {
+      home.classList.add('lcp-loaded');
+    }
+  }
+});

@@ -1,8 +1,13 @@
 <section class="o-section c-section--introduction">
 	<div class="o-section__wrapper">
 		<div class="c-introduction">
+			<div class="c-sec-title txt-center">
+				<h2 class="title">
+					راهکارهای کاهش هزینه و تأمین برق پایدار
+				</h2>
+			</div>
 			<div class="tabs u-flex gap-lg">
-				<div class="tab active u-flex items-center gap-md relative" data-t="1">
+				<div class="tab u-flex items-center gap-md relative" data-t="1">
 					<img class="border-radius h-100 arrow"
 						 src="<?php echo get_template_directory_uri(); ?>/assets/images/tab-1.svg" fetchpriority="high"
 						 alt="برقآپ">
@@ -20,7 +25,7 @@
 					گواهی ظرفیت</div>
 			</div>
 			<div class="panes">
-				<div class="pane pane-first gap-lg active" id="t1">
+				<div class="pane pane-first gap-lg " id="t1">
 					<ul class="u-flex gap-sm w-100 p-0">
 						<li class="u-flex">
 							<div class="pane-content space-between w-100 u-flex u-flex--column items-center">
@@ -67,7 +72,7 @@
 									fill="#004157"/>
 							</svg>
 									</span>
-								<h3 class="txt-center"><a href="#">خرید برق بورس </a></h3>
+								<h3 class="txt-center"><a href="#">خرید برق از بورس </a></h3>
 								<a class="btn-more u-flex gap-md items-center u-flex justify-center" href="#">
 									مشاهده جزئیات
 									<svg width="24" height="24" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -95,7 +100,7 @@
 									fill="#004157"/>
 							</svg>
 									</span>
-								<h3 class="txt-center"><a href="#">با خرید برق از طریق ماده 16 جهش تولید برق </a></h3>
+								<h3 class="txt-center"><a href="#">خرید برق ماده ۱۶ (برق سبز) </a></h3>
 								<a class="btn-more u-flex gap-md items-center u-flex justify-center" href="#">
 									مشاهده جزئیات
 									<svg width="24" height="24" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -123,7 +128,7 @@
 									fill="#004157"/>
 							</svg>
 									</span>
-								<h3 class="txt-center"><a href="#">با خرید برق از طریق ECA</a></h3>
+								<h3 class="txt-center"><a href="#">خرید برق ECA</a></h3>
 								<a class="btn-more u-flex gap-md items-center u-flex justify-center" href="#">
 									مشاهده جزئیات
 									<svg width="24" height="24" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -151,7 +156,10 @@
 									fill="#004157"/>
 							</svg>
 									</span>
-								<h3 class="txt-center"><a href="#">با خرید برق از طریق گواهی صرفه جویی</a></h3>
+								<h3 class="txt-center"><a href="#">
+										خرید گواهی صرفه جویی
+									برق
+									</a></h3>
 								<a class="btn-more u-flex gap-md items-center u-flex justify-center" href="#">
 									مشاهده جزئیات
 									<svg width="24" height="24" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -183,7 +191,7 @@
 									fill="#004157"/>
 							</svg>
 									</span>
-								<h3><a href="#">با خرید برق آزاد </a></h3>
+								<h3><a href="#">خرید برق آزاد </a></h3>
 								<a class="btn-more u-flex gap-md items-center u-flex justify-center" href="#">
 									مشاهده جزئیات
 									<svg width="24" height="24" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -211,7 +219,7 @@
 									fill="#004157"/>
 							</svg>
 									</span>
-								<h3><a href="#">با خرید سبز</a></h3>
+								<h3><a href="#">خرید برق سبز</a></h3>
 								<a class="btn-more u-flex gap-md items-center u-flex justify-center" href="#">
 									مشاهده جزئیات
 									<svg width="24" height="24" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -239,7 +247,7 @@
 									fill="#004157"/>
 							</svg>
 									</span>
-								<h3><a href="#">با خرید برق  ماده 4 </a></h3>
+								<h3><a href="#">خرید برق  ماده ۴ </a></h3>
 								<a class="btn-more u-flex gap-md items-center u-flex justify-center" href="#">
 									مشاهده جزئیات
 									<svg width="24" height="24" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -267,7 +275,10 @@
 									fill="#004157"/>
 							</svg>
 									</span>
-								<h3><a href="#">با خرید برق از طریق گواهی صرفه جویی</a></h3>
+								<h3><a href="#">
+										خرید گواهی صرفه جویی
+										برق
+									</a></h3>
 								<a class="btn-more u-flex gap-md items-center u-flex justify-center" href="#">
 									مشاهده جزئیات
 									<svg width="24" height="24" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -299,119 +310,7 @@
 									fill="#004157"/>
 							</svg>
 									</span>
-								<h3><a href="#">خرید برق دوجانبه</a></h3>
-								<a class="btn-more u-flex gap-md items-center u-flex justify-center" href="#">
-									مشاهده جزئیات
-									<svg width="24" height="24" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M6.83227 12.5254C9.9766 12.5254 12.5256 9.97635 12.5256 6.83203C12.5256 3.68767 9.9766 1.13867 6.83227 1.13867C3.68792 1.13867 1.13892 3.68767 1.13892 6.83203C1.13892 9.97635 3.68792 12.5254 6.83227 12.5254Z" stroke="#2D4B74" stroke-width="0.854003" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M8.8247 6.83203H5.40869" stroke="#2D4B74" stroke-width="0.854003" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M6.54761 5.12415L4.8396 6.83215L6.54761 8.54016" stroke="#2D4B74" stroke-width="0.854003" stroke-linecap="round" stroke-linejoin="round"/>
-									</svg>
-								</a>
-							</div>
-						</li>
-						<li class="u-flex">
-							<div class="pane-content space-between w-100 u-flex u-flex--column items-center">
-								<span class="u-flex justify-center">
-							<svg width="26" height="22" viewBox="0 0 26 22" fill="none"
-								 xmlns="http://www.w3.org/2000/svg">
-								<path fill-rule="evenodd" clip-rule="evenodd"
-									  d="M16.825 8.17371H16.673C14.1949 8.17371 11.7175 8.50081 9.24146 9.1543L9.20924 9.16271C8.66501 9.3224 8.29028 9.79309 8.27417 10.3359L8.27207 10.4319C8.20413 13.2791 8.86673 15.7068 10.2613 17.7079C11.784 19.8911 13.8888 21.1491 16.556 21.4685L16.673 21.4818L16.7872 21.4685C19.4558 21.1491 21.5606 19.8911 23.0826 17.7079C24.4778 15.7068 25.1404 13.2791 25.0725 10.4326L25.0704 10.3366L25.069 10.3037C25.0375 9.77138 24.6662 9.3182 24.1395 9.16411L24.1073 9.155L23.9497 9.11368C21.5746 8.5001 19.1994 8.18701 16.8243 8.17441L16.825 8.17371Z"
-									  fill="#FFCA3D"/>
-								<path fill-rule="evenodd" clip-rule="evenodd"
-									  d="M11.9186 8.88088V1.16919L2.66455 12.4797H8.31979V20.1914L17.5738 8.88088H11.9186Z"
-									  stroke="#004157" stroke-width="1.10985" stroke-linecap="round"
-									  stroke-linejoin="round"/>
-								<path
-									d="M0.153944 0.153944C0.340257 -0.0330702 0.632335 -0.04918 0.83756 0.102812L0.896395 0.153944L3.55871 2.81556C3.76394 3.02149 3.76394 3.35349 3.55871 3.55871C3.3724 3.74573 3.08032 3.76184 2.8751 3.60985L2.81626 3.55871L0.153944 0.897096C-0.0512813 0.69047 -0.0512813 0.358468 0.153944 0.153944ZM2.81556 17.1925C3.02149 16.988 3.35349 16.988 3.55871 17.1925C3.74573 17.3795 3.76184 17.6709 3.60985 17.8768L3.55871 17.9357L0.897096 20.598C0.691171 20.8032 0.359168 20.8032 0.153944 20.598C-0.0330702 20.4117 -0.04918 20.1196 0.102812 19.9144L0.153944 19.8548L2.81556 17.1932V17.1925ZM17.1925 17.1925C17.3795 17.0062 17.6709 16.9894 17.8768 17.1421L17.9357 17.1925L20.598 19.8548C20.8032 20.0601 20.8032 20.3928 20.598 20.598C20.4117 20.7843 20.1196 20.8011 19.9144 20.6491L19.8548 20.598L17.1932 17.9364C16.988 17.7304 16.988 17.3977 17.1932 17.1925H17.1925ZM19.8548 0.153944C20.0601 -0.0512813 20.3928 -0.0512813 20.598 0.153944C20.7843 0.340257 20.8011 0.632335 20.6491 0.83756L20.598 0.896395L17.9364 3.55871C17.7304 3.76394 17.3977 3.76394 17.1925 3.55871C17.0062 3.3724 16.9894 3.08032 17.1421 2.8751L17.1925 2.81626L19.8548 0.153944Z"
-									fill="#004157"/>
-							</svg>
-									</span>
-								<h3><a href="#">خرید برق دوجانبه</a></h3>
-								<a class="btn-more u-flex gap-md items-center u-flex justify-center" href="#">
-									مشاهده جزئیات
-									<svg width="24" height="24" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M6.83227 12.5254C9.9766 12.5254 12.5256 9.97635 12.5256 6.83203C12.5256 3.68767 9.9766 1.13867 6.83227 1.13867C3.68792 1.13867 1.13892 3.68767 1.13892 6.83203C1.13892 9.97635 3.68792 12.5254 6.83227 12.5254Z" stroke="#2D4B74" stroke-width="0.854003" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M8.8247 6.83203H5.40869" stroke="#2D4B74" stroke-width="0.854003" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M6.54761 5.12415L4.8396 6.83215L6.54761 8.54016" stroke="#2D4B74" stroke-width="0.854003" stroke-linecap="round" stroke-linejoin="round"/>
-									</svg>
-								</a>
-							</div>
-						</li>
-						<li class="u-flex">
-							<div class="pane-content space-between w-100 u-flex u-flex--column items-center">
-								<span class="u-flex justify-center">
-							<svg width="26" height="22" viewBox="0 0 26 22" fill="none"
-								 xmlns="http://www.w3.org/2000/svg">
-								<path fill-rule="evenodd" clip-rule="evenodd"
-									  d="M16.825 8.17371H16.673C14.1949 8.17371 11.7175 8.50081 9.24146 9.1543L9.20924 9.16271C8.66501 9.3224 8.29028 9.79309 8.27417 10.3359L8.27207 10.4319C8.20413 13.2791 8.86673 15.7068 10.2613 17.7079C11.784 19.8911 13.8888 21.1491 16.556 21.4685L16.673 21.4818L16.7872 21.4685C19.4558 21.1491 21.5606 19.8911 23.0826 17.7079C24.4778 15.7068 25.1404 13.2791 25.0725 10.4326L25.0704 10.3366L25.069 10.3037C25.0375 9.77138 24.6662 9.3182 24.1395 9.16411L24.1073 9.155L23.9497 9.11368C21.5746 8.5001 19.1994 8.18701 16.8243 8.17441L16.825 8.17371Z"
-									  fill="#FFCA3D"/>
-								<path fill-rule="evenodd" clip-rule="evenodd"
-									  d="M11.9186 8.88088V1.16919L2.66455 12.4797H8.31979V20.1914L17.5738 8.88088H11.9186Z"
-									  stroke="#004157" stroke-width="1.10985" stroke-linecap="round"
-									  stroke-linejoin="round"/>
-								<path
-									d="M0.153944 0.153944C0.340257 -0.0330702 0.632335 -0.04918 0.83756 0.102812L0.896395 0.153944L3.55871 2.81556C3.76394 3.02149 3.76394 3.35349 3.55871 3.55871C3.3724 3.74573 3.08032 3.76184 2.8751 3.60985L2.81626 3.55871L0.153944 0.897096C-0.0512813 0.69047 -0.0512813 0.358468 0.153944 0.153944ZM2.81556 17.1925C3.02149 16.988 3.35349 16.988 3.55871 17.1925C3.74573 17.3795 3.76184 17.6709 3.60985 17.8768L3.55871 17.9357L0.897096 20.598C0.691171 20.8032 0.359168 20.8032 0.153944 20.598C-0.0330702 20.4117 -0.04918 20.1196 0.102812 19.9144L0.153944 19.8548L2.81556 17.1932V17.1925ZM17.1925 17.1925C17.3795 17.0062 17.6709 16.9894 17.8768 17.1421L17.9357 17.1925L20.598 19.8548C20.8032 20.0601 20.8032 20.3928 20.598 20.598C20.4117 20.7843 20.1196 20.8011 19.9144 20.6491L19.8548 20.598L17.1932 17.9364C16.988 17.7304 16.988 17.3977 17.1932 17.1925H17.1925ZM19.8548 0.153944C20.0601 -0.0512813 20.3928 -0.0512813 20.598 0.153944C20.7843 0.340257 20.8011 0.632335 20.6491 0.83756L20.598 0.896395L17.9364 3.55871C17.7304 3.76394 17.3977 3.76394 17.1925 3.55871C17.0062 3.3724 16.9894 3.08032 17.1421 2.8751L17.1925 2.81626L19.8548 0.153944Z"
-									fill="#004157"/>
-							</svg>
-									</span>
-								<h3><a href="#">خرید برق دوجانبه</a></h3>
-								<a class="btn-more u-flex gap-md items-center u-flex justify-center" href="#">
-									مشاهده جزئیات
-									<svg width="24" height="24" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M6.83227 12.5254C9.9766 12.5254 12.5256 9.97635 12.5256 6.83203C12.5256 3.68767 9.9766 1.13867 6.83227 1.13867C3.68792 1.13867 1.13892 3.68767 1.13892 6.83203C1.13892 9.97635 3.68792 12.5254 6.83227 12.5254Z" stroke="#2D4B74" stroke-width="0.854003" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M8.8247 6.83203H5.40869" stroke="#2D4B74" stroke-width="0.854003" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M6.54761 5.12415L4.8396 6.83215L6.54761 8.54016" stroke="#2D4B74" stroke-width="0.854003" stroke-linecap="round" stroke-linejoin="round"/>
-									</svg>
-								</a>
-							</div>
-						</li>
-						<li class="u-flex">
-							<div class="pane-content space-between w-100 u-flex u-flex--column items-center">
-								<span class="u-flex justify-center">
-							<svg width="26" height="22" viewBox="0 0 26 22" fill="none"
-								 xmlns="http://www.w3.org/2000/svg">
-								<path fill-rule="evenodd" clip-rule="evenodd"
-									  d="M16.825 8.17371H16.673C14.1949 8.17371 11.7175 8.50081 9.24146 9.1543L9.20924 9.16271C8.66501 9.3224 8.29028 9.79309 8.27417 10.3359L8.27207 10.4319C8.20413 13.2791 8.86673 15.7068 10.2613 17.7079C11.784 19.8911 13.8888 21.1491 16.556 21.4685L16.673 21.4818L16.7872 21.4685C19.4558 21.1491 21.5606 19.8911 23.0826 17.7079C24.4778 15.7068 25.1404 13.2791 25.0725 10.4326L25.0704 10.3366L25.069 10.3037C25.0375 9.77138 24.6662 9.3182 24.1395 9.16411L24.1073 9.155L23.9497 9.11368C21.5746 8.5001 19.1994 8.18701 16.8243 8.17441L16.825 8.17371Z"
-									  fill="#FFCA3D"/>
-								<path fill-rule="evenodd" clip-rule="evenodd"
-									  d="M11.9186 8.88088V1.16919L2.66455 12.4797H8.31979V20.1914L17.5738 8.88088H11.9186Z"
-									  stroke="#004157" stroke-width="1.10985" stroke-linecap="round"
-									  stroke-linejoin="round"/>
-								<path
-									d="M0.153944 0.153944C0.340257 -0.0330702 0.632335 -0.04918 0.83756 0.102812L0.896395 0.153944L3.55871 2.81556C3.76394 3.02149 3.76394 3.35349 3.55871 3.55871C3.3724 3.74573 3.08032 3.76184 2.8751 3.60985L2.81626 3.55871L0.153944 0.897096C-0.0512813 0.69047 -0.0512813 0.358468 0.153944 0.153944ZM2.81556 17.1925C3.02149 16.988 3.35349 16.988 3.55871 17.1925C3.74573 17.3795 3.76184 17.6709 3.60985 17.8768L3.55871 17.9357L0.897096 20.598C0.691171 20.8032 0.359168 20.8032 0.153944 20.598C-0.0330702 20.4117 -0.04918 20.1196 0.102812 19.9144L0.153944 19.8548L2.81556 17.1932V17.1925ZM17.1925 17.1925C17.3795 17.0062 17.6709 16.9894 17.8768 17.1421L17.9357 17.1925L20.598 19.8548C20.8032 20.0601 20.8032 20.3928 20.598 20.598C20.4117 20.7843 20.1196 20.8011 19.9144 20.6491L19.8548 20.598L17.1932 17.9364C16.988 17.7304 16.988 17.3977 17.1932 17.1925H17.1925ZM19.8548 0.153944C20.0601 -0.0512813 20.3928 -0.0512813 20.598 0.153944C20.7843 0.340257 20.8011 0.632335 20.6491 0.83756L20.598 0.896395L17.9364 3.55871C17.7304 3.76394 17.3977 3.76394 17.1925 3.55871C17.0062 3.3724 16.9894 3.08032 17.1421 2.8751L17.1925 2.81626L19.8548 0.153944Z"
-									fill="#004157"/>
-							</svg>
-									</span>
-								<h3><a href="#">خرید برق دوجانبه</a></h3>
-								<a class="btn-more u-flex gap-md items-center u-flex justify-center" href="#">
-									مشاهده جزئیات
-									<svg width="24" height="24" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M6.83227 12.5254C9.9766 12.5254 12.5256 9.97635 12.5256 6.83203C12.5256 3.68767 9.9766 1.13867 6.83227 1.13867C3.68792 1.13867 1.13892 3.68767 1.13892 6.83203C1.13892 9.97635 3.68792 12.5254 6.83227 12.5254Z" stroke="#2D4B74" stroke-width="0.854003" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M8.8247 6.83203H5.40869" stroke="#2D4B74" stroke-width="0.854003" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M6.54761 5.12415L4.8396 6.83215L6.54761 8.54016" stroke="#2D4B74" stroke-width="0.854003" stroke-linecap="round" stroke-linejoin="round"/>
-									</svg>
-								</a>
-							</div>
-						</li>
-						<li class="u-flex">
-							<div class="pane-content space-between w-100 u-flex u-flex--column items-center">
-								<span class="u-flex justify-center">
-							<svg width="26" height="22" viewBox="0 0 26 22" fill="none"
-								 xmlns="http://www.w3.org/2000/svg">
-								<path fill-rule="evenodd" clip-rule="evenodd"
-									  d="M16.825 8.17371H16.673C14.1949 8.17371 11.7175 8.50081 9.24146 9.1543L9.20924 9.16271C8.66501 9.3224 8.29028 9.79309 8.27417 10.3359L8.27207 10.4319C8.20413 13.2791 8.86673 15.7068 10.2613 17.7079C11.784 19.8911 13.8888 21.1491 16.556 21.4685L16.673 21.4818L16.7872 21.4685C19.4558 21.1491 21.5606 19.8911 23.0826 17.7079C24.4778 15.7068 25.1404 13.2791 25.0725 10.4326L25.0704 10.3366L25.069 10.3037C25.0375 9.77138 24.6662 9.3182 24.1395 9.16411L24.1073 9.155L23.9497 9.11368C21.5746 8.5001 19.1994 8.18701 16.8243 8.17441L16.825 8.17371Z"
-									  fill="#FFCA3D"/>
-								<path fill-rule="evenodd" clip-rule="evenodd"
-									  d="M11.9186 8.88088V1.16919L2.66455 12.4797H8.31979V20.1914L17.5738 8.88088H11.9186Z"
-									  stroke="#004157" stroke-width="1.10985" stroke-linecap="round"
-									  stroke-linejoin="round"/>
-								<path
-									d="M0.153944 0.153944C0.340257 -0.0330702 0.632335 -0.04918 0.83756 0.102812L0.896395 0.153944L3.55871 2.81556C3.76394 3.02149 3.76394 3.35349 3.55871 3.55871C3.3724 3.74573 3.08032 3.76184 2.8751 3.60985L2.81626 3.55871L0.153944 0.897096C-0.0512813 0.69047 -0.0512813 0.358468 0.153944 0.153944ZM2.81556 17.1925C3.02149 16.988 3.35349 16.988 3.55871 17.1925C3.74573 17.3795 3.76184 17.6709 3.60985 17.8768L3.55871 17.9357L0.897096 20.598C0.691171 20.8032 0.359168 20.8032 0.153944 20.598C-0.0330702 20.4117 -0.04918 20.1196 0.102812 19.9144L0.153944 19.8548L2.81556 17.1932V17.1925ZM17.1925 17.1925C17.3795 17.0062 17.6709 16.9894 17.8768 17.1421L17.9357 17.1925L20.598 19.8548C20.8032 20.0601 20.8032 20.3928 20.598 20.598C20.4117 20.7843 20.1196 20.8011 19.9144 20.6491L19.8548 20.598L17.1932 17.9364C16.988 17.7304 16.988 17.3977 17.1932 17.1925H17.1925ZM19.8548 0.153944C20.0601 -0.0512813 20.3928 -0.0512813 20.598 0.153944C20.7843 0.340257 20.8011 0.632335 20.6491 0.83756L20.598 0.896395L17.9364 3.55871C17.7304 3.76394 17.3977 3.76394 17.1925 3.55871C17.0062 3.3724 16.9894 3.08032 17.1421 2.8751L17.1925 2.81626L19.8548 0.153944Z"
-									fill="#004157"/>
-							</svg>
-									</span>
-								<h3><a href="#">خرید برق دوجانبه</a></h3>
+								<h3><a href="#">گواهی ظرفیت اقساطی</a></h3>
 								<a class="btn-more u-flex gap-md items-center u-flex justify-center" href="#">
 									مشاهده جزئیات
 									<svg width="24" height="24" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">

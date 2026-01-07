@@ -1,15 +1,13 @@
-<section class="o-section c-section--home-blog">
+<section class="o-section c-section--home-blog relative">
 	<div class="o-section__wrapper">
-		<div class="c-home-blog u-flex u-flex--column">
+		<div class="c-home-blog u-flex u-flex--column gap-md">
 			<div class="c-sec-title txt-center">
 				<h2 class="title">
 
-					 اخبــــــار و وبــــلاگ برق‌آپ
+					اخبــــــار و وبــــلاگ برق‌آپ
 					پـــــلاس
 				</h2>
-				<h3 class="sub-title mb-0">
-					برق‌آپ پلاس؛ اولین سامانه توزیع برق صنعتی
-				</h3></div>
+			</div>
 			<ul class="c-home-blog__content p-0 u-flex gap-md">
 				<li>
 					<div class="c-slider-blogs h-100"
@@ -30,9 +28,48 @@
 									<div class="border-box w-100 padding-md u-flex u-flex--column h-100">
 										<div class="item-before-content u-flex gap-md u-flex--column relative w-100">
 											<a class="c-blog__img u-flex w-100" href="<?php the_permalink(); ?>">
-												<img class="w-100 border-radius cover"
-													 src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>"
-													 alt="<?php the_title_attribute(); ?>">
+												<?php
+												if (has_post_thumbnail()) :
+													$thumb_id = get_post_thumbnail_id();
+
+													// اندازه‌های استاندارد برای responsive
+													$sizes = [
+														'thumbnail' => 150,   // خیلی کوچک
+														'medium' => 300,   // موبایل کوچک
+														'medium_large' => 768,   // موبایل بزرگ / تبلت
+														'large' => 1024,  // دسکتاپ معمولی
+														'full' => 1920,  // دسکتاپ بزرگ
+													];
+
+													// srcset اتوماتیک از این اندازه‌ها
+													$srcset_items = [];
+													foreach ($sizes as $size_name => $width) {
+														$src = wp_get_attachment_image_url($thumb_id, $size_name);
+														if ($src) $srcset_items[] = $src . ' ' . $width . 'w';
+													}
+													$srcset = implode(', ', $srcset_items);
+
+													// sizes برای نمایش درست بر اساس viewport
+													$sizes_attr = '(max-width: 480px) 194px,
+                       (max-width: 768px) 350px,
+                       (max-width: 1024px) 500px,
+                       640px';
+
+													// نمایش تصویر
+													echo wp_get_attachment_image(
+														$thumb_id,
+														'medium_large', // fallback src
+														false,
+														[
+															'class' => 'w-100 border-radius cover',
+															'loading' => 'lazy',
+															'alt' => get_the_title(),
+															'srcset' => $srcset,
+															'sizes' => $sizes_attr,
+														]
+													);
+												endif;
+												?>
 											</a>
 											<div class="c-home-blog__item-info u-flex gap-md u-flex--column">
 												<div class="txt-overflow c-blog__meta u-flex gap-sm space-between">
@@ -51,7 +88,7 @@
 																  stroke-linejoin="round"/>
 														</svg>
 														مطالعه :
-														<?php echo reading_time()?>
+														<?php echo reading_time() ?>
 
 													</p>
 													<p class="m-0 u-flex gap-sm">
@@ -163,7 +200,7 @@
 						<ul class="p-0 m-0 u-flex--column u-flex gap-md">
 							<?php
 							$args = array(
-								'category_name'  => 'news',
+								'category_name' => 'news',
 								'post_type' => 'post',
 								'posts_per_page' => 6,
 								'orderby' => 'date',
@@ -173,21 +210,22 @@
 							$latest_posts = new WP_Query($args);
 
 							if ($latest_posts->have_posts()) :
-							while ($latest_posts->have_posts()) : $latest_posts->the_post(); ?>
-							<li>
-								<a class="border-radius padding-md relative u-flex gap-md u-flex--column" href="<?php the_permalink(); ?>">
-									<h3 class="m-0">
-										<?php the_title(); ?>
-									</h3>
-									<p class="m-0">
-										<?php echo wp_trim_words(get_the_excerpt(), 30, '...'); ?>
-									</p>
-									<span class="tag absolute">
+								while ($latest_posts->have_posts()) : $latest_posts->the_post(); ?>
+									<li>
+										<a class="border-radius padding-md relative u-flex gap-md u-flex--column"
+										   href="<?php the_permalink(); ?>">
+											<h3 class="m-0">
+												<?php the_title(); ?>
+											</h3>
+											<p class="m-0">
+												<?php echo wp_trim_words(get_the_excerpt(), 30, '...'); ?>
+											</p>
+											<span class="tag absolute">
 									خبر
 								</span>
-								</a>
-							</li>
-							<?php endwhile;
+										</a>
+									</li>
+								<?php endwhile;
 								wp_reset_postdata();
 							else : ?>
 								<div>هیچ مطلبی یافت نشد.</div>

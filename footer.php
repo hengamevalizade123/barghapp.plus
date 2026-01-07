@@ -18,7 +18,7 @@
 				<div class="c-footer__col">
 					<div class="c-footer__title u-flex">
 						<img
-							src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-barghaap-plus-bg-dark.svg"
+							src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-barghaap-plus-bg-light.svg"
 							alt="برقآپ">
 					</div>
 					<p class="txt-justify">
@@ -60,19 +60,25 @@
 					<ul class="u-flex gap-sm u-flex--column">
 						<li>
 							<p class="m-0">
-								<strong class="d-block color-white">
+								<strong class="d-block color-primary">
 									آدرس :
 								</strong>
-								اشرفی اصفهانی، سیمین بولیوار، خیابان فکوری نبش یکم غربی، پلاک ۴۰، واحد ۳
+								اشرفی اصفهانی، سیمون بولیوار، خیابان فکوری نبش یکم غربی، پلاک ۴۰، واحد ۳
 							</p>
 						</li>
 
 						<li>
-							<strong class="d-block color-white">
+							<strong class="d-block color-primary">
 								تماس با ما :
 							</strong>
-							<a href="tel:09122714980" title="پشتیبانی">۰۲۱-۹۱۰۱۱۵۲۲ | ۰۹۱۲۲۷۱۴۹۸۰ | ۰۲۱-۹۱۰۰۱۷۵۰
-							</a>
+							<div class="support-number">
+								<a href="tel:02191011522" title="پشتیبانی">۰۲۱-۹۱۰۱۱۵۲۲
+								</a>|
+								<a href="tel:02191001750" title="پشتیبانی">۰۲۱-۹۱۰۰۱۷۵۰
+								</a>|
+								<a href="tel:09122714980" title="پشتیبانی">۰۹۱۲۲۷۱۴۹۸۰
+								</a>
+							</div>
 							<a href="mailto:info@barghapp.com">info@barghapp.com</a>
 						</li>
 					</ul>
@@ -82,7 +88,7 @@
 						<li class="u-flex items-end justify-center">
 							<a href="https://trustseal.enamad.ir/?id=609733&Code=XfoPiDEewxqO6i3c6AdqbgHH1TOEMqu0"
 							   target="_blank">
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/enamad.png"
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/enamad.webp"
 									 alt="برقآپ">
 							</a>
 						</li>
@@ -102,13 +108,13 @@
 							</a>
 						</li>
 						<li class="u-flex items-end justify-center">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/samandehi.png"
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/samandehi.webp"
 								 alt="برقآپ">
 						</li>
 						<li class="u-flex items-end justify-center">
 							<a href="https://trustseal.enamad.ir/?id=609733&Code=XfoPiDEewxqO6i3c6AdqbgHH1TOEMqu0"
 							   target="_blank" aria-label="اینماد">
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/enamad.png"
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/enamad.webp"
 									 alt="برقآپ">
 							</a>
 						</li>
@@ -125,13 +131,13 @@
 					<svg width="24" height="24" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path
 							d="M16.2748 43H28.5107C38.7072 43 42.7858 38.9214 42.7858 28.7249V16.489C42.7858 6.29248 38.7072 2.21387 28.5107 2.21387H16.2748C6.07828 2.21387 1.99966 6.29248 1.99966 16.489V28.7249C1.99966 38.9214 6.07828 43 16.2748 43Z"
-							stroke="#ffff" stroke-opacity="0.7" stroke-width="3.05896" stroke-linecap="round"
+							stroke="#2d4b74" stroke-opacity="0.7" stroke-width="3.05896" stroke-linecap="round"
 							stroke-linejoin="round"/>
 						<path
 							d="M22.3919 29.7449C26.3339 29.7449 29.5295 26.5493 29.5295 22.6073C29.5295 18.6653 26.3339 15.4697 22.3919 15.4697C18.4499 15.4697 15.2543 18.6653 15.2543 22.6073C15.2543 26.5493 18.4499 29.7449 22.3919 29.7449Z"
-							stroke="#ffff" stroke-opacity="0.7" stroke-width="3.05896" stroke-linecap="round"
+							stroke="#2d4b74" stroke-opacity="0.7" stroke-width="3.05896" stroke-linecap="round"
 							stroke-linejoin="round"/>
-						<path d="M33.8873 12.4111H33.911" stroke="#ffff" stroke-opacity="0.7" stroke-width="4.07862"
+						<path d="M33.8873 12.4111H33.911" stroke="#2d4b74" stroke-opacity="0.7" stroke-width="4.07862"
 							  stroke-linecap="round" stroke-linejoin="round"/>
 					</svg>
 				</a>
@@ -139,22 +145,22 @@
 					<svg width="24" height="24" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path
 							d="M11.4826 39.9351C14.5419 41.7707 18.213 42.7905 21.8842 42.7905C33.1015 42.7905 42.2794 33.6126 42.2794 22.3952C42.2794 11.1779 33.1015 2 21.8842 2C10.6668 2 1.48892 11.1779 1.48892 22.3952C1.48892 26.0664 2.50868 29.5336 4.1403 32.5929L2.38721 39.3355C1.99007 40.8629 3.40387 42.2433 4.92142 41.8097L11.4826 39.9351Z"
-							stroke="#ffff" stroke-opacity="0.7" stroke-width="2.5" stroke-miterlimit="10"
+							stroke="#2d4b74" stroke-opacity="0.7" stroke-width="2.5" stroke-miterlimit="10"
 							stroke-linecap="round" stroke-linejoin="round"/>
 						<path
 							d="M31.0617 28.2042C31.0617 28.5346 30.988 28.8742 30.8318 29.2046C30.6756 29.535 30.4735 29.8471 30.2069 30.1408C29.7564 30.6364 29.2602 30.9943 28.6995 31.2237C28.148 31.4532 27.5504 31.5725 26.907 31.5725C25.9696 31.5725 24.9676 31.3522 23.9105 30.9025C22.8536 30.4528 21.7965 29.8471 20.7486 29.0853C19.6915 28.3144 18.6897 27.4608 17.7338 26.5155C16.7871 25.561 15.9322 24.5606 15.1693 23.5143C14.4156 22.4681 13.809 21.4218 13.3678 20.3847C12.9266 19.3384 12.706 18.338 12.706 17.3835C12.706 16.7594 12.8163 16.1629 13.0369 15.6122C13.2575 15.0524 13.6067 14.5384 14.0939 14.0795C14.6822 13.5013 15.3256 13.2168 16.0058 13.2168C16.2631 13.2168 16.5205 13.2719 16.7503 13.382C16.9893 13.4921 17.2007 13.6573 17.3661 13.896L19.4986 16.8971C19.664 17.1266 19.7835 17.3377 19.8663 17.5396C19.9489 17.7323 19.995 17.925 19.995 18.0994C19.995 18.3197 19.9306 18.54 19.8019 18.751C19.6824 18.9621 19.5078 19.1824 19.2871 19.4027L18.5886 20.1277C18.4876 20.2287 18.4415 20.348 18.4415 20.4948C18.4415 20.5683 18.4507 20.6325 18.469 20.7059C18.4968 20.7793 18.5243 20.8344 18.5427 20.8895C18.7081 21.1924 18.993 21.587 19.3974 22.0642C19.8111 22.5415 20.2522 23.0279 20.7303 23.5143C21.2267 24.0008 21.7045 24.4505 22.1918 24.8635C22.6696 25.2673 23.0649 25.5427 23.3774 25.7079C23.4235 25.7262 23.4785 25.7537 23.543 25.7813C23.6164 25.8088 23.69 25.818 23.7726 25.818C23.9291 25.818 24.0484 25.7629 24.1495 25.662L24.8481 24.9736C25.0779 24.7442 25.2986 24.5698 25.5099 24.4597C25.7214 24.3312 25.9327 24.2669 26.1625 24.2669C26.3371 24.2669 26.5211 24.3036 26.7232 24.3862C26.9255 24.4688 27.1368 24.5882 27.3667 24.7442L30.409 26.901C30.6481 27.0662 30.8135 27.2589 30.9146 27.4884C31.0066 27.7178 31.0617 27.9473 31.0617 28.2042Z"
-							stroke="#ffff" stroke-opacity="0.7" stroke-width="2.5" stroke-miterlimit="10"/>
+							stroke="#2d4b74" stroke-opacity="0.7" stroke-width="2.5" stroke-miterlimit="10"/>
 					</svg>
 				</a>
 				<a href="https://www.aparat.com/Barghapplication" aria-label="آپارات">
 					<svg width="24" height="24" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path
 							d="M32.7849 42.7905H12.3897C6.27109 42.7905 2.19205 37.6917 2.19205 30.0434V14.747C2.19205 7.09881 6.27109 2 12.3897 2H32.7849C38.9035 2 42.9825 7.09881 42.9825 14.747V30.0434C42.9825 37.6917 38.9035 42.7905 32.7849 42.7905Z"
-							stroke="#ffff" stroke-opacity="0.7" stroke-width="2.5" stroke-miterlimit="10"
+							stroke="#2d4b74" stroke-opacity="0.7" stroke-width="2.5" stroke-miterlimit="10"
 							stroke-linecap="round" stroke-linejoin="round"/>
 						<path
 							d="M21.3643 16.0206L26.4631 19.8447C28.2986 21.3743 28.2986 23.6688 26.4631 25.1984L21.3643 29.0225C19.3247 30.5522 17.6931 29.2775 17.6931 26.4731V18.8249C17.6931 15.5107 19.3247 14.4909 21.3643 16.0206Z"
-							stroke="#ffff" stroke-opacity="0.7" stroke-width="2.5" stroke-miterlimit="10"
+							stroke="#2d4b74" stroke-opacity="0.7" stroke-width="2.5" stroke-miterlimit="10"
 							stroke-linecap="round" stroke-linejoin="round"/>
 					</svg>
 				</a>

@@ -1,16 +1,17 @@
-<section class="o-section c-section--hero">
+<section class="o-section c-section--hero pb-0">
 	<div class="o-section__wrapper">
-		<div class="c-hero u-flex gap-lg">
+		<div class="c-hero u-flex gap-lg items-center">
 			<div class="c-hero__info relative u-flex u-flex--column">
 				<h1 class="u-flex u-flex--column gap-md items-start m-0">
 					<span>
-					بـــــرق‌آپ پــــــلاس؛
+					بـــــرق‌آپ پــــــلاس
 </span>
-					اولین سامانه توزیع برق صنعتی
+					اولین سامانه دانش بنیان تأمین برق مشترکین
 				</h1>
 				<p class="txt-justify m-0">
-					خرید برق عادی از طریق قرارداد دوجانبه فرآیندی است که در آن سامانه برق‌آپ پلاس برق را ‌از تولیدکننده
-					برق (نیروگاه) خریداری کرده و آن را به مصرف‌کننده نهایی برق تحویل می‌دهد.
+					برق‌آپ پلاس، نخستین سامانه دانش‌بنیان کشور در تأمین برق مشترکین با قدرت قراردادی بیش از ۳۰ کیلووات
+					است که با راهکارهای متنوع، هزینه‌های قبض برق را کاهش داده و برق پایدار و بدون وقفه را برای تولید
+					فراهم می‌کند.
 				</p>
 				<div class="c-hero__info-btn u-flex gap-md">
 					<a class="btn btn-primary-gradiant u-flex items-center gap-md" href="#">
@@ -30,28 +31,42 @@
 							<path d="M18.6816 19.7709H18.6906" stroke="white" stroke-width="2.16667"
 								  stroke-linecap="round" stroke-linejoin="round"/>
 						</svg>
-
 						ورود به سامانه
 					</a>
 					<a class="btn btn-outline-gradiant u-flex items-center gap-md" href="#">
 						<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M11.0835 16.0415C11.0835 17.1731 11.9585 18.0831 13.0318 18.0831H15.2252C16.1585 18.0831 16.9168 17.2898 16.9168 16.2981C16.9168 15.2365 16.4502 14.8515 15.7618 14.6065L12.2502 13.3815C11.5618 13.1365 11.0952 12.7631 11.0952 11.6898C11.0952 10.7098 11.8535 9.90479 12.7868 9.90479H14.9802C16.0535 9.90479 16.9285 10.8148 16.9285 11.9465" stroke="#2D4B74" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-							<path d="M14 8.75V19.25" stroke="#2D4B74" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-							<path d="M25.6666 14C25.6666 20.44 20.4399 25.6667 13.9999 25.6667C7.55992 25.6667 2.33325 20.44 2.33325 14C2.33325 7.56004 7.55992 2.33337 13.9999 2.33337" stroke="#2D4B74" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-							<path d="M19.8333 3.5V8.16667H24.4999" stroke="#2D4B74" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-							<path d="M25.6666 2.33337L19.8333 8.16671" stroke="#2D4B74" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+							<path
+								d="M11.0835 16.0415C11.0835 17.1731 11.9585 18.0831 13.0318 18.0831H15.2252C16.1585 18.0831 16.9168 17.2898 16.9168 16.2981C16.9168 15.2365 16.4502 14.8515 15.7618 14.6065L12.2502 13.3815C11.5618 13.1365 11.0952 12.7631 11.0952 11.6898C11.0952 10.7098 11.8535 9.90479 12.7868 9.90479H14.9802C16.0535 9.90479 16.9285 10.8148 16.9285 11.9465"
+								stroke="#2D4B74" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M14 8.75V19.25" stroke="#2D4B74" stroke-width="1.75" stroke-linecap="round"
+								  stroke-linejoin="round"/>
+							<path
+								d="M25.6666 14C25.6666 20.44 20.4399 25.6667 13.9999 25.6667C7.55992 25.6667 2.33325 20.44 2.33325 14C2.33325 7.56004 7.55992 2.33337 13.9999 2.33337"
+								stroke="#2D4B74" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M19.8333 3.5V8.16667H24.4999" stroke="#2D4B74" stroke-width="1.75"
+								  stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M25.6666 2.33337L19.8333 8.16671" stroke="#2D4B74" stroke-width="1.75"
+								  stroke-linecap="round" stroke-linejoin="round"/>
 						</svg>
-						سودتو حساب کن
+						قیمت برق
 					</a>
 				</div>
 				<img class="border-radius h-100 arrow"
-					 src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow.svg" fetchpriority="high"
-					 alt="برقآپ">
+					 src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow.svg" fetchpriority="low" alt="arrow">
 			</div>
 			<div class="c-hero__img u-flex justify-end items-center">
-				<img class="border-radius h-100 swing"
-					 src="<?php echo get_template_directory_uri(); ?>/assets/images/hero.webp" fetchpriority="high"
-					 alt="برقآپ">
+				<img
+					class="img-video-bef hero-personal img-video-left swing"
+					src="<?php echo get_field('hero-img')['sizes']['large']; ?>"
+					srcset="<?php echo get_field('hero-img')['sizes']['medium']; ?> 300w,
+          <?php echo get_field('hero-img')['sizes']['large']; ?> 1024w"
+					sizes="100vw"
+					alt="<?php echo esc_attr(get_field('hero-img')['alt']); ?>"
+					fetchpriority="high"
+					loading="eager"
+					decoding="async"
+					style="width:100%; height:auto;"
+				/>
 			</div>
 		</div>
 	</div>

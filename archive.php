@@ -67,9 +67,20 @@ get_header();
 							<li class="item-before">
 								<div class="item-before-content u-flex u-flex--column gap-md">
 									<a class="c-blog__img u-flex w-100" href="<?php the_permalink(); ?>">
-										<img class="w-100 cover"
-											 src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>"
-											 alt="<?php the_title_attribute(); ?>">
+										<?php
+										if ( has_post_thumbnail() ) {
+											echo wp_get_attachment_image(
+												get_post_thumbnail_id(),
+												'medium_large',
+												false,
+												[
+													'class'   => 'w-100 cover',
+													'loading'=> 'lazy',
+													'alt'    => get_the_title()
+												]
+											);
+										}
+										?>
 									</a>
 									<div class="txt-overflow c-blog__meta u-flex gap-sm space-between">
 										<p class="m-0 u-flex gap-sm">

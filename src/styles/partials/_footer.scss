@@ -1,3 +1,6 @@
+.c-section--footer{
+	background: #EDF5F7;
+}
 footer {
 	background: var(--color-primary);
 	margin-top: 24px;
@@ -5,7 +8,7 @@ footer {
 
 .c-footer {
 	p, a, span {
-		color: var(--color-white-80);
+		color: var(--color-primary);
 	}
 
 	a:hover {
@@ -61,7 +64,7 @@ footer {
 
 	&__bottom {
 		border-bottom: 1px solid var(--color-primary-20);
-		padding: 48px 0;
+		padding: 42px 0 24px;
 
 		@include mq($until: md) {
 			flex-wrap: wrap;
@@ -145,7 +148,7 @@ footer {
 	}
 
 	&__title {
-		color: var(--color-white);
+		color: var(--color-primary);
 		@include font-size(18px, 1.8);
 		font-weight: 700;
 		@include mq($from: sm, $until: md) {
@@ -158,7 +161,7 @@ footer {
 	}
 
 	&__copyright {
-		padding: 24px 0;
+		padding: 18px 0;
 		border-top: 1px solid var(--color-white-40);
 		@include mq($until: sm) {
 			justify-content: flex-end !important;
@@ -167,7 +170,7 @@ footer {
 
 		span {
 			@include font-size(14px, 1.6);
-			color: var(--color-white-80);
+			color: var(--color-primary-80);
 			@include mq($until: sm) {
 				display: none;
 			}
