@@ -5,9 +5,7 @@
 				<h2 class="title">
 					مشــــتـریـان بــرق‌آپ پـــلاس
 				</h2>
-				<h3 class="sub-title mb-0">
-					برق‌آپ پلاس؛ اولین سامانه توزیع برق صنعتی
-				</h3></div>
+			</div>
 			<ul class="u-flex p-0 space-between gap-lg m-0">
 				<li class="border-radius flex-1 u-flex items-center space-between gap-md">
 					<span class="customer-icon">

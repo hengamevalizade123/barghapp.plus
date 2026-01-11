@@ -129,7 +129,7 @@
 					</nav>
 					<div class="c-main-header__cta u-flex items-center relative justify-end relative">
 						<a class="c-gif c-main-header__panel u-flex items-center border-radius gap-sm btn-outline-gradiant relative"
-						   href="https://barghapplus.com/" target="_blank">
+						   href="https://plus.barghapp.com/calculator/" target="_blank">
 							<video
 								autoplay
 								loop

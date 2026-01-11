@@ -514,7 +514,8 @@
 
 	.comment-form textarea {
 		height: 10em;
-		width: 100%;
+		width: 97%;
+		color: var(--color-text);
 	}
 }
 
@@ -944,4 +945,7 @@ table:not(.c-page__table.js-tabs table) tr {
 
 .enam-blog {
 	width: 46px;
+}
+.pdfemb-viewer{
+	border-radius: $border-radius;
 }

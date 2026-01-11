@@ -61,7 +61,8 @@
 			max-width: 100%;
 			@include mq($until: md) {
 				max-height: 300px;
-				width: auto;
+				height: 264px !important;
+				width: auto !important;
 			}
 		}
 

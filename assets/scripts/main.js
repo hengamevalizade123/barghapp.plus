@@ -41,6 +41,20 @@
     video.addEventListener("ended", function () {
       btn.classList.remove("hidden"); // وقتی تموم شد
     });
+    // support
+    console.log("fjgvhfk");
+    var callBtn = document.getElementById('callBtn');
+    var chatCards = document.getElementById('chatCards');
+    callBtn.addEventListener('click', function (event) {
+      console.log("fjgvdddddddddddddhfk");
+      event.stopPropagation();
+      chatCards.classList.toggle('active');
+    });
+    document.addEventListener('click', function (event) {
+      if (!chatCards.contains(event.target) && !callBtn.contains(event.target)) {
+        chatCards.classList.remove('active');
+      }
+    });
   });
   jQuery(document).ready(function ($) {
     // video personal

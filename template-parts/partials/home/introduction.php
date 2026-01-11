@@ -44,8 +44,8 @@
 									fill="#004157"/>
 							</svg>
 									</span>
-								<h3 class="txt-center"><a href="#">خرید برق دوجانبه </a></h3>
-								<a class="btn-more u-flex gap-md items-center u-flex justify-center" href="#">
+								<h3 class="txt-center"><a href="/bilateral-power-purchase/">خرید برق دوجانبه </a></h3>
+								<a class="btn-more u-flex gap-md items-center u-flex justify-center" href="/bilateral-power-purchase/">
 									مشاهده جزئیات
 									<svg width="24" height="24" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path d="M6.83227 12.5254C9.9766 12.5254 12.5256 9.97635 12.5256 6.83203C12.5256 3.68767 9.9766 1.13867 6.83227 1.13867C3.68792 1.13867 1.13892 3.68767 1.13892 6.83203C1.13892 9.97635 3.68792 12.5254 6.83227 12.5254Z" stroke="#2D4B74" stroke-width="0.854003" stroke-linecap="round" stroke-linejoin="round"/>

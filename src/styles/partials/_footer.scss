@@ -186,7 +186,7 @@ footer {
 .call-button {
 	position: fixed;
 	bottom: 36px;
-	right: 36px;
+	left: 36px;
 	background-color: var(--color-primary);
 	color: var(--color-white);
 	width: 64px;
@@ -199,6 +199,18 @@ footer {
 	z-index: 1000;
 	animation: pulse-glow 1.8s infinite ease-in-out;
 	overflow: visible;
+	@include mq($from:400px,$until: md) {
+		left: 24px;
+		right: auto;
+		bottom: 64px;
+		width: 52px;
+		height: 52px;
+	}
+	@include mq($until:400px) {
+		left: 14px;
+		bottom: 64px;
+		right: auto;
+	}
 }
 
 .call-button:hover {
@@ -207,8 +219,8 @@ footer {
 
 .chat-cards {
 	position: fixed;
-	bottom: 114px;
-	right: 25px;
+	bottom: 116px;
+	left: 34px;
 	display: flex;
 	flex-direction: column;
 	gap: 12px;
@@ -217,6 +229,10 @@ footer {
 	transform: translateY(30px);
 	transition: all 0.4s ease;
 	z-index: 999;
+	@include mq($until: md) {
+		right: auto;
+		left: 25px;
+	}
 
 	img {
 		object-fit: cover;
@@ -241,10 +257,10 @@ footer {
 }
 
 .chat-card img {
-	width: 42px;
+	width: 72px;
 	height: 42px;
-	border-radius: 50%;
 	margin-left: 10px;
+	object-fit: contain;
 }
 
 .chat-info {
@@ -254,13 +270,13 @@ footer {
 .chat-info h4 {
 	margin: 0;
 	@include font-size(14px, 1.8);
-	color: var(--color-white-80);
+	color: var(--color-text-grey);
 }
 
-.chat-info p {
+.chat-info a {
 	margin: 3px 0 0;
 	@include font-size(13px, 1.8);
-	color: var(--color-white-80);
+	color: var(--color-text-grey);
 	display: flex;
 	align-items: center;
 	gap: 5px;
@@ -328,4 +344,7 @@ footer {
 	100% {
 		transform: rotate(360deg);
 	}
+}
+.main-footer .c-footer__top{
+	padding: 24px 0;
 }
