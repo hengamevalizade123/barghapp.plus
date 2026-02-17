@@ -12,7 +12,6 @@ get_header();
 	<section class="o-section c-section--main-page pt-0">
 		<div class="o-section__wrapper">
 			<?php if (function_exists("rank_math_the_breadcrumbs")) rank_math_the_breadcrumbs(); ?>
-
 			<h1 class="title title-left">
 				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path
@@ -39,26 +38,20 @@ get_header();
 			<div class="c-archive-blog">
 				<ul class="u-flex flex-wrap gap-md wrap p-0 items-start">
 					<?php
-					$paged = get_query_var('paged') ? get_query_var('paged') : (isset($_GET['page']) ? intval($_GET['page']) : 1);
+					$paged = max( 1, get_query_var('paged') );
 
 					$queried_object = get_queried_object();
-					$is_category_archive = is_category();
 
-					// آرگومان‌های اصلی
 					$args = array(
-						'post_type'      => 'post',
+						'post_type' => 'post',
 						'posts_per_page' => 6,
-						'paged'          => $paged,
-						'orderby'        => 'date',
-						'order'          => 'DESC',
+						'paged' => $paged,
+						'orderby' => 'date',
+						'order' => 'DESC',
 					);
-
-					// اگر در دسته‌بندی هستیم، نیاز نیست category_name اضافه کنیم
-					// چون وردپرس خودش دسته فعلی را اعمال می کند
-					if (!$is_category_archive && isset($queried_object->slug)) {
+					if (is_category()) {
 						$args['category_name'] = $queried_object->slug;
 					}
-
 					$latest_posts = new WP_Query($args);
 
 
@@ -68,15 +61,15 @@ get_header();
 								<div class="item-before-content u-flex u-flex--column gap-md">
 									<a class="c-blog__img u-flex w-100" href="<?php the_permalink(); ?>">
 										<?php
-										if ( has_post_thumbnail() ) {
+										if (has_post_thumbnail()) {
 											echo wp_get_attachment_image(
 												get_post_thumbnail_id(),
 												'medium_large',
 												false,
 												[
-													'class'   => 'w-100 cover',
-													'loading'=> 'lazy',
-													'alt'    => get_the_title()
+													'class' => 'w-100 cover',
+													'loading' => 'lazy',
+													'alt' => get_the_title()
 												]
 											);
 										}
@@ -160,14 +153,21 @@ get_header();
 						<li>هیچ مطلبی یافت نشد.</li>
 					<?php endif; ?>
 				</ul>
+				<?php
+				$paged = max( 1, get_query_var('paged') );
+				echo "<pre>";
+				echo "paged: " . $paged . "\n";
+				echo "URL: " . home_url( add_query_arg( null, null ) ) . "\n";
+				print_r( $wp_query->query_vars );
+				echo "</pre>";
+				?>
+
 				<div class="pagination u-flex gap-md justify-center content-center margin-lg-t padding-lg-t">
 					<?php
 					echo paginate_links(array(
-						'total'     => $latest_posts->max_num_pages,
-						'current'   => $paged,
-						'base'      => add_query_arg('page', '%#%'),
-						'format'    => '',
-						'type'      => 'list',
+						'total'   => $latest_posts->max_num_pages,
+						'current' => $paged,
+						'type'    => 'list',
 						'prev_text' => __('« قبلی'),
 						'next_text' => __('بعدی »'),
 					));

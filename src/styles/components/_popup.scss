@@ -34,12 +34,15 @@
 	top: 10px;
 	right: 20px;
 	cursor: pointer;
-	@include font-size(36px,1.6);
-	color: var(--color-white);
+	@include font-size(36px,1);
+	color: var(--color-secondary);
 	transition: 0.25s;
+	&:hover{
+		color: var(--color-primary);
+	}
 }
 #popup-close:hover {
-	color: var(--color-secondary);
+	color: var(--color-primary);
 }
 
 

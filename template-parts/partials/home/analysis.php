@@ -3,7 +3,7 @@
 		<div class="c-analysis u-flex items-center">
 			<div class="c-analysis-sec c-analysis__analysis u-flex u-flex--column items-center">
 				<span>
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/analysis-icon.svg" alt="برقآپ">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/analysis-icon.svg" alt="برق‌آپ">
 				</span>
 				<h2 class="title color-primary">
 					تحلیل صورتحساب
@@ -18,7 +18,7 @@
 			</div>
 			<div class="c-analysis-sec c-analysis__price u-flex u-flex--column items-center relative">
 				<span>
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/price-icon.svg" alt="برقآپ">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/price-icon.svg" alt="برق‌آپ">
 				</span>
 				<h2 class="title color-white">
 					قیمت های برق رو اینجا ببین

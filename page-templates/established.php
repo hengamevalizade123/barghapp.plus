@@ -19,8 +19,8 @@ get_header();
 			</h1>
 			<div class="c-established u-flex gap-md u-flex--column">
 				<img class="border-radius h-auto w-100"
-					 src="<?php echo get_template_directory_uri(); ?>/assets/images/banner-estf.png"
-					 alt="برقآپ">
+					 src="<?php echo get_template_directory_uri(); ?>/assets/images/barghapp-paye.png"
+					 alt="برق‌آپ">
 				<div class="c-established__desc u-flex gap-md u-flex--column">
 					<p class="m-0 txt-justify">
 						ما در برق‌آپ مفتخریم اعلام کنیم که با توسعه زیرساخت‌های هوشمند تأمین انرژی، امکان جدیدی را برای
@@ -46,6 +46,13 @@ get_header();
 						<li>کاهش ریسک‌های مالی، عملیاتی و جلوگیری از جریمه‌های ناترازی؛</li>
 						<li>پشتیبانی توسط زیرساخت قدرتمند برق‌آپ با قابلیت پوشش بیش از ۶۰۰۰ مگاوات.</li>
 					</ul>
+					<video class="video-explain-personal" id="myVideo" controls
+						   poster="<?php echo get_template_directory_uri(); ?>/assets/images/cover-video-paye.png">
+						<source
+							src="<?php echo get_template_directory_uri(); ?>/assets/videos/barghapp-paye.mp4"
+							type="video/mp4">
+						مرورگر شما از تگ ویدیو پشتیبانی نمی‌کند.
+					</video>
 				</div>
 			</div>
 		</div>

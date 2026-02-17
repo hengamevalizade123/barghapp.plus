@@ -4,7 +4,7 @@
 		@include mq($until: md) {
 			margin: auto;
 		}
-		@include mq($from:sm,$until: md) {
+		@include mq($from: sm, $until: md) {
 			@include font-size(22px, 1.6);
 		}
 		@include mq($until: sm) {
@@ -205,7 +205,7 @@
 			}
 		}
 
-		&.pane-first,&.pane-second,&.pane-third {
+		&.pane-first, &.pane-second, &.pane-third {
 			li {
 				width: calc(20% - 5px);
 				@include mq($from: md, $until: desktop) {

@@ -18,7 +18,7 @@
 					<div class="c-footer__title u-flex">
 						<img
 							src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-barghaap-plus-bg-light.svg"
-							alt="برقآپ">
+							alt="برق‌آپ">
 					</div>
 					<p class="txt-justify">
 						سامانه برق‌آپ پلاس اولین سامانه جامع آنلاین خرید برق در کشور است که در تاریخ ۱ آبان ۱۴۰۲ متولد
@@ -36,19 +36,20 @@
 						<li>
 							<a href="https://barghapplus.com/" title="بلاگ برق‌آپ">تامین برق</a>
 						</li>
+
+						<li>
+							<a href="/contact-us/" title="تماس با ما">تماس با ما</a>
+						</li>
+						<li>
+							<a href="/about-us/" title="چرا برق‌آپ">چرا برق‌آپ</a>
+						</li>
 						<li>
 							<a href="https://plus.barghapp.com/careers/" title="فرصت های شغلی">
 								فرصت‌های شغلی
 							</a>
 						</li>
 						<li>
-							<a href="/contact-us/" title="تماس با ما">تماس با ما</a>
-						</li>
-						<li>
-							<a href="/about-us/" title="چرا برقآپ">چرا برق‌آپ</a>
-						</li>
-						<li>
-							<a href="/blog/" title="بلاگ برقآپ">بلاگ برق‌آپ</a>
+							<a href="/blog/" title="بلاگ برق‌آپ">مجله برق‌آپ پلاس</a>
 						</li>
 					</ul>
 				</div>
@@ -88,7 +89,7 @@
 							<a href="https://trustseal.enamad.ir/?id=609733&Code=XfoPiDEewxqO6i3c6AdqbgHH1TOEMqu0"
 							   target="_blank">
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/enamad.webp"
-									 alt="برقآپ">
+									 alt="برق‌آپ">
 							</a>
 						</li>
 						<li class="u-flex items-end justify-center">
@@ -108,13 +109,13 @@
 						</li>
 						<li class="u-flex items-end justify-center">
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/samandehi.webp"
-								 alt="برقآپ">
+								 alt="برق‌آپ">
 						</li>
 						<li class="u-flex items-end justify-center">
 							<a href="https://trustseal.enamad.ir/?id=609733&Code=XfoPiDEewxqO6i3c6AdqbgHH1TOEMqu0"
 							   target="_blank" aria-label="اینماد">
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/enamad.webp"
-									 alt="برقآپ">
+									 alt="برق‌آپ">
 							</a>
 						</li>
 					</ul>
@@ -214,7 +215,7 @@
 		<div id="popup-box" class="u-flex border-radius">
 			<div id="popup-close">×</div>
 			<a class="u-flex border-radius" href="https://plus.barghapp.com/established/">
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/popupaye.webp" alt="برقآپ">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/popupaye.webp" alt="برق‌آپ">
 			</a>
 		</div>
 	</div>

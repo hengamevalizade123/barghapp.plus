@@ -10,19 +10,21 @@
 				<div class="tab u-flex items-center gap-md relative" data-t="1">
 					<img class="border-radius h-100 arrow"
 						 src="<?php echo get_template_directory_uri(); ?>/assets/images/tab-1.svg" fetchpriority="high"
-						 alt="برقآپ">
-					کاهش هزینه قبض برق</div>
+						 alt="برق‌آپ">
+					کاهش هزینه قبض برق
+				</div>
 				<div class="tab u-flex items-center gap-md relative" data-t="2">
 					<img class="border-radius h-100 arrow"
 						 src="<?php echo get_template_directory_uri(); ?>/assets/images/tab-1.svg" fetchpriority="high"
-						 alt="برقآپ">
+						 alt="برق‌آپ">
 					تامین برق پایدار
 				</div>
 				<div class="tab u-flex items-center gap-md relative" data-t="3">
 					<img class="border-radius h-100 arrow"
 						 src="<?php echo get_template_directory_uri(); ?>/assets/images/tab-1.svg" fetchpriority="high"
-						 alt="برقآپ">
-					گواهی ظرفیت</div>
+						 alt="برق‌آپ">
+					گواهی ظرفیت
+				</div>
 			</div>
 			<div class="panes">
 				<div class="pane pane-first gap-lg " id="t1">
@@ -45,12 +47,19 @@
 							</svg>
 									</span>
 								<h3 class="txt-center"><a href="/bilateral-power-purchase/">خرید برق دوجانبه </a></h3>
-								<a class="btn-more u-flex gap-md items-center u-flex justify-center" href="/bilateral-power-purchase/">
+								<a class="btn-more u-flex gap-md items-center u-flex justify-center"
+								   href="/bilateral-power-purchase/">
 									مشاهده جزئیات
-									<svg width="24" height="24" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M6.83227 12.5254C9.9766 12.5254 12.5256 9.97635 12.5256 6.83203C12.5256 3.68767 9.9766 1.13867 6.83227 1.13867C3.68792 1.13867 1.13892 3.68767 1.13892 6.83203C1.13892 9.97635 3.68792 12.5254 6.83227 12.5254Z" stroke="#2D4B74" stroke-width="0.854003" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M8.8247 6.83203H5.40869" stroke="#2D4B74" stroke-width="0.854003" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M6.54761 5.12415L4.8396 6.83215L6.54761 8.54016" stroke="#2D4B74" stroke-width="0.854003" stroke-linecap="round" stroke-linejoin="round"/>
+									<svg width="24" height="24" viewBox="0 0 14 14" fill="none"
+										 xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M6.83227 12.5254C9.9766 12.5254 12.5256 9.97635 12.5256 6.83203C12.5256 3.68767 9.9766 1.13867 6.83227 1.13867C3.68792 1.13867 1.13892 3.68767 1.13892 6.83203C1.13892 9.97635 3.68792 12.5254 6.83227 12.5254Z"
+											stroke="#2D4B74" stroke-width="0.854003" stroke-linecap="round"
+											stroke-linejoin="round"/>
+										<path d="M8.8247 6.83203H5.40869" stroke="#2D4B74" stroke-width="0.854003"
+											  stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M6.54761 5.12415L4.8396 6.83215L6.54761 8.54016" stroke="#2D4B74"
+											  stroke-width="0.854003" stroke-linecap="round" stroke-linejoin="round"/>
 									</svg>
 								</a>
 							</div>
@@ -72,13 +81,20 @@
 									fill="#004157"/>
 							</svg>
 									</span>
-								<h3 class="txt-center"><a href="#">خرید برق از بورس </a></h3>
-								<a class="btn-more u-flex gap-md items-center u-flex justify-center" href="#">
+								<h3 class="txt-center"><a href="https://plus.barghapp.com/stock-energy/">خرید برق از
+										بورس </a></h3>
+								<a class="btn-more u-flex gap-md items-center u-flex justify-center" href="https://plus.barghapp.com/stock-energy/">
 									مشاهده جزئیات
-									<svg width="24" height="24" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M6.83227 12.5254C9.9766 12.5254 12.5256 9.97635 12.5256 6.83203C12.5256 3.68767 9.9766 1.13867 6.83227 1.13867C3.68792 1.13867 1.13892 3.68767 1.13892 6.83203C1.13892 9.97635 3.68792 12.5254 6.83227 12.5254Z" stroke="#2D4B74" stroke-width="0.854003" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M8.8247 6.83203H5.40869" stroke="#2D4B74" stroke-width="0.854003" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M6.54761 5.12415L4.8396 6.83215L6.54761 8.54016" stroke="#2D4B74" stroke-width="0.854003" stroke-linecap="round" stroke-linejoin="round"/>
+									<svg width="24" height="24" viewBox="0 0 14 14" fill="none"
+										 xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M6.83227 12.5254C9.9766 12.5254 12.5256 9.97635 12.5256 6.83203C12.5256 3.68767 9.9766 1.13867 6.83227 1.13867C3.68792 1.13867 1.13892 3.68767 1.13892 6.83203C1.13892 9.97635 3.68792 12.5254 6.83227 12.5254Z"
+											stroke="#2D4B74" stroke-width="0.854003" stroke-linecap="round"
+											stroke-linejoin="round"/>
+										<path d="M8.8247 6.83203H5.40869" stroke="#2D4B74" stroke-width="0.854003"
+											  stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M6.54761 5.12415L4.8396 6.83215L6.54761 8.54016" stroke="#2D4B74"
+											  stroke-width="0.854003" stroke-linecap="round" stroke-linejoin="round"/>
 									</svg>
 								</a>
 							</div>
@@ -100,13 +116,19 @@
 									fill="#004157"/>
 							</svg>
 									</span>
-								<h3 class="txt-center"><a href="#">خرید برق ماده ۱۶ (برق سبز) </a></h3>
-								<a class="btn-more u-flex gap-md items-center u-flex justify-center" href="#">
+								<h3 class="txt-center"><a href="https://plus.barghapp.com/green-electrical-signboard/">خرید برق ماده ۱۶ (برق سبز) </a></h3>
+								<a class="btn-more u-flex gap-md items-center u-flex justify-center" href="https://plus.barghapp.com/green-electrical-signboard/">
 									مشاهده جزئیات
-									<svg width="24" height="24" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M6.83227 12.5254C9.9766 12.5254 12.5256 9.97635 12.5256 6.83203C12.5256 3.68767 9.9766 1.13867 6.83227 1.13867C3.68792 1.13867 1.13892 3.68767 1.13892 6.83203C1.13892 9.97635 3.68792 12.5254 6.83227 12.5254Z" stroke="#2D4B74" stroke-width="0.854003" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M8.8247 6.83203H5.40869" stroke="#2D4B74" stroke-width="0.854003" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M6.54761 5.12415L4.8396 6.83215L6.54761 8.54016" stroke="#2D4B74" stroke-width="0.854003" stroke-linecap="round" stroke-linejoin="round"/>
+									<svg width="24" height="24" viewBox="0 0 14 14" fill="none"
+										 xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M6.83227 12.5254C9.9766 12.5254 12.5256 9.97635 12.5256 6.83203C12.5256 3.68767 9.9766 1.13867 6.83227 1.13867C3.68792 1.13867 1.13892 3.68767 1.13892 6.83203C1.13892 9.97635 3.68792 12.5254 6.83227 12.5254Z"
+											stroke="#2D4B74" stroke-width="0.854003" stroke-linecap="round"
+											stroke-linejoin="round"/>
+										<path d="M8.8247 6.83203H5.40869" stroke="#2D4B74" stroke-width="0.854003"
+											  stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M6.54761 5.12415L4.8396 6.83215L6.54761 8.54016" stroke="#2D4B74"
+											  stroke-width="0.854003" stroke-linecap="round" stroke-linejoin="round"/>
 									</svg>
 								</a>
 							</div>
@@ -131,10 +153,16 @@
 								<h3 class="txt-center"><a href="#">خرید برق ECA</a></h3>
 								<a class="btn-more u-flex gap-md items-center u-flex justify-center" href="#">
 									مشاهده جزئیات
-									<svg width="24" height="24" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M6.83227 12.5254C9.9766 12.5254 12.5256 9.97635 12.5256 6.83203C12.5256 3.68767 9.9766 1.13867 6.83227 1.13867C3.68792 1.13867 1.13892 3.68767 1.13892 6.83203C1.13892 9.97635 3.68792 12.5254 6.83227 12.5254Z" stroke="#2D4B74" stroke-width="0.854003" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M8.8247 6.83203H5.40869" stroke="#2D4B74" stroke-width="0.854003" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M6.54761 5.12415L4.8396 6.83215L6.54761 8.54016" stroke="#2D4B74" stroke-width="0.854003" stroke-linecap="round" stroke-linejoin="round"/>
+									<svg width="24" height="24" viewBox="0 0 14 14" fill="none"
+										 xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M6.83227 12.5254C9.9766 12.5254 12.5256 9.97635 12.5256 6.83203C12.5256 3.68767 9.9766 1.13867 6.83227 1.13867C3.68792 1.13867 1.13892 3.68767 1.13892 6.83203C1.13892 9.97635 3.68792 12.5254 6.83227 12.5254Z"
+											stroke="#2D4B74" stroke-width="0.854003" stroke-linecap="round"
+											stroke-linejoin="round"/>
+										<path d="M8.8247 6.83203H5.40869" stroke="#2D4B74" stroke-width="0.854003"
+											  stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M6.54761 5.12415L4.8396 6.83215L6.54761 8.54016" stroke="#2D4B74"
+											  stroke-width="0.854003" stroke-linecap="round" stroke-linejoin="round"/>
 									</svg>
 								</a>
 							</div>
@@ -156,16 +184,22 @@
 									fill="#004157"/>
 							</svg>
 									</span>
-								<h3 class="txt-center"><a href="#">
+								<h3 class="txt-center"><a href="https://plus.barghapp.com/electricity-saving-certificate/">
 										خرید گواهی صرفه جویی
-									برق
+										برق
 									</a></h3>
-								<a class="btn-more u-flex gap-md items-center u-flex justify-center" href="#">
+								<a class="btn-more u-flex gap-md items-center u-flex justify-center" href="https://plus.barghapp.com/electricity-saving-certificate/">
 									مشاهده جزئیات
-									<svg width="24" height="24" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M6.83227 12.5254C9.9766 12.5254 12.5256 9.97635 12.5256 6.83203C12.5256 3.68767 9.9766 1.13867 6.83227 1.13867C3.68792 1.13867 1.13892 3.68767 1.13892 6.83203C1.13892 9.97635 3.68792 12.5254 6.83227 12.5254Z" stroke="#2D4B74" stroke-width="0.854003" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M8.8247 6.83203H5.40869" stroke="#2D4B74" stroke-width="0.854003" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M6.54761 5.12415L4.8396 6.83215L6.54761 8.54016" stroke="#2D4B74" stroke-width="0.854003" stroke-linecap="round" stroke-linejoin="round"/>
+									<svg width="24" height="24" viewBox="0 0 14 14" fill="none"
+										 xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M6.83227 12.5254C9.9766 12.5254 12.5256 9.97635 12.5256 6.83203C12.5256 3.68767 9.9766 1.13867 6.83227 1.13867C3.68792 1.13867 1.13892 3.68767 1.13892 6.83203C1.13892 9.97635 3.68792 12.5254 6.83227 12.5254Z"
+											stroke="#2D4B74" stroke-width="0.854003" stroke-linecap="round"
+											stroke-linejoin="round"/>
+										<path d="M8.8247 6.83203H5.40869" stroke="#2D4B74" stroke-width="0.854003"
+											  stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M6.54761 5.12415L4.8396 6.83215L6.54761 8.54016" stroke="#2D4B74"
+											  stroke-width="0.854003" stroke-linecap="round" stroke-linejoin="round"/>
 									</svg>
 								</a>
 							</div>
@@ -194,16 +228,23 @@
 								<h3><a href="#">خرید برق آزاد </a></h3>
 								<a class="btn-more u-flex gap-md items-center u-flex justify-center" href="#">
 									مشاهده جزئیات
-									<svg width="24" height="24" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M6.83227 12.5254C9.9766 12.5254 12.5256 9.97635 12.5256 6.83203C12.5256 3.68767 9.9766 1.13867 6.83227 1.13867C3.68792 1.13867 1.13892 3.68767 1.13892 6.83203C1.13892 9.97635 3.68792 12.5254 6.83227 12.5254Z" stroke="#2D4B74" stroke-width="0.854003" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M8.8247 6.83203H5.40869" stroke="#2D4B74" stroke-width="0.854003" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M6.54761 5.12415L4.8396 6.83215L6.54761 8.54016" stroke="#2D4B74" stroke-width="0.854003" stroke-linecap="round" stroke-linejoin="round"/>
+									<svg width="24" height="24" viewBox="0 0 14 14" fill="none"
+										 xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M6.83227 12.5254C9.9766 12.5254 12.5256 9.97635 12.5256 6.83203C12.5256 3.68767 9.9766 1.13867 6.83227 1.13867C3.68792 1.13867 1.13892 3.68767 1.13892 6.83203C1.13892 9.97635 3.68792 12.5254 6.83227 12.5254Z"
+											stroke="#2D4B74" stroke-width="0.854003" stroke-linecap="round"
+											stroke-linejoin="round"/>
+										<path d="M8.8247 6.83203H5.40869" stroke="#2D4B74" stroke-width="0.854003"
+											  stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M6.54761 5.12415L4.8396 6.83215L6.54761 8.54016" stroke="#2D4B74"
+											  stroke-width="0.854003" stroke-linecap="round" stroke-linejoin="round"/>
 									</svg>
 								</a>
 							</div>
 						</li>
 						<li class="u-flex">
-							<div class="pane-content space-betweenpane-content w-100 u-flex u-flex--column items-center">
+							<div
+								class="pane-content space-betweenpane-content w-100 u-flex u-flex--column items-center">
 								<span class="u-flex justify-center">
 							<svg width="26" height="22" viewBox="0 0 26 22" fill="none"
 								 xmlns="http://www.w3.org/2000/svg">
@@ -219,13 +260,19 @@
 									fill="#004157"/>
 							</svg>
 									</span>
-								<h3><a href="#">خرید برق سبز</a></h3>
-								<a class="btn-more u-flex gap-md items-center u-flex justify-center" href="#">
+								<h3><a href="https://plus.barghapp.com/green-electrical-signboard/">خرید برق سبز</a></h3>
+								<a class="btn-more u-flex gap-md items-center u-flex justify-center" href="https://plus.barghapp.com/green-electrical-signboard/">
 									مشاهده جزئیات
-									<svg width="24" height="24" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M6.83227 12.5254C9.9766 12.5254 12.5256 9.97635 12.5256 6.83203C12.5256 3.68767 9.9766 1.13867 6.83227 1.13867C3.68792 1.13867 1.13892 3.68767 1.13892 6.83203C1.13892 9.97635 3.68792 12.5254 6.83227 12.5254Z" stroke="#2D4B74" stroke-width="0.854003" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M8.8247 6.83203H5.40869" stroke="#2D4B74" stroke-width="0.854003" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M6.54761 5.12415L4.8396 6.83215L6.54761 8.54016" stroke="#2D4B74" stroke-width="0.854003" stroke-linecap="round" stroke-linejoin="round"/>
+									<svg width="24" height="24" viewBox="0 0 14 14" fill="none"
+										 xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M6.83227 12.5254C9.9766 12.5254 12.5256 9.97635 12.5256 6.83203C12.5256 3.68767 9.9766 1.13867 6.83227 1.13867C3.68792 1.13867 1.13892 3.68767 1.13892 6.83203C1.13892 9.97635 3.68792 12.5254 6.83227 12.5254Z"
+											stroke="#2D4B74" stroke-width="0.854003" stroke-linecap="round"
+											stroke-linejoin="round"/>
+										<path d="M8.8247 6.83203H5.40869" stroke="#2D4B74" stroke-width="0.854003"
+											  stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M6.54761 5.12415L4.8396 6.83215L6.54761 8.54016" stroke="#2D4B74"
+											  stroke-width="0.854003" stroke-linecap="round" stroke-linejoin="round"/>
 									</svg>
 								</a>
 							</div>
@@ -247,13 +294,19 @@
 									fill="#004157"/>
 							</svg>
 									</span>
-								<h3><a href="#">خرید برق  ماده ۴ </a></h3>
+								<h3><a href="#">خرید برق ماده ۴ </a></h3>
 								<a class="btn-more u-flex gap-md items-center u-flex justify-center" href="#">
 									مشاهده جزئیات
-									<svg width="24" height="24" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M6.83227 12.5254C9.9766 12.5254 12.5256 9.97635 12.5256 6.83203C12.5256 3.68767 9.9766 1.13867 6.83227 1.13867C3.68792 1.13867 1.13892 3.68767 1.13892 6.83203C1.13892 9.97635 3.68792 12.5254 6.83227 12.5254Z" stroke="#2D4B74" stroke-width="0.854003" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M8.8247 6.83203H5.40869" stroke="#2D4B74" stroke-width="0.854003" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M6.54761 5.12415L4.8396 6.83215L6.54761 8.54016" stroke="#2D4B74" stroke-width="0.854003" stroke-linecap="round" stroke-linejoin="round"/>
+									<svg width="24" height="24" viewBox="0 0 14 14" fill="none"
+										 xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M6.83227 12.5254C9.9766 12.5254 12.5256 9.97635 12.5256 6.83203C12.5256 3.68767 9.9766 1.13867 6.83227 1.13867C3.68792 1.13867 1.13892 3.68767 1.13892 6.83203C1.13892 9.97635 3.68792 12.5254 6.83227 12.5254Z"
+											stroke="#2D4B74" stroke-width="0.854003" stroke-linecap="round"
+											stroke-linejoin="round"/>
+										<path d="M8.8247 6.83203H5.40869" stroke="#2D4B74" stroke-width="0.854003"
+											  stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M6.54761 5.12415L4.8396 6.83215L6.54761 8.54016" stroke="#2D4B74"
+											  stroke-width="0.854003" stroke-linecap="round" stroke-linejoin="round"/>
 									</svg>
 								</a>
 							</div>
@@ -275,16 +328,22 @@
 									fill="#004157"/>
 							</svg>
 									</span>
-								<h3><a href="#">
+								<h3><a href="https://plus.barghapp.com/electricity-saving-certificate/">
 										خرید گواهی صرفه جویی
 										برق
 									</a></h3>
-								<a class="btn-more u-flex gap-md items-center u-flex justify-center" href="#">
+								<a class="btn-more u-flex gap-md items-center u-flex justify-center" href="https://plus.barghapp.com/electricity-saving-certificate/">
 									مشاهده جزئیات
-									<svg width="24" height="24" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M6.83227 12.5254C9.9766 12.5254 12.5256 9.97635 12.5256 6.83203C12.5256 3.68767 9.9766 1.13867 6.83227 1.13867C3.68792 1.13867 1.13892 3.68767 1.13892 6.83203C1.13892 9.97635 3.68792 12.5254 6.83227 12.5254Z" stroke="#2D4B74" stroke-width="0.854003" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M8.8247 6.83203H5.40869" stroke="#2D4B74" stroke-width="0.854003" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M6.54761 5.12415L4.8396 6.83215L6.54761 8.54016" stroke="#2D4B74" stroke-width="0.854003" stroke-linecap="round" stroke-linejoin="round"/>
+									<svg width="24" height="24" viewBox="0 0 14 14" fill="none"
+										 xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M6.83227 12.5254C9.9766 12.5254 12.5256 9.97635 12.5256 6.83203C12.5256 3.68767 9.9766 1.13867 6.83227 1.13867C3.68792 1.13867 1.13892 3.68767 1.13892 6.83203C1.13892 9.97635 3.68792 12.5254 6.83227 12.5254Z"
+											stroke="#2D4B74" stroke-width="0.854003" stroke-linecap="round"
+											stroke-linejoin="round"/>
+										<path d="M8.8247 6.83203H5.40869" stroke="#2D4B74" stroke-width="0.854003"
+											  stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M6.54761 5.12415L4.8396 6.83215L6.54761 8.54016" stroke="#2D4B74"
+											  stroke-width="0.854003" stroke-linecap="round" stroke-linejoin="round"/>
 									</svg>
 								</a>
 							</div>
@@ -313,10 +372,16 @@
 								<h3><a href="#">گواهی ظرفیت اقساطی</a></h3>
 								<a class="btn-more u-flex gap-md items-center u-flex justify-center" href="#">
 									مشاهده جزئیات
-									<svg width="24" height="24" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M6.83227 12.5254C9.9766 12.5254 12.5256 9.97635 12.5256 6.83203C12.5256 3.68767 9.9766 1.13867 6.83227 1.13867C3.68792 1.13867 1.13892 3.68767 1.13892 6.83203C1.13892 9.97635 3.68792 12.5254 6.83227 12.5254Z" stroke="#2D4B74" stroke-width="0.854003" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M8.8247 6.83203H5.40869" stroke="#2D4B74" stroke-width="0.854003" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M6.54761 5.12415L4.8396 6.83215L6.54761 8.54016" stroke="#2D4B74" stroke-width="0.854003" stroke-linecap="round" stroke-linejoin="round"/>
+									<svg width="24" height="24" viewBox="0 0 14 14" fill="none"
+										 xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M6.83227 12.5254C9.9766 12.5254 12.5256 9.97635 12.5256 6.83203C12.5256 3.68767 9.9766 1.13867 6.83227 1.13867C3.68792 1.13867 1.13892 3.68767 1.13892 6.83203C1.13892 9.97635 3.68792 12.5254 6.83227 12.5254Z"
+											stroke="#2D4B74" stroke-width="0.854003" stroke-linecap="round"
+											stroke-linejoin="round"/>
+										<path d="M8.8247 6.83203H5.40869" stroke="#2D4B74" stroke-width="0.854003"
+											  stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M6.54761 5.12415L4.8396 6.83215L6.54761 8.54016" stroke="#2D4B74"
+											  stroke-width="0.854003" stroke-linecap="round" stroke-linejoin="round"/>
 									</svg>
 								</a>
 							</div>

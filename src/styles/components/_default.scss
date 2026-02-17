@@ -129,7 +129,9 @@
 .color-white {
 	color: var(--color-white);
 }
-
+.color-text {
+	color: var(--color-text);
+}
 .font-sm {
 	@include font-size(14px, 1.6);
 }

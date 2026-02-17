@@ -3,85 +3,89 @@
 get_header();
 ?>
 	<section class="o-section c-section--main-page pt-0">
-
-			<div class="o-section__wrapper">
-				<div class="c-breadcrumbs">
-					<?php if (function_exists('rank_math_the_breadcrumbs')) rank_math_the_breadcrumbs(); ?>
-				</div>
-				<h1 class="title title-left">
-					<svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z"
-							  stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-						<path
-							d="M18.3801 15.2702V7.58023C18.3801 6.81023 17.7601 6.25024 17.0001 6.31024H16.9601C15.6201 6.42024 13.5901 7.11025 12.4501 7.82025L12.3401 7.89026C12.1601 8.00026 11.8501 8.00026 11.6601 7.89026L11.5001 7.79025C10.3701 7.08025 8.34012 6.41023 7.00012 6.30023C6.24012 6.24023 5.62012 6.81025 5.62012 7.57025V15.2702C5.62012 15.8802 6.1201 16.4602 6.7301 16.5302L6.9101 16.5602C8.2901 16.7402 10.4301 17.4502 11.6501 18.1202L11.6801 18.1302C11.8501 18.2302 12.1301 18.2302 12.2901 18.1302C13.5101 17.4502 15.6601 16.7502 17.0501 16.5602L17.2601 16.5302C17.8801 16.4602 18.3801 15.8902 18.3801 15.2702Z"
-							stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-						<path d="M12 8.1001V17.6601" stroke="#292D32" stroke-width="1.5" stroke-linecap="round"
-							  stroke-linejoin="round"/>
-					</svg>
-
-					دربــاره ی بــرق آپ
-				</h1>
+	<div class="o-section__wrapper">
+			<div class="c-breadcrumbs">
+				<?php if (function_exists('rank_math_the_breadcrumbs')) rank_math_the_breadcrumbs(); ?>
 			</div>
+			<h1 class="title title-left">
+				<svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z"
+						  stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+					<path
+						d="M18.3801 15.2702V7.58023C18.3801 6.81023 17.7601 6.25024 17.0001 6.31024H16.9601C15.6201 6.42024 13.5901 7.11025 12.4501 7.82025L12.3401 7.89026C12.1601 8.00026 11.8501 8.00026 11.6601 7.89026L11.5001 7.79025C10.3701 7.08025 8.34012 6.41023 7.00012 6.30023C6.24012 6.24023 5.62012 6.81025 5.62012 7.57025V15.2702C5.62012 15.8802 6.1201 16.4602 6.7301 16.5302L6.9101 16.5602C8.2901 16.7402 10.4301 17.4502 11.6501 18.1202L11.6801 18.1302C11.8501 18.2302 12.1301 18.2302 12.2901 18.1302C13.5101 17.4502 15.6601 16.7502 17.0501 16.5602L17.2601 16.5302C17.8801 16.4602 18.3801 15.8902 18.3801 15.2702Z"
+						stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+					<path d="M12 8.1001V17.6601" stroke="#292D32" stroke-width="1.5" stroke-linecap="round"
+						  stroke-linejoin="round"/>
+				</svg>
+
+				 دربــاره ی بــرق آپ
+				پلاس
+			</h1>
+		</div>
 
 		<div class="c-about u-flex u-flex--column">
 			<div>
-			<div class="o-section__wrapper">
-				<div class="u-flex u-flex--column c-about-content">
-					<div class="c-about__desc">
-						<h2 class="m-0 sub-title">
-							سامانه برقآپ، اولین سامانه جامع آنلاین خرید برق در کشور
-						</h2>
-						<p class="txt-justify m-0">
-							سامانه برق‌آپ اولین سامانه جامع خرید برق در کشور است که در تاریخ ۱۴۰۲/۰۸/۰۱ متولد گردید این
-							سامانه جامع خرید به منظور تسهیل در خرید برق مشترکین بالای یک مگاوات طراحی و اجرا گردید و
-							مشترکین
-							برق شرکتهای توزیع و برق منطقه ای که مشمول مصوبه ۱۴۰۱/۶۹۳۸۴/۲۰/۱۰۰ مورخ ۱۴۰۱/۱۲/۲۷ وزارت نیرو
-							می باشند می توانند برق مورد نیاز خود را از جمله برق سبز از سامانه جامع انلاین خرید برق
-							خریداری
-							نمایند
-							متقاضیان خرید برق می توانند با ورود و ثبت نام در این سامانه جامع خرید اطلاعات کابری و انشعاب
-							و
-							مالک شبکه را وارد نموده و در هر دوره اقدام به خرید برق نمایند در این اپ شما می توانید کلیه
-							اطلاعات مربوط به خریدها ، پرداختها و رژیم مصرف برق و… را دریافت نموده و صورتحساب آنلاین
-							دریافت
-							کنید و در پایان برق مورد نیاز شما توسط شرکتهای تامین کننده برق به شما تخصیص داده می شود.
-						</p>
-					</div>
-					<div class="c-about__slider"
-						 data-flickity='{"wrapAround": true, "autoPlay": 5500,"pageDots":false,"prevNextButtons": false,"rightToLeft": true,"cellAlign": "right"}'>
-						<div class="c-about__slide">
-							<img class="border-radius h-100"
-								 src="<?php echo get_template_directory_uri(); ?>/assets/images/namayeshgah-1.webp"
-								 alt="برقآپ">
+				<div class="o-section__wrapper">
+					<div class="u-flex u-flex--column c-about-content">
+						<div class="c-about__desc">
+							<h2 class="m-0 sub-title">
+								سامانه برق آپ پلاس، اولین سامانه جامع آنلاین خرید برق در کشور
+							</h2>
+							<p class="txt-justify m-0">
+								سامانه برق‌آپ اولین سامانه جامع خرید برق در کشور است که در تاریخ ۱۴۰۲/۰۸/۰۱ متولد گردید
+								این
+								سامانه جامع خرید به منظور تسهیل در خرید برق مشترکین بالای یک مگاوات طراحی و اجرا گردید و
+								مشترکین
+								برق شرکتهای توزیع و برق منطقه ای که مشمول مصوبه ۱۴۰۱/۶۹۳۸۴/۲۰/۱۰۰ مورخ ۱۴۰۱/۱۲/۲۷ وزارت
+								نیرو
+								می باشند می توانند برق مورد نیاز خود را از جمله برق سبز از سامانه جامع انلاین خرید برق
+								خریداری
+								نمایند
+								متقاضیان خرید برق می توانند با ورود و ثبت نام در این سامانه جامع خرید اطلاعات کابری و
+								انشعاب
+								و
+								مالک شبکه را وارد نموده و در هر دوره اقدام به خرید برق نمایند در این اپ شما می توانید
+								کلیه
+								اطلاعات مربوط به خریدها ، پرداختها و رژیم مصرف برق و… را دریافت نموده و صورتحساب آنلاین
+								دریافت
+								کنید و در پایان برق مورد نیاز شما توسط شرکتهای تامین کننده برق به شما تخصیص داده می شود.
+							</p>
 						</div>
-						<div class="c-about__slide">
-							<img class="border-radius h-100"
-								 src="<?php echo get_template_directory_uri(); ?>/assets/images/namayeshgah-2.avif"
-								 alt="برقآپ">
-						</div>
-						<div class="c-about__slide">
-							<img class="border-radius h-100"
-								 src="<?php echo get_template_directory_uri(); ?>/assets/images/namayeshgah-3.webp"
-								 alt="برقآپ">
-						</div>
-						<div class="c-about__slide">
-							<img class="border-radius h-100"
-								 src="<?php echo get_template_directory_uri(); ?>/assets/images/namayeshgah-4.webp"
-								 alt="برقآپ">
-						</div>
-						<div class="c-about__slide">
-							<img class="border-radius h-100"
-								 src="<?php echo get_template_directory_uri(); ?>/assets/images/namayeshgah-5.webp"
-								 alt="برقآپ">
-						</div>
-						<div class="c-about__slide">
-							<img class="border-radius h-100"
-								 src="<?php echo get_template_directory_uri(); ?>/assets/images/namayeshgah-6.webp"
-								 alt="برقآپ">
+						<div class="c-about__slider carousel"
+							 data-flickity='{"wrapAround": true, "autoPlay": 5500,"pageDots":false,"prevNextButtons": false,"rightToLeft": true,"cellAlign": "right"}'>
+							<div class="c-about__slide">
+								<img class="border-radius h-100"
+									 src="<?php echo get_template_directory_uri(); ?>/assets/images/namayeshgah-1.webp"
+									 alt="برق‌آپ">
+							</div>
+							<div class="c-about__slide">
+								<img class="border-radius h-100"
+									 src="<?php echo get_template_directory_uri(); ?>/assets/images/namayeshgah-2.avif"
+									 alt="برق‌آپ">
+							</div>
+							<div class="c-about__slide">
+								<img class="border-radius h-100"
+									 src="<?php echo get_template_directory_uri(); ?>/assets/images/namayeshgah-3.webp"
+									 alt="برق‌آپ">
+							</div>
+							<div class="c-about__slide">
+								<img class="border-radius h-100"
+									 src="<?php echo get_template_directory_uri(); ?>/assets/images/namayeshgah-4.webp"
+									 alt="برق‌آپ">
+							</div>
+							<div class="c-about__slide">
+								<img class="border-radius h-100"
+									 src="<?php echo get_template_directory_uri(); ?>/assets/images/namayeshgah-5.webp"
+									 alt="برق‌آپ">
+							</div>
+							<div class="c-about__slide">
+								<img class="border-radius h-100"
+									 src="<?php echo get_template_directory_uri(); ?>/assets/images/namayeshgah-6.webp"
+									 alt="برق‌آپ">
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
 			</div>
 			<div class="c-about__video-content bg-white border-radius">
 				<div class="o-section__wrapper">
@@ -136,7 +140,7 @@ get_header();
 						 src="https://plus.barghapp.com/wp-content/themes/barghapp-plus/assets/images/txt-before.png"
 						 width="98" height="98" class="border-radius w-100 h-auto contain entered litespeed-loaded"
 						 data-src="https://plus.barghapp.com/wp-content/themes/barghapp-plus/assets/images/txt-before.png"
-						 alt="برقآپ" data-ll-status="loaded">
+						 alt="برق‌آپ" data-ll-status="loaded">
 				</span>
 								اولین سامانه تامین و مدیریت انرژی
 							</p>
@@ -216,60 +220,60 @@ get_header();
 									<div class="content-04__slider-item" style="--position:1">
 										<img
 											src="<?php echo get_template_directory_uri(); ?>/assets/images/iran-khodro.png"
-											alt="برقآپ">
+											alt="برق‌آپ">
 									</div>
 									<div class="content-04__slider-item" style="--position:2">
 										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/yazd.png"
-											 alt="برقآپ">
+											 alt="برق‌آپ">
 									</div>
 
 									<div class="content-04__slider-item" style="--position:3">
 										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/foolad.png"
-											 alt="برقآپ">
+											 alt="برق‌آپ">
 									</div>
 									<div class="content-04__slider-item" style="--position:4">
 										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/sanaye.png"
-											 alt="برقآپ">
+											 alt="برق‌آپ">
 									</div>
 									<div class="content-04__slider-item" style="--position:5">
 										<img
 											src="<?php echo get_template_directory_uri(); ?>/assets/images/enteghal-ab.png"
-											alt="برقآپ">
+											alt="برق‌آپ">
 									</div>
 									<div class="content-04__slider-item" style="--position:6">
 										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/apadana.png"
-											 alt="برقآپ">
+											 alt="برق‌آپ">
 									</div>
 									<div class="content-04__slider-item" style="--position:7">
 										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/sahami.png"
-											 alt="برقآپ">
+											 alt="برق‌آپ">
 									</div>
 									<div class="content-04__slider-item" style="--position:8">
 										<img
 											src="<?php echo get_template_directory_uri(); ?>/assets/images/shahroud.png"
-											alt="برقآپ">
+											alt="برق‌آپ">
 									</div>
 									<div class="content-04__slider-item" style="--position:9">
 										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/saipa.png"
-											 alt="برقآپ">
+											 alt="برق‌آپ">
 									</div>
 									<div class="content-04__slider-item" style="--position:10">
 										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/kaleh.png"
-											 alt="برقآپ">
+											 alt="برق‌آپ">
 									</div>
 									<div class="content-04__slider-item" style="--position:11">
 										<img
 											src="<?php echo get_template_directory_uri(); ?>/assets/images/shimiayi.png"
-											alt="برقآپ">
+											alt="برق‌آپ">
 									</div>
 									<div class="content-04__slider-item" style="--position:12">
 										<img class="white-filter"
 											 src="<?php echo get_template_directory_uri(); ?>/assets/images/siman.png"
-											 alt="برقآپ">
+											 alt="برق‌آپ">
 									</div>
 									<div class="content-04__slider-item" style="--position:13">
 										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/azam.png"
-											 alt="برقآپ">
+											 alt="برق‌آپ">
 									</div>
 								</div>
 							</div>
@@ -279,6 +283,5 @@ get_header();
 			</div>
 		</div>
 	</section>
-
 <?php
 get_footer();

@@ -28,25 +28,19 @@
       }
     });
     // video player
-    var video = document.getElementById("myVideo");
-    var btn = document.getElementById("playBtn");
-    btn.addEventListener("click", function () {
-      video.setAttribute("controls", "controls"); // ← کنترل‌ها را فعال کن
-      video.play();
-      btn.classList.add("hidden");
-    });
-    video.addEventListener("pause", function () {
-      btn.classList.remove("hidden"); // دکمه برگرده
-    });
-    video.addEventListener("ended", function () {
-      btn.classList.remove("hidden"); // وقتی تموم شد
-    });
+    if (document.querySelector("#myVideo")) {
+      var video = document.getElementById("myVideo");
+      var btn = document.getElementById("playBtn");
+      btn.addEventListener("click", function () {
+        video.setAttribute("controls", "controls"); // ← کنترل‌ها را فعال کن
+        video.play();
+        btn.classList.add("hidden");
+      });
+    }
     // support
-    console.log("fjgvhfk");
     var callBtn = document.getElementById('callBtn');
     var chatCards = document.getElementById('chatCards');
     callBtn.addEventListener('click', function (event) {
-      console.log("fjgvdddddddddddddhfk");
       event.stopPropagation();
       chatCards.classList.toggle('active');
     });
@@ -57,6 +51,115 @@
     });
   });
   jQuery(document).ready(function ($) {
+    // مصرف خانگی
+    $("table.table-collapse").each(function () {
+      var $table = $(this);
+      // اولین ردیف جدول رو کلاس clickable می‌کنیم
+      $table.find("tr:first").addClass("clickable");
+      // بقیه ردیف‌ها رو مخفی می‌کنیم و کلاس content می‌دیم
+      $table.find("tr:not(:first)").hide().addClass("content");
+    });
+
+    // وقتی روی ردیف اول جدول کلیک شد
+    $("tr.clickable").click(function () {
+      // toggle ردیف‌های بعدی همین جدول با انیمیشن اسلاید
+      $(this).nextAll("tr.content").slideToggle();
+    });
+    // calculator
+    $(document).on('click', '.gc-calc-btn', function () {
+      var $calculator = $(this).closest('[data-calculator="green-power"]');
+      var demandMW = parseFloat($calculator.find('.gc-demand').val());
+      var days = parseInt($calculator.find('.gc-days').val());
+      var $result = $calculator.find('.c-calculator__result');
+      if (isNaN(demandMW) || isNaN(days) || demandMW <= 0 || days <= 0) {
+        alert('لطفاً مقادیر معتبر وارد کنید');
+        if ($result.is(':visible')) {
+          $result.slideUp(400);
+        }
+        return;
+      }
+
+      // 1. کل مصرف (kWh)
+      var totalConsumption = demandMW * 1000 * 24 * days;
+
+      // 2. تعهد ۳٪
+      var commitment = totalConsumption * 0.03;
+
+      // 3. هزینه‌ها
+      var buyCost = commitment * 3800;
+      var penaltyCost = commitment * 5800;
+
+      // 4. سود
+      var profit = penaltyCost - buyCost;
+
+      // نمایش خروجی
+      $calculator.find('.gc-total').text(totalConsumption.toLocaleString());
+      $calculator.find('.gc-commitment').text(commitment.toLocaleString());
+      $calculator.find('.gc-buy').text(buyCost.toLocaleString());
+      $calculator.find('.gc-penalty').text(penaltyCost.toLocaleString());
+      $calculator.find('.gc-profit-value').text(profit.toLocaleString());
+      $result.slideDown(600);
+    });
+
+    // tab price list
+    if ($('#year-filter').length && $('#month-filter').length) {
+      // آرایه ماه میلادی → ماه شمسی
+      var solarMonths = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]; // فقط عدد ماه شمسی
+
+      // تاریخ میلادی امروز
+      var today = new Date();
+      var gy = today.getFullYear();
+      var gm = today.getMonth() + 1; // 1..12 میلادی
+      var gd = today.getDate();
+
+      // اینجا یک **تقریب ساده**: برای ماه شمسی فعلی می‌تونیم ثابت بگذاریم
+      // مثلا برای تست فعلی، فرض می‌کنیم الان بهمن (ماه 11)
+      var currentMonth = 11; // اینجا باید به صورت ثابت یا از سرور بگیری
+      var currentYear = 1404; // سال فعلی شمسی
+
+      // محاسبه ماه قبل
+      var defaultMonth = currentMonth - 1;
+      var defaultYear = currentYear;
+      if (defaultMonth === 0) {
+        defaultMonth = 12;
+        defaultYear = currentYear - 1;
+      }
+
+      // مقدار پیش‌فرض select
+      $('#year-filter').val(defaultYear.toString());
+      $('#month-filter').val(defaultMonth.toString().padStart(2, '0'));
+      filterTabs();
+    }
+    $('.tab').click(function () {
+      var tabId = $(this).data('tab');
+      $('.tab').removeClass('active');
+      $('.tab-content').fadeOut(200, function () {
+        $('#' + tabId).fadeIn(300).addClass('active').siblings().removeClass('active');
+      });
+    });
+    function filterTabs() {
+      var selectedYear = $('#year-filter').val();
+      var selectedMonth = $('#month-filter').val() ? $('#month-filter').val().padStart(2, '0') : "";
+      if (!selectedYear || !selectedMonth) {
+        $('.tab-content').hide();
+        return;
+      }
+      $('.tab-content').each(function () {
+        var tabYear = $(this).data('year');
+        var tabMonth = $(this).data('month').toString().padStart(2, '0');
+        if (tabYear == selectedYear && tabMonth == selectedMonth) {
+          $(this).show();
+        } else {
+          $(this).hide();
+        }
+      });
+      var firstVisible = $('.tab-content:visible').first().attr('id');
+      if (firstVisible) {
+        $('.tab').removeClass('active');
+        $('.tab[data-tab="' + firstVisible + '"]').addClass('active');
+      }
+    }
+    $('#year-filter, #month-filter').change(filterTabs);
     // video personal
     $('#personal-pointer').on('click', function () {
       var video = $('.video-explain-personal').get(0);

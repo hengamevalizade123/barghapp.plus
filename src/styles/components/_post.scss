@@ -23,6 +23,8 @@
 		border-radius: .5rem;
 		overflow: hidden;
 		height: 25em;
+		display: flex;
+		align-items: flex-end;
 		@include mq($until: md) {
 			height: 13em;
 		}
@@ -182,6 +184,7 @@
 		font-weight: 300;
 
 		.c-post__date, .c-post__study {
+			color: #858484;
 			svg {
 				vertical-align: bottom;
 				margin-left: 3px;

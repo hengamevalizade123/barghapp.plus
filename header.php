@@ -67,7 +67,7 @@
 				<div class="c-main-header__content u-flex items-center space-between">
 					<a class="header-logo u-flex" href="/">
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-barghaap-plus.svg"
-							 alt="برقآپ">
+							 alt="برق‌آپ">
 					</a>
 					<nav id="site-navigation" class="main-navigation u-flex items-center">
 						<div class="c-header__wrap js-navs">
@@ -130,14 +130,8 @@
 					<div class="c-main-header__cta u-flex items-center relative justify-end relative">
 						<a class="c-gif c-main-header__panel u-flex items-center border-radius gap-sm btn-outline-gradiant relative"
 						   href="https://plus.barghapp.com/calculator/" target="_blank">
-							<video
-								autoplay
-								loop
-								muted
-								playsinline
-								style="display:block" class="gif">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/videos/coin.webm" type="video/webm">
-							</video>
+							<img class="gif" src="<?php echo get_template_directory_uri(); ?>/assets/images/coin-plus.gif"
+								 alt="برق‌آپ">
 							<span>
 								سودتو حساب کن
 							</span>

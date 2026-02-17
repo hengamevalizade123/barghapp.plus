@@ -14,7 +14,7 @@
 					فراهم می‌کند.
 				</p>
 				<div class="c-hero__info-btn u-flex gap-md">
-					<a class="btn btn-primary-gradiant u-flex items-center gap-md" href="#">
+					<a class="btn btn-primary-gradiant u-flex items-center gap-md" href="https://barghapplus.com/">
 						<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path
 								d="M10.8334 18.3625H6.72758C3.07675 18.3625 2.16675 17.4525 2.16675 13.8016V7.30168C2.16675 3.65084 3.07675 2.74084 6.72758 2.74084H18.1351C21.7859 2.74084 22.6959 3.65084 22.6959 7.30168"
@@ -33,7 +33,7 @@
 						</svg>
 						ورود به سامانه
 					</a>
-					<a class="btn btn-outline-gradiant u-flex items-center gap-md" href="#">
+					<a class="btn btn-outline-gradiant u-flex items-center gap-md" href="/electricity-price/">
 						<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path
 								d="M11.0835 16.0415C11.0835 17.1731 11.9585 18.0831 13.0318 18.0831H15.2252C16.1585 18.0831 16.9168 17.2898 16.9168 16.2981C16.9168 15.2365 16.4502 14.8515 15.7618 14.6065L12.2502 13.3815C11.5618 13.1365 11.0952 12.7631 11.0952 11.6898C11.0952 10.7098 11.8535 9.90479 12.7868 9.90479H14.9802C16.0535 9.90479 16.9285 10.8148 16.9285 11.9465"
@@ -49,6 +49,9 @@
 								  stroke-linecap="round" stroke-linejoin="round"/>
 						</svg>
 						قیمت برق
+					</a>
+					<a class="btn btn-outline-gradiant u-flex items-center gap-md" href="https://plus.barghapp.com/courses/register-guide/">
+						راهنمای ثبت نام
 					</a>
 				</div>
 				<img class="border-radius h-100 arrow"
